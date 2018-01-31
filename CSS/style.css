@@ -1,0 +1,144 @@
+html {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  width: auto;  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 100%;
+  font-family: 'Arial'; 
+}
+
+h1{
+    margin-top: 180px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 70px;
+}
+
+h2{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 50px;
+}
+
+.term-menu {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.term-button {
+    display: inline-flex;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 10%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.term-menu:hover .term-button {
+    background-color: #000;
+    color: white;
+}
+
+.topic-menu {
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+}
+
+.topic-button1 {
+    display: block;
+    background-color: indianred;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+}
+
+.topic-button2 {
+    display: block;
+    background-color: darkgoldenrod;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+}
+
+.topic-button3 {
+    display: block;
+    background-color: dodgerblue;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+}
+
+.topic-menu:hover .topic-button1 {
+    background-color: #000;
+    color: white;
+}
+
+.topic-menu:hover .topic-button2 {
+    background-color: #000;
+    color: white;
+}
+
+.topic-menu:hover .topic-button3 {
+    background-color: #000;
+    color: white;
+}
+
+.topic1 {
+    position: fixed;
+    list-style-type: none;
+    width: 400px;
+    overflow: auto;
+    height:1000px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.topic1 a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.topic1-content {
+    display: block;
+    background-color: indianred;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+}
