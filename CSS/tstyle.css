@@ -2,22 +2,6 @@ html, body {
     padding: 0;
     margin: 0;
 }
-.quiz-container {
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    height: auto;
-    background: rgba(0,0,0,0.5);
-}
-
-.container{
-    display: block;
-    position: relative;
-    margin: 40px auto;
-    height: auto;
-    width: 500px;
-    padding: 20px;
-}
 
 .list-group {
     width: 90%;
@@ -32,6 +16,14 @@ html, body {
 }
 
 /*Answers and Question Format*/
+.quiz-container {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: auto;
+    background: black;
+}
+
 .questions {
     font-family: monospace;
     color: white;
@@ -104,9 +96,6 @@ html, body {
 	transition: background 0.25s linear;
 }
 
-input[type=radio]:checked ~ .check { border: 5px solid #e60000; }
-input[type=radio]:checked ~ .check::before{ background: #e60000; }
-input[type=radio]:checked ~ label{ 
-    color: #e60000;
-    border-color: #e60000;
-}
+input[type=radio]:checked ~ .check { border: 5px solid #FFFFFF; }
+input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }
+input[type=radio]:checked ~ label{ color: #FFFFFF; border-color: #FFFFFF; }
