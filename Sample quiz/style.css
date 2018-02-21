@@ -1,13 +1,11 @@
 html, body {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
 
-body {
-    background-color: #000000;
-}
-
 #begin-cont {
+    background: black;
     padding-top: 15vh;
     display: block;
     position: relative;
@@ -16,6 +14,8 @@ body {
     padding: auto;
     text-align: center;
 }
+
+/*rgb(247, 217, 33);*/
 
 #logo-force {
     height: 60vh;
@@ -125,5 +125,24 @@ input[type=radio]:checked ~ .check { border: 5px solid #FFFFFF; }
 input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }
 input[type=radio]:checked ~ label{ color: #FFFFFF; border-color: #FFFFFF; }
 
+#rev-quiz {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 4vh;
+    font-weight: 800;
+    font-family: starwars1;
+    padding: 2vh;
+    text-decoration: none;
+    color: #000000;
+}
 
+#rev-quiz:hover {
+    box-shadow: 0px 0px 200px red;
+    transition: all 0.2s linear;
+}
 
+/*fonts*/
+@font-face {
+    font-family: starwars1;
+    src: url(fonts/font1.ttf);
+}
