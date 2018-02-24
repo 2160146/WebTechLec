@@ -1,0 +1,319 @@
+<!DOCTYPE>
+<html>
+    
+<head> <title>Hypertext Transfer Protocol </title></head>
+    
+    <body>
+        
+    <div class="container">
+        <h1>HTTP (Hypertext Transfer Protocol)</h1><br>
+         <ul>
+         <li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the world wide web</li>
+         <li>Invented by Sir Tim Berners – Lee at CERN in 1989</li>
+         <li>Jointly developed by the W3C and the IETF</li>
+                <!-- vea ihover mo yung W3C containing this text: Also founded by Berners-Lee-->
+         <li>Used to retrieve resources</li><br>
+         </ul>
+     </div>
+        
+    <div class="container">
+        <h2>Version History</h2>
+        <ul>
+        <li>HTTP 0.9 (1991) (GET)</li>
+        <li>HTTP 1.0 (RFC 1945, May 1996) (GET,HEAD,POST)</li>
+        <li>HTPP 1.1 (RFC January 1997, RFC 2016 June 1999), RFC 7230-7235
+            (June 2014) (Persistent Connection)</li>
+        <li>HTTP 2(RFC 7540 May 2015) </li>
+            <ul>
+            <li>SPDY
+                <ul>
+                <li>Faster</li>
+                </ul></li>
+            <li>Server Push<ul>
+                <li>Lessen page load times</li>
+            </ul></li>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>Type Lining</h2>
+        <ul>
+        <li>"send an html while still sending other html without getting response"</li>
+        <li>latency</li>
+        <li>"pipe lining"</li>
+        </ul>
+        
+        TCP(Transmission Control Protocol) <br>
+        
+        Port (0-65535)
+    </div>
+
+    <div class="container">
+        <h2>HTTP Fundamentals</h2>
+        <ul>
+        <li>HTTP typicallcy runs on top of TCP/IP, using TCP port(0-65535) 80 by default, or TCP port 443 for HTTPS(HTTP over SSL/TLS)</li>
+        <li>HTTP is based on a client-server architecture</li>
+            <ul>
+            <li>Servers</li>
+                <ul>
+                <li>Origin Servers</li>
+                <li>Proxy Servers,gateways,tunnels (encryptions)</li>
+                </ul>
+            <li>Clients a.k.a user agent (UA)
+                <ul>
+                <li>Web browsers, web crawlers/spiders, other end user tools and applications</li>
+                </ul></li>
+            </ul>
+        </ul>
+        SSL-encrypts data
+        <ul>
+        <li>HTTP uses a requet-response standard protocol</li>
+            <ul>
+            <li>The client sends an HTTP request message on the server</li>
+            <li>The server processes the request and replies with an HTTP response message</li>
+            </ul>
+        <li>HTTP is a statistics communication protocol </li>
+            <ul>
+            <li>Servers do not keep information about clients in-between requests</li>
+            </ul>
+        <li>HTTP provides support for other functionalities such as: </li>
+            <ul>
+            <li>Cache controls (local storage)</li>
+            <li>Content media type (MULTIPURPOSE INTERNET MAIL EXTENTIONS or MIME) specification</li>
+            <li>Language and character set specification</li>
+            <li>content/transfer codings - compression (rar.zip)</li>
+            <li>Content negotiation</li>
+            <li>Client-server protocol negotiations- switch protocols</li>
+            <li>Persistent connections</li>
+            <li>Request pipelining/multiplexing</li>
+            <li>Authentication/authorization</li>
+            <li>Etc.</li>
+            </ul>
+        </ul>
+    </div>
+        
+    <div class="container">
+       <h2>HTTP Resource Addressing</h2> 
+        
+        HTTP resources are identified using URIs (RFC (3986),or more, specifically HTTP URLs)
+       <ul>
+        <li>Scheme ( http or https)</li> 
+        <li>Authority</li>
+           <ul>
+            <li>User information or authentication credentials (deprecated) (usr:pwd)</li>
+            <li>Host
+               <ul>
+                <li>Domain name (resolved to an IP address using DNS) of the server where the resource resides)</li>
+                </ul></li>
+            <li>Port number</li>
+            </ul>
+        <li>Path to resource (resolved relative to the document root on the server)</li>
+           <ul>
+            <li>May refer to a static or dynamic resource (as-is)-(produce)</li>
+            </ul>
+           
+        <li>Query</li>
+           <ul>
+           <li>Typically provided as key=value pairs, with ampersand separators between key/value pairs</li>
+            <li>May be URL-encoded</li>
+           </ul>
+        <li>Fragment identifier</li>
+           <ul>
+           <li>Starts w/ hashtag (#) – not sent to server</li>
+            <li>Bookmark</li>
+           </ul>
+       </ul>
+        Example<br>
+        http://usr:pwd@server.org:81/info/profile.php?id=1234#addr
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Request Message</h2>
+        <ul>
+        <li>Request Line (CRLF-terminated line consisting of three space-separated values</li>
+        <li>Message Headers(general, request, and/or entity headers)</li>
+        <li>Empty Line (CRLF)-new line</li>
+        <li>Message Body a.k.a payload (Optional)</li>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Response Message</h2>   
+        
+        <ul>
+        <li>Status Line(CRLF)</li>
+            <ul>
+            <li>Protocol Version</li>
+            <li>Status Code</li>
+            <li>Reason phrase</li>
+
+            </ul>
+        <li>Message Headers (general, response, and/or entity headers)</li>
+            <li>Empty Line(CRLF)</li>
+        <li>Message Body(CRLF)</li>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Request Methods</h2>
+        
+        Standard Methods(8)<br>
+        GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, CONNECT
+        
+        <ul>
+        <li>GET</li>
+            <ul>
+            <li>used to retrieve (entity)</li>
+            <li>most commonly used HTTP method</li>
+            </ul>
+        <li>HEAD</li>
+            <ul>
+            <li>identical to GET, except that server gives response yon line and headers ( no message body) </li>
+            </ul>
+        <li>POST</li>
+            <ul>
+            <li>used in submitting HTML form data (submitted as a query)</li>
+            </ul>
+        <li>PUT</li>
+            <ul>
+            <li>create or replace the state of the target resource</li>
+            </ul>
+        <li>DELETE</li>
+            <ul>
+            <li>remove the association between the target resource</li>
+            </ul>
+        <li>OPTIONS</li>
+            <ul>
+            <li>allows clients to determine the options and/or requirements</li>
+            <li>request target may be an asterisk(*)</li>
+            </ul>
+        <li>TRACE</li>
+            <ul>
+            <li>used for testing/diagnostics of the request/response chain</li>
+            </ul>
+        <li>CONNECT</li>
+            <ul>
+            <li>requests the establishment of a tunnel to the destination origin server</li>
+            <li>comonly used to create an end-to-ed virtual connection</li>
+            </ul>
+        </ul>
+        
+        METHOD PROPERTIES
+        <ul>
+            <li>Safe Methods</li>
+            <ul>
+            <li>GET,HEAD,OPTIONS,TRACE</li>
+            <li>Read-only</li>
+            </ul>
+            <li>Idempotent Methods</li>
+            <ul>
+            <li>GET,HEAD,OPTIONS,TRACE,PUT,DELETE</li>
+            <li>same effet as the effet of a single such request</li>
+            </ul>
+            <li>Cacheable Methods</li>
+            <ul>
+            <li>GET,HEAD,POST</li>
+            <li>alloed to be stored for future reuse</li>
+            </ul>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Message Headers (RFC 2616)</h2>
+        
+        <ul>
+            <li>General Header Fields (clients & servers)</li>
+            <ul>
+            <li>Cache-control</li>
+            <li>Connection</li>
+            <li>Data</li>
+            <li>Pragma</li>
+            <li>Trailer</li>
+            <li>Transfer-Encoding</li>
+            <li>Upgrade</li>
+            <li>Vea</li>
+            <li>Warning</li>
+            </ul>
+            <li>Request Header Fields</li>
+            <ul>
+            <li>Accept</li>
+            <li>Accept-charset</li>
+            <li>Accept-encoding</li>
+            <li>Accept-language</li>
+            <li>Authorization</li>
+            <li>Expect</li>
+            <li>From</li>
+            <li>Host</li>
+            <li>If-Match</li>
+            <li>If-None-Match</li>
+            </ul>
+            <li>Response Header Fields</li>
+            <ul>
+            <li>Accept-Ranges</li>
+            <li>Age</li>
+            <li>ETag</li>
+            <li>Location</li>
+            <li>Proxy-Authenticate</li>
+            <li>Retry After</li>
+            <li>Server</li>
+            <li>Vary</li>
+            <li>WWW-Authenticate</li>
+            </ul>
+            <li>Entity Header Fields(payload)</li>
+            <ul>
+            <li>Allow</li>
+            <li>Content-encoding</li>
+            <li>Content-language</li>
+            <li>Content-length</li>
+            <li>Content-location</li>
+            <li>Content-MDS</li>
+            <li>Content-range</li>
+            <li>Content-type</li>
+            <li>Expires</li>
+            <li>Last-Modifier</li>
+            </ul>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Status Codes(RFC 2616)</h2>
+        
+        <ul>
+        <li>Informational(1xx)</li>
+        <li>Success(2xx)</li>
+        <li>Redirection(3xx)</li>
+        <li>client Error(4xx)</li>
+        <li>Server Error (5xx)</li>
+        </ul>
+    </div>
+        
+    <div class="container">
+        <h2>HTTP Extensions</h2>
+        
+        -by redefining new request methods, message headers and/or status codes and the implementing servers and/or clients that make use of the new functionality
+        <br>
+        
+        WebDAV(RFC 4918) (Distributed Authoring and Versioning)
+        <ul>
+        <li>Request Methods</li>
+        <ul>
+            <li>PROF FIND,PROP PATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+            </ul>
+        <li>Message Headers</li>
+            <ul>
+                <li>DAV,Depth, Destination, If, Lock-Token, Overwrite, Timeout</li>
+            </ul>
+        <li>Status Codes</li>
+            <ul>
+            <li>(207)Multi Status, (422) Unprocessable Entity, (423) Locked, (424) Failed Dependency, (507) Insufficient Storage</li>
+            </ul>
+        </ul>
+        
+    </div>
+        
+        Content Negotiation<br><br>
+        
+        -an HTTP client can negotiate for the resource that it prefers using the Accept, Accept-charset, Accept-encoding, and Accept-Language Headers
+        
+    </body>
+</html>
