@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="prelim.css" type="text/css"> </head>
+  <link rel="stylesheet" href="css/prelim.css" type="text/css"> </head>
 
 <body class="self">
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -19,7 +19,7 @@
             <a class="nav-link" href="#"> &nbsp;Lessons</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">&nbsp;Quiz</a>
+            <a class="nav-link" href="quiz.html">&nbsp;Quiz</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebTech</a>
@@ -73,7 +73,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-secondary" style="background-image: url('images/background.jpg'); background-attachment: fixed;background-repeat:no-repeat;background-size:cover;" id="www-body">
+  <div class="py-5 bg-secondary" style="background-image: url('images/bg1.jpg'); background-attachment: fixed;background-size:cover;" id="www-body">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-7">
@@ -87,7 +87,7 @@
             <br>-The early web only included <i>text-based resources. </i>It was originally intended for research sharing.</p>
         </div>
         <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </div>
+          <img class="img-fluid d-block w-100 img-thumbnail" src="images/SirTimBernersLeeWWW.jpg"> </div>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -127,8 +127,8 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-info"><b>Internet</b></h1>
-          <p class="text-success"><b>It is the shortcut for InterNetwork</b></p>
+          <h1 class="text-info text-right"><b>Internet</b></h1>
+          <p class="text-success text-right"><b>It is the shortcut for InterNetwork</b></p>
         </div>
       </div>
       <div class="row">
@@ -136,6 +136,8 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
           <div class="row">
             <div class="col-md-12">
               <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid d-block w-100 img-thumbnail" src="images/Internet.jpeg"> </div>
                 <div class="col-md-6">
                   <p class="" contenteditable="true"><b style="font-weight: bold;">INTER: meaning across boundaries</b></p>
                   <p class=""><b style="font-weight: bold;">NETWORK: meaning establishing connection</b></p>
@@ -150,26 +152,30 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
                     <p class="text-light"><i style="font-weight: bold;">Examples: </i>FTP (file transfer protocol), HTTP (HyperText Transfer Protocol)</p>
                   </ul>
                 </div>
-                <div class="col-md-6">
-                  <img class="img-fluid d-block w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h1 class="text-info"><b>URL: uniform resource locator</b></h1>
           <p class="">URL allows you to determine the address of a resource over the network</p>
-        </div>
-        <div class="col-md-6">
-          <h1 class="text-success"><b>http</b>://<i>webtek.org</i>/
-            <u>index.html</u>
-          </h1>
-          <p class=""><b><b>HTTP: </b>is the protocol
-            <br><b>webtek.org: </b>is the hostname
-            <br><b>index.html: </b>is the file to be fetched</b>
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <b>http</b>://<i>webtek.org</i>/
+              <u>index.html</u>
+            </button>
           </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <ul class="text-success">
+                <li><i>HTTP</i>: determines the protocol</li>
+                <li><i>webtek.org:</i> is the hostname/domain</li>
+                <li><i>index.html: </i>is the file to be fetched a</li>
+              </ul>
+            </div>
+          </div>
+          <p> </p>
         </div>
       </div>
     </div>
@@ -183,16 +189,341 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
       </div>
     </div>
   </div>
-  <div class="py-5 bg-dark" style="background-image: url('images/Bg2.png');background-attachment: fixed;background-size:cover;" id="http-body">
+  <div class="py-5 bg-dark" style="background-image: url(&quot;images/Bg2.png&quot;); background-attachment: fixed; background-size:cover;" id="http-body">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Article subtitle #1</h2>
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="col-md-6">
+          <h2 class="text-primary">HTTP</h2>
+          <p class="">Application layer communications protocol used to access resources (hypertext/hypermedia) on the world wide web
+            <br>
+            <br>&nbsp;Invented by Sir Tim Berners – Lee at CERN in 1989 ans was Jointly developed by the W3C and the IETF&nbsp;
+            <br>
+            <br>It is a protocol used to retrieve resource</p>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </div>
+        <div class="col-md-6 align-self-center">
+          <img class="img-fluid d-block w-100 img-thumbnail" src="images/HTTPLogo.jpg"> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-secondary">VERSION HISTORY</h2>
+          <ul class="text-info">
+            <li>HTTP 0.9 (1991) (GET)</li>
+            <li>HTTP 1.0 (RFC 1945, May 1996) (GET,HEAD,POST)</li>
+            <li>HTPP 1.1 (RFC January 1997, RFC 2016 June 1999), RFC 7230-7235 (June 2014) (Persistent Connection)</li>
+            <li>HTTP 2(RFC 7540 May 2015)</li>
+            <p class=""><i>Additional Features of HTTP 2.0:</i>
+              <br>
+              <br><b class="text-secondary">Server Push</b>-Lessen page load times
+              <br><b class="text-secondary">Type Lining</b>-"send an html while still sending other html without getting response" latency</p>
+          </ul>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col-md-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header bg-dark" id="headingOne">
+                <h5 class="mb-0 text-center text-white">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <b>HTTP Fundamentals</b> </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                    <li>HTTP typicallcy runs on top of TCP/IP, using TCP port(0-65535) 80 by default, or TCP port 443 for HTTPS(HTTP over SSL/TLS)</li>
+                    <li>HTTP is based on a client-server architecture</li>
+                    <ul>
+                      <li>Servers</li>
+                      <ul>
+                        <li>Origin Servers</li>
+                        <li>Proxy Servers,gateways,tunnels (encryptions)</li>
+                      </ul>
+                      <li>Clients a.k.a user agent (UA)
+                        <ul>
+                          <li>Web browsers, web crawlers/spiders, other end user tools and applications</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </ul> <b>SSL-encrypts data</b>
+                  <ul>
+                    <li>HTTP uses a requet-response standard protocol</li>
+                    <ul>
+                      <li>The client sends an HTTP request message on the server</li>
+                      <li>The server processes the request and replies with an HTTP response message</li>
+                    </ul>
+                    <li>HTTP is a statistics communication protocol </li>
+                    <ul>
+                      <li>Servers do not keep information about clients in-between requests</li>
+                    </ul>
+                    <li>HTTP provides support for other functionalities such as: </li>
+                    <ul>
+                      <li>Cache controls (local storage)</li>
+                      <li>Content media type (MULTIPURPOSE INTERNET MAIL EXTENTIONS or MIME) specification</li>
+                      <li>Language and character set specification</li>
+                      <li>content/transfer codings - compression (rar.zip)</li>
+                      <li>Content negotiation</li>
+                      <li>Client-server protocol negotiations- switch protocols</li>
+                      <li>Persistent connections</li>
+                      <li>Request pipelining/multiplexing</li>
+                      <li>Authentication/authorization</li>
+                      <li>Etc.</li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header bg-dark" id="headingTwo">
+                <h5 class="mb-0 text-center">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> <b> HTTP Resource Addressing</b> </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body"> HTTP resources are identified using URIs (RFC (3986),or more, specifically HTTP URLs)
+                  <ul>
+                    <li>Scheme ( http or https)</li>
+                    <li>Authority</li>
+                    <ul>
+                      <li>User information or authentication credentials (deprecated) (usr:pwd)</li>
+                      <li>Host
+                        <ul>
+                          <li>Domain name (resolved to an IP address using DNS) of the server where the resource resides)</li>
+                        </ul>
+                      </li>
+                      <li>Port number</li>
+                    </ul>
+                    <li>Path to resource (resolved relative to the document root on the server)</li>
+                    <ul>
+                      <li>May refer to a static or dynamic resource (as-is)-(produce)</li>
+                    </ul>
+                    <li>Query</li>
+                    <ul>
+                      <li>Typically provided as key=value pairs, with ampersand separators between key/value pairs</li>
+                      <li>May be URL-encoded</li>
+                    </ul>
+                    <li>Fragment identifier</li>
+                    <ul>
+                      <li>Starts w/ hashtag (#) – not sent to server</li>
+                      <li>Bookmark</li>
+                    </ul>
+                  </ul> Example
+                  <br> http://usr:pwd@server.org:81/info/profile.php?id=1234#addr </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header bg-dark" id="headingThree">
+                <h5 class="mb-0 text-center">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><b> HTTP Request Message</b> </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                    <li>Request Line (CRLF-terminated line consisting of three space-separated values</li>
+                    <li>Message Headers(general, request, and/or entity headers)</li>
+                    <li>Empty Line (CRLF)-new line</li>
+                    <li>Message Body a.k.a payload (Optional)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingFour">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo"> <b> HTTP Response Message</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>Status Line(CRLF)</li>
+                      <ul>
+                        <li>Protocol Version</li>
+                        <li>Status Code</li>
+                        <li>Reason phrase</li>
+                      </ul>
+                      <li>Message Headers (general, response, and/or entity headers)</li>
+                      <li>Empty Line(CRLF)</li>
+                      <li>Message Body(CRLF)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingFive">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><b> HTTP Request Methods </b></button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body"> Standard Methods(8)
+                    <br> GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, CONNECT
+                    <ul>
+                      <li>GET</li>
+                      <ul>
+                        <li>used to retrieve (entity)</li>
+                        <li>most commonly used HTTP method</li>
+                      </ul>
+                      <li>HEAD</li>
+                      <ul>
+                        <li>identical to GET, except that server gives response yon line and headers ( no message body) </li>
+                      </ul>
+                      <li>POST</li>
+                      <ul>
+                        <li>used in submitting HTML form data (submitted as a query)</li>
+                      </ul>
+                      <li>PUT</li>
+                      <ul>
+                        <li>create or replace the state of the target resource</li>
+                      </ul>
+                      <li>DELETE</li>
+                      <ul>
+                        <li>remove the association between the target resource</li>
+                      </ul>
+                      <li>OPTIONS</li>
+                      <ul>
+                        <li>allows clients to determine the options and/or requirements</li>
+                        <li>request target may be an asterisk(*)</li>
+                      </ul>
+                      <li>TRACE</li>
+                      <ul>
+                        <li>used for testing/diagnostics of the request/response chain</li>
+                      </ul>
+                      <li>CONNECT</li>
+                      <ul>
+                        <li>requests the establishment of a tunnel to the destination origin server</li>
+                        <li>comonly used to create an end-to-ed virtual connection</li>
+                      </ul>
+                    </ul> METHOD PROPERTIES
+                    <ul>
+                      <li>Safe Methods</li>
+                      <ul>
+                        <li>GET,HEAD,OPTIONS,TRACE</li>
+                        <li>Read-only</li>
+                      </ul>
+                      <li>Idempotent Methods</li>
+                      <ul>
+                        <li>GET,HEAD,OPTIONS,TRACE,PUT,DELETE</li>
+                        <li>same effet as the effet of a single such request</li>
+                      </ul>
+                      <li>Cacheable Methods</li>
+                      <ul>
+                        <li>GET,HEAD,POST</li>
+                        <li>alloed to be stored for future reuse</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingSix">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> <b>HTTP Message Headers (RFC 2616)</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>General Header Fields (clients &amp; servers)</li>
+                      <ul>
+                        <li>Cache-control</li>
+                        <li>Connection</li>
+                        <li>Data</li>
+                        <li>Pragma</li>
+                        <li>Trailer</li>
+                        <li>Transfer-Encoding</li>
+                        <li>Upgrade</li>
+                        <li>Vea</li>
+                        <li>Warning</li>
+                      </ul>
+                      <li>Request Header Fields</li>
+                      <ul>
+                        <li>Accept</li>
+                        <li>Accept-charset</li>
+                        <li>Accept-encoding</li>
+                        <li>Accept-language</li>
+                        <li>Authorization</li>
+                        <li>Expect</li>
+                        <li>From</li>
+                        <li>Host</li>
+                        <li>If-Match</li>
+                        <li>If-None-Match</li>
+                      </ul>
+                      <li>Response Header Fields</li>
+                      <ul>
+                        <li>Accept-Ranges</li>
+                        <li>Age</li>
+                        <li>ETag</li>
+                        <li>Location</li>
+                        <li>Proxy-Authenticate</li>
+                        <li>Retry After</li>
+                        <li>Server</li>
+                        <li>Vary</li>
+                        <li>WWW-Authenticate</li>
+                      </ul>
+                      <li>Entity Header Fields(payload)</li>
+                      <ul>
+                        <li>Allow</li>
+                        <li>Content-encoding</li>
+                        <li>Content-language</li>
+                        <li>Content-length</li>
+                        <li>Content-location</li>
+                        <li>Content-MDS</li>
+                        <li>Content-range</li>
+                        <li>Content-type</li>
+                        <li>Expires</li>
+                        <li>Last-Modifier</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingSeven">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><b> HTTP Status Codes(RFC 2616)</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>Informational(1xx)</li>
+                      <li>Success(2xx)</li>
+                      <li>Redirection(3xx)</li>
+                      <li>client Error(4xx)</li>
+                      <li>Server Error (5xx)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingEight">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><b> HTTP Extensions </b></button>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body"> -by redefining new request methods, message headers and/or status codes and the implementing servers and/or clients that make use of the new functionality
+                    <br> WebDAV(RFC 4918) (Distributed Authoring and Versioning)
+                    <ul>
+                      <li>Request Methods</li>
+                      <ul>
+                        <li>PROF FIND,PROP PATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+                      </ul>
+                      <li>Message Headers</li>
+                      <ul>
+                        <li>DAV,Depth, Destination, If, Lock-Token, Overwrite, Timeout</li>
+                      </ul>
+                      <li>Status Codes</li>
+                      <ul>
+                        <li>(207)Multi Status, (422) Unprocessable Entity, (423) Locked, (424) Failed Dependency, (507) Insufficient Storage</li>
+                      </ul>
+                    </ul> Content Negotiation
+                    <br> -an HTTP client can negotiate for the resource that it prefers using the Accept, Accept-charset, Accept-encoding, and Accept-Language Headers </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -221,7 +552,7 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
           </ul>
         </div>
         <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_9.jpg"> </div>
+          <img class="img-fluid d-block w-100 img-thumbnail" src="images/IanHicksonHTML.jpg"> </div>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -233,7 +564,7 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
       </div>
       <div class="row">
         <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="https://pingendo.github.io/templates/sections/assets/gallery_3.jpg"> </div>
+          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="images/HTMLHistory.jpg"> </div>
         <div class="col-md-7">
           <h2 class="pt-3 text-secondary">Pre-standadization</h2>
           <ul>
@@ -396,7 +727,7 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
           <h2 class="mb-4 text-secondary text-center">9358A</h2>
           <p class="text-white text-center">Created during the Academic Year 2017-2018
             <br>
-            <br> </p>
+            <br>&nbsp;<i>Created by:&nbsp;<br>Dean Christian Baguisi&nbsp;<br>Mitch Ainslie Galatcha&nbsp;<br>Nikki Ganotan&nbsp;<br>Vea Edriana Hufana&nbsp;<br>Jerome Francis Salazar </i></p>
         </div>
         <div class="col-md-4">
           <div class="p-4 col-md-12">
@@ -423,9 +754,7 @@ Web Servers: </b>these are applications or hardware devices that Hypermedia and 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
+ 
 </body>
 
 </html>
