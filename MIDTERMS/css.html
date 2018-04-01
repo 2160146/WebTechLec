@@ -1,0 +1,279 @@
+<div>
+Cascading Style Sheets (CSS)
+<ul>-used to specify the presentation of structurally marked up documents</ul>
+<ul>-developed by Håkon Wium Lie (CHSS) and Bert Bos (SSP) in World Wide Web Consortium (W3C)</ul>
+    <ul>
+        <li>CHSS means Cascading HTML Style Sheets</li>
+	    <li>SSP means Stream-based Style Sheet Proposal</li>
+    </ul>
+</div>
+<br><!--Version History-->
+<div>
+    <ul>Version History
+    <ul>
+        <li>CSS Level 1 (CSS 1, W3C Recommendation, Dec 1996</li>
+        <li>CSS Level 2 (CSS 2, W3C Recommendation, May 1998</li>
+        <li>CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation, Jun 2011</li>
+        <li>CSS Level 3</li>
+        <ul>-modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1) which is the last version</ul>
+    </ul>
+    </ul>
+</div>
+<br><!--HTML Style Sheets-->
+<div>
+    <ul>HTML Style Sheets
+    <ul>-sources of styles for HTML documents</ul>
+    <ul>
+        <li>author styles</li>
+        <ul><li>external (linked) stylesheets (recommended)</li></ul>
+        <ul><li>embedded (internal) stylesheets</li></ul>
+        <ul><li>inline styles</li></ul>
+        <li>user styles</li>
+        <ul><li>some browsers provide (non-standard) alternatives through plugins/extensions (i.e Stylish, Web Maker, JSbin, CSS-Tricks)</li></ul>
+        <li>user agent styles</li>
+        <ul><li>sample default user agent stylesheet from CSS 2.1</li></ul>
+        <ul><li>the source of a style denotes its origin, which is used in determining its precedence in the cascade</li></ul>
+   </ul>
+    <ul>Extensions</ul>
+    <ul><li>Override</li>
+    <ul>DOM-LEVEL-2-STYLE</ul>
+    </ul>
+    <ul><li>Animation</li></ul>
+    <ul><li>Transition</li></ul>
+    </ul>
+</div>    
+<br><!--CSS Statements-->    
+<div>
+    <ul>CSS Statements
+    <ul>
+        <li>At-Rules(@)</li>
+        <ul>@charset</ul>
+        <ul>@import</ul>
+        <ul>@namespace</ul>
+        <ul>@media</ul>
+        <ul>@supports</ul>
+        <ul>@page</ul>
+        <ul>@font-face</ul>
+        <ul>@keyframes</ul>
+    </ul>
+    <ul><li>CSS Rule Sets (a.k.a CSS Rules, Style Rules)</li>
+    <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed by a property value</ul>
+    </ul>
+    </ul>
+</div>
+<br><!--CSS Selectors-->
+<div>
+    <ul>CSS Selectors
+    <ul>
+        <li>Selector(Level 3)</li>
+        <ul>-structure used as a condition in CSS rule to determine which elements in the document tree and matched by the selector and are thus targeted
+        <ul><li>Selector Syntax</li>
+            <ul>-chain of one or more sequences of simple selectors separated by combinators
+                <li>Sequences of Simple Selectors</li>
+                    <ul>-chain of simple selectors not separated by combinators</ul>
+            </ul>
+        </ul>
+        </ul>
+    </ul>
+    </ul>
+</div>
+<br><!--Combinators-->
+<div>
+    <ul>Combinators
+    <ul>-are used to improve additional matching constrains</ul>
+        <ul><li>Selector Group</li>
+        <ul>-comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list
+        </ul>
+            
+        <ul>Types of Combinators</ul>
+            <ul><li>Descendant Combinator - (whitespace)</li></ul>
+            <ul><li>Child Combinator (>)</li></ul>
+            <ul><li>Sibling Combinator</li>
+                <ul>
+                <li>Adjacent sibling combinatory (+) – immediately after or the first</li>
+                <li>General sibling combinatory (~) – any sibling after</li>
+                </ul>
+            </ul>
+        
+        <ul>Pseudo Elements</ul>
+            <li>:first-letter, ::first-letter</li>
+            <li>:first-line, ::first-line</li>
+            <li>:before, ::before</li>
+            <li>:after, ::after</li>
+        </ul>
+    </ul>
+        
+        <ul>Simple Selectors
+        <ul><li>Universal Selector - matches everything</li></ul>
+        <ul><li>Type Selector - different elements</li></ul>
+        <ul><li>ID Selector - value of the id, case-sensitive (#)</li></ul>
+        <ul><li>Class Selector - class variable</li></ul>
+        <ul><li>Attribute Selector - value of attributes</li></ul>
+        <ul><li>Pseudo-Classes</li>
+            <ul>
+            <li>Dynamic Pseudo-Classes</li>
+            <li>Target Pseudo-Classes</li>
+            <li>Language Pseudo-Classes</li>
+            <li>UI Element State Pseudo-Classes</li>
+            <li>Structural Pseudo-Classes</li>
+            <li>Negotation Pseudo-Classes</li>
+            </ul>
+        </ul>
+        </ul>
+</div>
+<br><!--CSS Rule Precedence-->
+<div>
+    <ul>CSS Rule Precedence
+        <ul>
+            <li>An HTML element may be the subject of the selectors of multiple style rules</li>
+            <li>When such rules target different properties, their effects cascade (i.e. are combined)</li>
+            <li>When the style involve the same property, they conflict, and must be resolved such that only one style is applied</li>
+            <li>Resolution</li>
+            <ul>
+                <li>By origin and importance</li>
+                <li>By specificity</li>
+                <li>By order (last priority)</li>
+            </ul>
+        <ul>Important
+            <ul>1.	Important user agent declarations</ul>
+            <ul>2.	Important user declarations</ul>
+            <ul>3.	Important author declarations</ul>
+            Normal
+            <ul>1.	Normal author declarations</ul>
+            <ul>2.	Normal user declarations</ul>
+            <ul>3.	Normal user agent declarations</ul>
+        </ul>
+            <li>Count the number of ID selectors in the selector (=a)</li>
+            <li>Count the number of class selectors, attribute selectors and pseudo classes in the selector (=b)</li>
+        </ul>
+    </ul>
+</div>
+<br><!--CSS Declarations-->
+<div>
+    <ul>CSS Declarations
+        <ul><li>
+            Properties
+            </li>
+            <ul>
+                <li>Shorthand Properties</li>
+                <ul>
+                    <li>Allows authors to specify the values of the several properties with a single property</li>
+                    <li>Vendor Specific Extensions (a.k.a Vendor Prefixes)</li>
+                        <ul>
+                            <li>Used by the browsers vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of user-controlled flags on preferences</li>
+                        </ul>
+                    <li>Custom properties (a.k.a CSS Variables (experimental)</li>
+                    <ul>
+                        <li>Property names prefixed with --, representing a value that can be reused throughout the document using the var() function</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<br><!--Values-->
+<div>
+    <ul>Values
+    <ul><li>Value Processing</li>
+        <ul><li>Value Processing</li>
+            <ul><li>Declared, Cascaded, Specified, Computed, Used, Actual Values</li></ul>
+            <li>Value Types</li>
+            <ul><li>Keywords</li></ul>
+                <ul><li>CSS-Wide Keywords</li>
+                    <ul>Initial, Inherit, Unset</ul>
+                    <li>Property-Specific Keywords</li>
+                </ul>
+            <ul><li>Numbers</li></ul>
+                <ul><li>Integers or reals in (scientific) decimal notation</li></ul>
+            <ul><li>Dimensions</li></ul>
+                <ul>
+                    <li>Length, angle, duration (or time), frequency, resolution</li>
+                        <ul><li>Length Units</li>              <ul>
+                                <li>Font-relative: em, ex, ch, rem</li>
+                                <li>Viewport-percentage: vw, vh, vmin, vmax</li>
+                                <li>Absolute: cm, mm, in, pt, pc, px</li>    
+                            </ul>
+                        </ul>
+                        <ul><li>Angle Units</li>
+                            <ul>
+                                <li>deg, grad, rad, turn</li>
+                                <li>Used in some gradient and transform functions</li>   
+                            </ul>
+                        </ul>
+                        <ul><li>Duration (or time) units</li>
+                            <ul>
+                                <li>s, ms</li>
+                                <li>Used in animation, transition and related properties</li>   
+                            </ul>
+                        </ul>    
+                        <ul><li>Frequency Units</li>
+                            <ul>
+                                <li>Hz, kHz</li>
+                                <li>Initially introduced in CSS2 for the (obsoleted) aural media type; reintroduced in CSS3, but is correctly unused</li>   
+                            </ul>    
+                    </ul>
+                        <ul><li>Resolution Units</li>
+                            <ul>
+                                <li>dp, dpcm, dppx</li>
+                                <li>Used in media queries</li>   
+                            </ul>                    
+                        </ul>
+                </ul>
+        <ul><li>Percentages</li>
+            <ul>
+                <li>Number with a % suffix</li>
+                <li>Calculated as a percentage of some value (usually taken from the par)</li>
+            </ul>
+        </ul>
+        <ul><li>URLs and URIs</li>
+            <ul>
+                <li>url() function with an absolute or relative (to the stylesheet) URL parameter</li>
+                <li>denotes a pointer to a resource, such as an image or a font</li>
+            </ul>
+        </ul>
+        <ul><li>Colors</li>
+            <ul>
+                <li>Color keywords</li>
+                <li>RGB hexadecimal notation</li>
+                <li>RGB functions</li>
+                <li>HSL functions</li>
+                <li>Currentcolor, transparent</li>
+            </ul>
+        </ul>
+        <ul><li>Strings</li>
+            <ul>
+                <li>Delimited by single quotes (‘) or double quotes (“)</li>
+            </ul>
+        </ul>
+        <ul><li>Functions</li></ul>
+        </ul>
+        </ul>
+    </ul>
+</div>
+<br><!--CSS Preprocessors. Frameworks and Polyfills-->
+<div>
+    <ul><li>CSS Preprocessors. Frameworks and Polyfills</li>
+        <ul>
+        <li>CSS Preprocessors</li>
+            <ul>
+                -Generate CSS a custom language syntax that typically includes features that don’t exist in pure CSS (e.g. Variables, Control Flow, Nesting, Mixins, Functions, etc.)
+            </ul>
+        <li>CSS Frameworks</li>
+            <ul>
+                -Provides predefined CSS design functionality that can be reused, extended and customized
+            </ul>
+        <li>CSS Polyfills</li>
+            <ul>
+                -Provides future developers expect browsers to provide natively
+            </ul>     
+        </ul>
+    
+    
+    
+    
+    
+    
+    </ul>
+</div>
+
+
