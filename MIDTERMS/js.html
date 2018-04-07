@@ -250,3 +250,153 @@ JavaScript (JS)
     <li>Can declare different types in an array (flexible)</li>    
     </ul>
 </div>
+
+<div>
+<ul>JavaScript Event Handling</ul>
+    <ul>
+        <li>onclick Event Type</li>
+        <ul><li>most used type of event that triggers when a user clicks using the left button of mouse.</li></ul>
+        <li>onsubmit Event Type</li>
+        <ul><li>event that triggers when a user tries to submit a form.</li></ul>
+        <li>onmouseover Event Type</li>
+        <ul><li>event that occurs when a user brings the mouse over any element.</li></ul>
+        <li>onmouseout Event Type</li>
+        <ul><li>event that occurs when a user moves the mouse out from the element.</li></ul>
+    </ul>
+    
+</div>
+
+<div>
+<ul>How to Create and Dispatch Events</ul>
+    <ul>
+        <ul>var clickEvent = new Event('click');</ul>
+        <ul>var button = document.querySelector('#button');</ul>
+        <ul>button.dispatchEvent(clickEvent);</ul>
+    </ul>
+    
+    <ul>
+        <ul>var ce = new CustomEvent('pindot');</ul>
+        <ul>button.addEventListener('pindot'.pindotHandler);</ul>
+        <ul>button.dispatchEvent(ce);</ul>
+    </ul>
+</div>
+
+<div>
+<ul>Event Propagation Order(DOM-compliant browsers)</ul>
+    <ul>
+        <ul><li>capturing the phase</li></ul>
+        <ul><li>at target</li></ul>
+        <ul><li>bubbling phase</li></ul>
+    </ul>
+</div>
+
+<div>
+<ul>Event Handler Registration</ul>
+    <ul>
+        <li>Method 1(inline HTML event attribute)</li>
+        <ul><li>non-standard, universal support, not recommended</li></ul>
+        <ul><li>ex. onClick='handler()'</li></ul>
+        <li>Method 2(pre-DOM L2)</li>
+        <ul><li>non-standard, universal support</li></ul>
+        <ul><li>can register only one handler</li></ul>
+        <ul><li>remove handler by assigning null value to attribute</li></ul>
+        <ul><li>ex. button.onclick=handler();</li></ul>
+        <li>Method 3 (DOM L2 event registration</li>
+        <ul><li>standard, well-supported</li></ul>
+        <ul><li>can register more than one event handler</li></ul>
+        <ul><li>can register handlers on the bubble or capture phase</li></ul>
+        <ul><lil>use removeEventListener() to remove event handler</lil></ul>
+        <ul><li>use dispatchEvent(0 to trigger event programmatically</li></ul>
+        <ul><li>ex. button.addEventListener('click',handler)</li></ul>
+        <li>Method 4 (Microsoft-specific, non-standard, IEv6-v10...)</li>
+        <ul><li>can register more than one event handler</li></ul>
+        <ul><li>can register handlers only on the bubble phase</li></ul>
+        <ul><li>use detachEvent() to remove event handler</li></ul>
+        <ul><li>use fireEvent() to trigger event programmatically</li></ul>
+        <ul><li>ex. button.attachEvent(‘onclick’, handler)</li></ul>
+    </ul>
+</div>
+
+<div>
+<ul>//cross-browser event registration</ul>
+    <ul>
+        <ul>var button – document.getElementById(‘button’);</ul>
+        <ul>if (button.addEventListener) {</ul>
+        <ul><ul>button.addEventListener('click',handler);</ul></ul>
+        <ul>} else if (button.attachEvent) {</ul>
+        <ul><ul>button.AttachEvent('onclick',handler);</ul></ul>
+        <ul>} else {</ul>
+        <ul><ul>button.onclick=handler;</ul></ul>
+        <ul>}</ul>
+    </ul>
+</div>
+
+<div>
+<ul>Whenever an event is triggered information about the event is made available via the ‘event’ object property of the ‘Window’ object.</ul>
+<ul>*for method 1 registration, the event object may be passed explicitly in the call to the handler.</ul>
+<ul>*for methods 2 and 3 registration, the event object is passed implicitly as the first argument of the event handler.</ul>
+</div>
+
+<div>
+<ul>Event Object Properties and Methods</ul>
+    <ul>
+        <ul><li>Bubbles</li></ul>
+        <ul><li>Eventphase</li></ul>
+        <ul><li>Target (or srcElement (non-standard))</li></ul>
+        <ul><li>currentTarget</li></ul>
+        <ul><li>preventDefault()</li></ul>
+        <ul><li>stopPropagation()</li></ul>
+        <ul><li>stopImmediatePropagation()</li></ul>
+        <ul><li>other events-specific information</li></ul>
+    </ul>
+</div>
+
+<div>
+<ul>AJAX (Asynchronous JavaScript And XML)</ul>
+    <ul>XMLHttpRequest</ul>
+    <ul>
+        <ul><li>var xar = new XMLHttpRequest();</li></ul> 
+        <ul><li>xhr.open(‘GET’, resource, false);</ul> 
+        <ul><ul><li>what resource will be fetched</li></ul></ul> 
+        <ul><li>xhr.send()</li></ul> 
+    </ul>
+</div>
+
+<div>
+<ul>2 modes of fetch</ul>
+    <ul>
+        <ul><li>synchronous</li></ul>
+        <ul><li>asynchronous</li></ul>
+    </ul>
+    <ul>
+        Synchronous
+        <ul>
+            <ul><li>page is blocked, cannot interact, false</li></ul>
+        </ul>
+    </ul>
+    <ul>
+        Asynchronous
+        <ul>
+            <ul><li>not frozen, can interact, true(default)</li></ul>
+        </ul>
+    </ul>
+    <ul>
+        Callback
+        <ul>
+            <ul><li>monitor progress of response</li></ul>
+        </ul>
+    </ul>
+    <ul>JavaScript Promise</ul>
+    <ul>
+    <ul>//defining the promise</ul>
+    <ul>var promise = new Promise</ul>
+        <ul><ul>//do operation(asynchrously done)</ul></ul>
+        <ul><ul>//success - > call resolve () …</ul></ul>
+        <ul><ul>//failure -> call reject () …</ul></ul>
+    <ul>})</ul>
+    <ul>//calls the promise</ul>
+    <ul>promise().then(success,failure);</ul><br>
+    <ul>function success(result){}</ul>
+    <ul>function failure(err){}</ul>
+    </ul>
+</div>
