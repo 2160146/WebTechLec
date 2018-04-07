@@ -26,4 +26,227 @@ JavaScript (JS)
         </ul>
     </ul>
 
+    <ul>Noscript
+        <ul><li>provides alternative content when the browser does not support or disabled</li>
+        </ul>
+    </ul>
+    
+</div>
+
+<div>
+    <ul>JavaScript Execution Environment</ul>
+    <ul><li>accessible for specific page only</li>
+        <li>JavaScript was built on NetScape</li>
+        <ul>
+            <li>Core JavaScript (EcmaScript) language and API</li>
+            <li>(Traditional) Browser Object Model (BOM) API (non-standardized)</li>
+            <ul><li>Window, Navigator, Screen, Location, History </li></ul>
+            <li>Document Object Model (DOM) API</li>
+            <ul>
+            <li>Node, Document, Element, Text, Attr, DocumentType, Comment, etc.</li>
+            <li>Event, EventTarget, Event Listener, etc.</li>
+            <li>CSSStyleSheet, CSSRule, etc.</li>
+            </ul>
+            <li>Miscellaneous JavaScript Web APIs</li>
+            <ul>
+                <li>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XML HttpRequest (AJAX), etc.</li>
+            </ul>
+            <li>Most of the APIs are accessed from scripts via the global object Window</li>
+        </ul>
+    </ul>    
+</div>
+
+<div>
+    <ul>
+        <li>DOM (Document Object Model)</li>
+        <ul>
+            <li>API that allows access to the HTML document from within scripts associated with the web page</li>
+            <ul>
+                <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
+                <li>Accessed in the Document object property of the global Window object</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+
+<div>
+<ul>Functionalies</ul>
+    <ul><li>retrieve references to nodes (or node collections) in the DOM</li>
+        <ul>
+            <li>getElementById()</li>
+            <li>getElementByTagName, getElementByClassName(), getElementByName()</li>
+            <li>querySelector(), querySelectorAll()</li>
+        </ul>
+    </ul>
+    <ul><li>traverse the DOM tree (from a given node)</li>
+        <ul>
+            <li>parentNode, parentElement</li>
+            <li>childNodes, children</li>
+            <li>firstChild, lastChild, nextSibling, previousSibling</li>
+            <li>	firstElementChild, lastElementChild, nextElementSibling, previousElementSibling</li>
+        </ul>
+    </ul>
+    <ul><li>construct/copy nodes</li>
+        <ul>
+            <li>createElement(), createTextNode(), createAttribute()</li>
+        </ul>
+    </ul>
+</div>
+
+<div>
+<ul>JavaScript Language Fundamentals</ul>
+    <ul>Top Level</ul>
+        <ul>
+            var globalVar;  				 //global scope – property of window object
+        </ul>
+        <ul>
+            let someVar;  				//global scope – not a property of window object
+        </ul>
+        <ul>
+            const LEGAL_AGE=21;		              //global constant- not a property of window object
+        </ul>
+        <ul>
+            avoidThis = 100; 		              //global reference to window property
+        </ul>
+    <ul>Inside Function</ul>
+        <ul>
+            function func() {
+        <ul>
+            var localVar1;                                   //local function scope
+        </ul>
+        <ul>
+            for (;;) 				lexical scoping technique
+        </ul>
+        <ul>
+           let blockVar; 		//block local scope
+        </ul>
+        }    
+        </ul>
+</div>
+
+<div>
+<ul>Primitive data type</ul>
+    <ul>Numbers
+        <ul>
+            <li>decimal notation (integer, floating-point, scientific notation)</li>
+            <li>binary, octal, hexadecimal</li>
+            <li>special numbers ( Infinity, -Infinity, NaN)</li>
+        </ul>
+    </ul>
+    <ul>Strings
+    <ul>
+            <li>single-quote delimited</li>
+            <li>double-quote delimited</li>
+            <li>back-quote</li>
+                <ul>
+                <li>template literals</li>
+                <ul><li>allowing multi-line strings and expression interpolation</li></ul></ul>
+        </ul>
+    </ul>
+    <ul>Boolean
+        <ul>
+            <li>true, false</li>
+            <li>0, “”(empty string), null, undefined, NaN are “falsy” values</li>
+        </ul>
+    </ul>
+    <ul>Null and undefined
+        <ul>
+            <li>Var object= null;</li>
+            <li>Var und1, und2 = undefined;</li>
+        </ul>
+    </ul>
+</div>
+
+<div>
+<ul>Object Type</ul>
+    <ul>
+    <li>New String</li>
+    <li>New Number</li>
+    <li>New Boolean</li>
+    <li>Dates and times (in the browser environment), date object</li>
+    <li>Regular expressions</li>
+        <ul>
+            <li>RegExp Object</li>
+            <li>Var r1 = new regExp(‘[,.],’g’);</li>
+                <ul><li>Object constructor</li></ul>
+            <li>Var r2 = /[/:]/g;</li>
+            <ul><li>Regular expression literal syntax</li></ul>
+        </ul>
+    <li>Mathematical functions and constants (math objects)</li>
+        <ul>
+            <li>Sqrt</li>
+            <li>Pi</li>
+            <li>Random</li>
+            <li>Trunc</li>
+        </ul>
+    </ul>
+</div>
+
+<div>
+<ul>JavaScript is loosely and dynamically-typed
+    <ul>
+        <li>var var1 = 100;		//v1 is a number</li>
+        <li>var var1=’hello’;	//v1 is now a string</li>
+        <li>var varr1=true;		//v1 is now a Boolean</li>
+    </ul>
+</ul>    
+    <ul>Implicit Type Conversion
+        <ul>
+        <li>(8+’9’)		//’89’</li>
+        <li>(8*’9’)		//72</li>
+        <li>(8/false)	//Infinity</li>
+        <li>(8+true)	//9</li>
+        <li>(8-‘nine’)	//NaN</li>
+        <li>(8+null)		//8</li>
+        <li>(8+undefined)	//NaN</li>
+        <li>(true+’love’)	//’truelove’</li>    
+        </ul>
+    </ul>
+    <ul>Object functions for explicit type conversions
+        <ul>
+        <li>(8+Number(‘9’));		//17</li>
+        <li>(String(8) + String (true));	//’8true’</li>
+        </ul>
+    </ul>
+    <ul>FUNCTIONS
+        <ul>function max( item 1, item 2) {
+        <ul>if (item 1 > item 2) {</ul>
+        <ul>return item1;</ul>
+        <ul>} else if (item 2 > item 1) {</ul>
+        <ul>return item2;</ul>
+        <ul>}</ul>
+        }</ul>
+    </ul>
+    
+    <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
+    
+    <ul>//’arguments’ object (only valid inside a function)</ul>
+    <ul>//default parameter values</ul>
+    <ul>//”rest” parameters
+        <li>(arg1, arg2, … other Args)</li>
+    </ul>
+    <ul>//function expressions
+        <li>Function (a,b)</li>
+    </ul>
+    <ul>//”arrow” function expression
+        <li>Var f5 ( a,b) = > {ar P-a*b; return P; }</li>
+    </ul>
+    <ul>//function expressions
+        <li>Higher order function</li>
+        <ul><li>Function that returns a function</li>
+            <li>Can be passed as arguments to functions</li>
+            <li>Nesting functions</li>
+        <ul><li>Define functions inside a function</li></ul></ul>
+    </ul>    
+</div>
+
+<div>
+<ul>ARRAYS</ul>
+    <ul>
+    <li>Array size is dynamic</li>
+    <li>JavaScript allows “sparse “arrays</li>
+        <ul><li>Array with no elements in other locations</li></ul>
+    <li>Length is higher than 1 than the index</li>
+    <li>Can declare different types in an array (flexible)</li>    
+    </ul>
 </div>
