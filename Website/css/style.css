@@ -174,4 +174,9 @@ input[type=radio]:checked ~ label{ color: #FFFFFF; border-color: #FFFFFF; }
 @font-face {
     font-family: starwars1;
     src: url(fonts/font1.ttf);
+    
+    font-family: Roboto Slab;
+    src: url(fonts/RobotoSlab-Regular.ttf);
+    
 }
+
