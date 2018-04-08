@@ -64,13 +64,13 @@
       </div>
     </div>
   </div>
-  <div class="py-5 text-center bg-secondary" id="css">
+  <div class="py-5 text-center" id="css" style="background-color:rgba(100,55,204,0.4)">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="text-light">Cascading Style Sheets</h1>
+              <h1 class="text-light text-uppercase">Cascading Style Sheets</h1>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
   <div class="py-5">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-7">
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
           <h2 class="text-primary">What is CSS?</h2>
           <p class="">-used to specify the presentation of structurally marked up documents
             <br>
@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-md-5">
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css2.png"> </div>
-        <div class="col-md-7">
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
           <h2 class="text-primary pt-3">Version History</h2>
           <ul class="">
             <li>CSS Level 1 (CSS 1, W3C Recommendation, Dec 1996</li>
@@ -114,85 +114,63 @@
       <div class="row mb-5">
         <div class="col-md-7">
           <h2 class="text-primary">HTML Style Sheets</h2>
-          <p class="">-sources of styles for HTML documents</p>
+          <p class="text-light">-sources of styles for HTML documents</p>
+          <br>
           <div class="container">
-            <h2>Dynamic Tabs</h2>
-            <ul class="nav nav-tabs">
-              <li class="active">
-                <a data-toggle="tab" href="#authorstyles">Author Styles</a>
+            <h2 class="text-primary">Dynamic Tabs</h2>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a href="" class="active nav-link" data-toggle="pill" data-target="#tabone">Author Styles</a>
               </li>
-              <li>
-                <a data-toggle="tab" href="#userstyles">User Styles</a>
+              <li class="nav-item">
+                <a class="nav-link" href="" data-toggle="pill" data-target="#tabtwo">User Styles</a>
               </li>
-              <li>
-                <a data-toggle="tab" href="#useragent">User Agent</a>
+              <li class="nav-item">
+                <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree">User Agent</a>
               </li>
-              <li>
-                <a data-toggle="tab" href="#extension">Extension</a>
+              <li class="nav-item">
+                <a href="" class="nav-link" data-toggle="pill" data-target="#tabfour">Extension</a>
               </li>
             </ul>
-            <div class="tab-content">
-              <div id="authorstyles" class="tab-pane fade in active">
-                <h3>Author Styles</h3>
-                <ul>
-                  <li>external (linked) stylesheets (recommended)</li>
-                </ul>
-                <ul>
-                  <li>embedded (internal) stylesheets</li>
-                </ul>
-                <ul>
-                  <li>inline styles</li>
-                </ul>
+            <div class="tab-content mt-2 p-2" style="background-color:rgba(255,255,255,.6);">
+              <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                <p>external (linked) stylesheets (recommended)</p>
+                <p>embedded (internal) stylesheets</p>
+                <p>inline styles</p>
               </div>
-              <div id="userstyles" class="tab-pane fade">
-                <h3>User Styles</h3>
-                <ul>
-                  <li>some browsers provide (non-standard) alternatives through plugins/extensions (i.e Stylish, Web Maker, JSbin, CSS-Tricks)</li>
-                </ul>
+              <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+                <p class=""> </p>
+                <p>some browsers provide (non-standard) alternatives through plugins/extensions (i.e Stylish, Web Maker, JSbin, CSS-Tricks)</p>
               </div>
-              <div id="useragent" class="tab-pane fade">
-                <h3>User Agent</h3>
-                <ul>
-                  <li>sample default user agent stylesheet from CSS 2.1</li>
-                </ul>
-                <ul>
-                  <li>the source of a style denotes its origin, which is used in determining its precedence in the cascade</li>
-                </ul>
+              <div class="tab-pane fade" id="tabthree" role="tabpanel">
+                <p> sample default user agent stylesheet from CSS 2.1 </p>
               </div>
-              <div id="extension" class="tab-pane fade">
-                <h3>Extension</h3>
-                <ul>
-                  <li>Override</li>
-                  <ul>DOM-LEVEL-2-STYLE</ul>
-                </ul>
-                <ul>
-                  <li>Animation</li>
-                </ul>
-                <ul>
-                  <li>Transition</li>
-                </ul>
+              <div class="tab-pane fade" id="tabfour" role="tabpanel">
+                <p class=""> Override
+                  <br> DOM-LEVEL-2-STYLE
+                  <br> Animation
+                  <br> Transition
+                  <br> </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="align-self-center">
-          <div class="col-md-12">
-            <h2 class="text-primary pt-3">CSS Statements</h2>
-            <div class="row">
-              <div class="col-4">
-                <ul class="nav nav-pills flex-column">
-                  <li class="nav-item">
-                    <a class="active nav-link" href="" data-toggle="pill" data-target="#tabone">At-Rules(@)</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo">CSS Rule Sets (a.k.a CSS Rules, Style Rules)</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-8">
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                    <ul>
+          <div class="align-self-center">
+            <div class="col-md-12">
+              <h2 class="text-primary pt-3">CSS Statements</h2>
+              <div class="row">
+                <div class="col-4">
+                  <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                      <a class="active nav-link" href="" data-toggle="pill" data-target="#one">AT-RULES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link" data-toggle="pill" data-target="#two">CSS RULE SETS</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-8 p-2" style="background-color:rgba(255,255,255,.6);">
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="one" role="tabpanel">
                       <ul>@charset</ul>
                       <ul>@import</ul>
                       <ul>@namespace</ul>
@@ -201,968 +179,952 @@
                       <ul>@page</ul>
                       <ul>@font-face</ul>
                       <ul>@keyframes</ul>
-                    </ul>
-                  </div>
-                  <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                    <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed by
-                      a property value</ul>
+                    </div>
+                    <div class="tab-pane fade" id="two" role="tabpanel">
+                      <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed
+                        by a property value</ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <br>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
-            </div>
-            <div class="collapse" id="collapseExample2">
-              <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+              <br>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+              </div>
+              <div class="collapse" id="collapseExample2">
+                <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">CSS Selectors</h2>
-          <ul>
-            <li>Selector(Level 3)</li>
-            <ul>-structure used as a condition in CSS rule to determine which elements in the document tree and matched by the selector and are thus targeted
-              <ul>
-                <li>Selector Syntax</li>
-                <ul>-chain of one or more sequences of simple selectors separated by combinators
-                  <li>Sequences of Simple Selectors</li>
-                  <ul>-chain of simple selectors not separated by combinators</ul>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary">CSS Selectors</h2>
+            <ul>
+              <li>Selector(Level 3)</li>
+              <ul>-structure used as a condition in CSS rule to determine which elements in the document tree and matched by the selector and are thus targeted
+                <ul>
+                  <li>Selector Syntax</li>
+                  <ul>-chain of one or more sequences of simple selectors separated by combinators
+                    <li>Sequences of Simple Selectors</li>
+                    <ul>-chain of simple selectors not separated by combinators</ul>
+                  </ul>
                 </ul>
               </ul>
             </ul>
-          </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/css3.png"> </div>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/css3.png"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block" src="img/css8.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">Combinators</h2>
-          <ul>-are used to improve additional matching constrains</ul>
-          <ul>
-            <li>Selector Group</li>
-            <ul>-comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list </ul>
-            <ul>Types of Combinators</ul>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block" src="img/css8.jpg"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.8);">
+            <h2 class="text-primary pt-3">Combinators</h2>
+            <ul>-are used to improve additional matching constrains</ul>
             <ul>
-              <li>Descendant Combinator - (whitespace)</li>
-            </ul>
-            <ul>
-              <li>Child Combinator (&gt;)</li>
-            </ul>
-            <ul>
-              <li>Sibling Combinator</li>
+              <li>Selector Group</li>
+              <ul>-comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list </ul>
+              <ul>Types of Combinators</ul>
               <ul>
-                <li>Adjacent sibling combinatory (+) – immediately after or the first</li>
-                <li>General sibling combinatory (~) – any sibling after</li>
+                <li>Descendant Combinator - (whitespace)</li>
+              </ul>
+              <ul>
+                <li>Child Combinator (&gt;)</li>
+              </ul>
+              <ul>
+                <li>Sibling Combinator</li>
+                <ul>
+                  <li>Adjacent sibling combinatory (+) – immediately after or the first</li>
+                  <li>General sibling combinatory (~) – any sibling after</li>
+                </ul>
+              </ul>
+              <ul>Pseudo Elements</ul>
+              <li>:first-letter, ::first-letter</li>
+              <li>:first-line, ::first-line</li>
+              <li>:before, ::before</li>
+              <li>:after, ::after</li>
+            </ul>
+            <ul>Simple Selectors
+              <ul>
+                <li>Universal Selector - matches everything</li>
+              </ul>
+              <ul>
+                <li>Type Selector - different elements</li>
+              </ul>
+              <ul>
+                <li>ID Selector - value of the id, case-sensitive (#)</li>
+              </ul>
+              <ul>
+                <li>Class Selector - class variable</li>
+              </ul>
+              <ul>
+                <li>Attribute Selector - value of attributes</li>
+              </ul>
+              <ul>
+                <li>Pseudo-Classes</li>
+                <ul>
+                  <li>Dynamic Pseudo-Classes</li>
+                  <li>Target Pseudo-Classes</li>
+                  <li>Language Pseudo-Classes</li>
+                  <li>UI Element State Pseudo-Classes</li>
+                  <li>Structural Pseudo-Classes</li>
+                  <li>Negotation Pseudo-Classes</li>
+                </ul>
               </ul>
             </ul>
-            <ul>Pseudo Elements</ul>
-            <li>:first-letter, ::first-letter</li>
-            <li>:first-line, ::first-line</li>
-            <li>:before, ::before</li>
-            <li>:after, ::after</li>
-          </ul>
-          <ul>Simple Selectors
-            <ul>
-              <li>Universal Selector - matches everything</li>
-            </ul>
-            <ul>
-              <li>Type Selector - different elements</li>
-            </ul>
-            <ul>
-              <li>ID Selector - value of the id, case-sensitive (#)</li>
-            </ul>
-            <ul>
-              <li>Class Selector - class variable</li>
-            </ul>
-            <ul>
-              <li>Attribute Selector - value of attributes</li>
-            </ul>
-            <ul>
-              <li>Pseudo-Classes</li>
-              <ul>
-                <li>Dynamic Pseudo-Classes</li>
-                <li>Target Pseudo-Classes</li>
-                <li>Language Pseudo-Classes</li>
-                <li>UI Element State Pseudo-Classes</li>
-                <li>Structural Pseudo-Classes</li>
-                <li>Negotation Pseudo-Classes</li>
-              </ul>
-            </ul>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">CSS Rule Precedence</h2>
-          <ul>
-            <li>An HTML element may be the subject of the selectors of multiple style rules</li>
-            <li>When such rules target different properties, their effects cascade (i.e. are combined)</li>
-            <li>When the style involve the same property, they conflict, and must be resolved such that only one style is applied</li>
-            <li>Resolution</li>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.8);">
+            <h2 class="text-primary">CSS Rule Precedence</h2>
             <ul>
-              <li>By origin and importance</li>
-              <li>By specificity</li>
-              <li>By order (last priority)</li>
-            </ul>
-            <ul>Important
-              <ul>1. Important user agent declarations</ul>
-              <ul>2. Important user declarations</ul>
-              <ul>3. Important author declarations</ul> Normal
-              <ul>1. Normal author declarations</ul>
-              <ul>2. Normal user declarations</ul>
-              <ul>3. Normal user agent declarations</ul>
-            </ul>
-            <li>Count the number of ID selectors in the selector (=a)</li>
-            <li>Count the number of class selectors, attribute selectors and pseudo classes in the selector (=b)</li>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block" src="img/css9.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css4.png"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">CSS Declarations</h2>
-          <ul>
-            <li> Properties </li>
-            <ul>
-              <li>Shorthand Properties</li>
+              <li>An HTML element may be the subject of the selectors of multiple style rules</li>
+              <li>When such rules target different properties, their effects cascade (i.e. are combined)</li>
+              <li>When the style involve the same property, they conflict, and must be resolved such that only one style is applied</li>
+              <li>Resolution</li>
               <ul>
-                <li>Allows authors to specify the values of the several properties with a single property</li>
-                <li>Vendor Specific Extensions (a.k.a Vendor Prefixes)</li>
+                <li>By origin and importance</li>
+                <li>By specificity</li>
+                <li>By order (last priority)</li>
+              </ul>
+              <ul>Important
+                <ul>1. Important user agent declarations</ul>
+                <ul>2. Important user declarations</ul>
+                <ul>3. Important author declarations</ul> Normal
+                <ul>1. Normal author declarations</ul>
+                <ul>2. Normal user declarations</ul>
+                <ul>3. Normal user agent declarations</ul>
+              </ul>
+              <li>Count the number of ID selectors in the selector (=a)</li>
+              <li>Count the number of class selectors, attribute selectors and pseudo classes in the selector (=b)</li>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block" src="img/css9.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css4.png"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-primary pt-3">CSS Declarations</h2>
+            <ul class="text-dark">
+              <li> Properties </li>
+              <ul>
+                <li>Shorthand Properties</li>
                 <ul>
-                  <li>Used by the browsers vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of user-controlled flags on preferences</li>
-                </ul>
-                <li>Custom properties (a.k.a CSS Variables (experimental)</li>
-                <ul>
-                  <li>Property names prefixed with --, representing a value that can be reused throughout the document using the var() function</li>
+                  <li>Allows authors to specify the values of the several properties with a single property</li>
+                  <li>Vendor Specific Extensions (a.k.a Vendor Prefixes)</li>
+                  <ul>
+                    <li>Used by the browsers vendors as a prefix for the names of experimental or non-standard CSS properties; lately, vendors are moving away from vendor prefixes in favor of user-controlled flags on preferences</li>
+                  </ul>
+                  <li>Custom properties (a.k.a CSS Variables (experimental)</li>
+                  <ul>
+                    <li>Property names prefixed with --, representing a value that can be reused throughout the document using the var() function</li>
+                  </ul>
                 </ul>
               </ul>
             </ul>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Values</h2>
-          <ul>
-            <li>Value Processing</li>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary">Values</h2>
             <ul>
               <li>Value Processing</li>
               <ul>
-                <li>Declared, Cascaded, Specified, Computed, Used, Actual Values</li>
-              </ul>
-              <li>Value Types</li>
-              <ul>
-                <li>Keywords</li>
-              </ul>
-              <ul>
-                <li>CSS-Wide Keywords</li>
-                <ul>Initial, Inherit, Unset</ul>
-                <li>Property-Specific Keywords</li>
-              </ul>
-              <ul>
-                <li>Numbers</li>
-              </ul>
-              <ul>
-                <li>Integers or reals in (scientific) decimal notation</li>
-              </ul>
-              <ul>
-                <li>Dimensions</li>
-              </ul>
-              <ul>
-                <li>Length, angle, duration (or time), frequency, resolution</li>
+                <li>Value Processing</li>
                 <ul>
-                  <li>Length Units</li>
+                  <li>Declared, Cascaded, Specified, Computed, Used, Actual Values</li>
+                </ul>
+                <li>Value Types</li>
+                <ul>
+                  <li>Keywords</li>
+                </ul>
+                <ul>
+                  <li>CSS-Wide Keywords</li>
+                  <ul>Initial, Inherit, Unset</ul>
+                  <li>Property-Specific Keywords</li>
+                </ul>
+                <ul>
+                  <li>Numbers</li>
+                </ul>
+                <ul>
+                  <li>Integers or reals in (scientific) decimal notation</li>
+                </ul>
+                <ul>
+                  <li>Dimensions</li>
+                </ul>
+                <ul>
+                  <li>Length, angle, duration (or time), frequency, resolution</li>
                   <ul>
-                    <li>Font-relative: em, ex, ch, rem</li>
-                    <li>Viewport-percentage: vw, vh, vmin, vmax</li>
-                    <li>Absolute: cm, mm, in, pt, pc, px</li>
+                    <li>Length Units</li>
+                    <ul>
+                      <li>Font-relative: em, ex, ch, rem</li>
+                      <li>Viewport-percentage: vw, vh, vmin, vmax</li>
+                      <li>Absolute: cm, mm, in, pt, pc, px</li>
+                    </ul>
+                  </ul>
+                  <ul>
+                    <li>Angle Units</li>
+                    <ul>
+                      <li>deg, grad, rad, turn</li>
+                      <li>Used in some gradient and transform functions</li>
+                    </ul>
+                  </ul>
+                  <ul>
+                    <li>Duration (or time) units</li>
+                    <ul>
+                      <li>s, ms</li>
+                      <li>Used in animation, transition and related properties</li>
+                    </ul>
+                  </ul>
+                  <ul>
+                    <li>Frequency Units</li>
+                    <ul>
+                      <li>Hz, kHz</li>
+                      <li>Initially introduced in CSS2 for the (obsoleted) aural media type; reintroduced in CSS3, but is correctly unused</li>
+                    </ul>
+                  </ul>
+                  <ul>
+                    <li>Resolution Units</li>
+                    <ul>
+                      <li>dp, dpcm, dppx</li>
+                      <li>Used in media queries</li>
+                    </ul>
                   </ul>
                 </ul>
                 <ul>
-                  <li>Angle Units</li>
+                  <li>Percentages</li>
                   <ul>
-                    <li>deg, grad, rad, turn</li>
-                    <li>Used in some gradient and transform functions</li>
+                    <li>Number with a % suffix</li>
+                    <li>Calculated as a percentage of some value (usually taken from the par)</li>
                   </ul>
                 </ul>
                 <ul>
-                  <li>Duration (or time) units</li>
+                  <li>URLs and URIs</li>
                   <ul>
-                    <li>s, ms</li>
-                    <li>Used in animation, transition and related properties</li>
+                    <li>url() function with an absolute or relative (to the stylesheet) URL parameter</li>
+                    <li>denotes a pointer to a resource, such as an image or a font</li>
                   </ul>
                 </ul>
                 <ul>
-                  <li>Frequency Units</li>
+                  <li>Colors</li>
                   <ul>
-                    <li>Hz, kHz</li>
-                    <li>Initially introduced in CSS2 for the (obsoleted) aural media type; reintroduced in CSS3, but is correctly unused</li>
+                    <li>Color keywords</li>
+                    <li>RGB hexadecimal notation</li>
+                    <li>RGB functions</li>
+                    <li>HSL functions</li>
+                    <li>Currentcolor, transparent</li>
                   </ul>
                 </ul>
                 <ul>
-                  <li>Resolution Units</li>
+                  <li>Strings</li>
                   <ul>
-                    <li>dp, dpcm, dppx</li>
-                    <li>Used in media queries</li>
+                    <li>Delimited by single quotes (‘) or double quotes (“)</li>
                   </ul>
                 </ul>
-              </ul>
-              <ul>
-                <li>Percentages</li>
                 <ul>
-                  <li>Number with a % suffix</li>
-                  <li>Calculated as a percentage of some value (usually taken from the par)</li>
+                  <li>Functions</li>
                 </ul>
-              </ul>
-              <ul>
-                <li>URLs and URIs</li>
-                <ul>
-                  <li>url() function with an absolute or relative (to the stylesheet) URL parameter</li>
-                  <li>denotes a pointer to a resource, such as an image or a font</li>
-                </ul>
-              </ul>
-              <ul>
-                <li>Colors</li>
-                <ul>
-                  <li>Color keywords</li>
-                  <li>RGB hexadecimal notation</li>
-                  <li>RGB functions</li>
-                  <li>HSL functions</li>
-                  <li>Currentcolor, transparent</li>
-                </ul>
-              </ul>
-              <ul>
-                <li>Strings</li>
-                <ul>
-                  <li>Delimited by single quotes (‘) or double quotes (“)</li>
-                </ul>
-              </ul>
-              <ul>
-                <li>Functions</li>
               </ul>
             </ul>
-          </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/css6.png"> </div>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/css6.png"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css5.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">CSS Preprocessors. Frameworks and Polyfills</h2>
-          <ul>
-            <li>CSS Preprocessors</li>
-            <ul> -Generate CSS a custom language syntax that typically includes features that don’t exist in pure CSS (e.g. Variables, Control Flow, Nesting, Mixins, Functions, etc.) </ul>
-            <li>CSS Frameworks</li>
-            <ul> -Provides predefined CSS design functionality that can be reused, extended and customized </ul>
-            <li>CSS Polyfills</li>
-            <ul> -Provides future developers expect browsers to provide natively </ul>
-          </ul>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css5.jpg"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary pt-3">CSS Preprocessors. Frameworks and Polyfills</h2>
+            <ul>
+              <li>CSS Preprocessors</li>
+              <ul> -Generate CSS a custom language syntax that typically includes features that don’t exist in pure CSS (e.g. Variables, Control Flow, Nesting, Mixins, Functions, etc.) </ul>
+              <li>CSS Frameworks</li>
+              <ul> -Provides predefined CSS design functionality that can be reused, extended and customized </ul>
+              <li>CSS Polyfills</li>
+              <ul> -Provides future developers expect browsers to provide natively </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5 text-center bg-primary" id="js">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="text-light text-uppercase">JavaScript</h1>
+    <div class="py-5 text-center" id="js" style="background-color:rgba(18,187,173,0.6)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-light text-uppercase text-center">JavaScript</h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7" style="background-color:rgba(255,255,255,.3);">
-          <h2 class="bg-secondary text-light text-center">Two types of programming on web</h2>
-          <ol class="text-light">
-            <li>Client Side Web Scripting</li>
-            <li>Server Side Web Scripting</li>
-          </ol>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 text-light" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary text-center">Two types of programming on web</h2>
+            <ol class="">
+              <li>Client Side Web Scripting</li>
+              <li>Server Side Web Scripting</li>
+            </ol>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js1.jpg"> </div>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js1.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
-        <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
-          <h2 class="pt-3 text-center">Type of Scripts</h2>
-          <ul class="nav nav-pills flex-column">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-4 bg-info">
-                    <ul class="nav nav-pills flex-column">
-                      <li class="nav-item">
-                        <a class="active nav-link" href="" data-toggle="pill" data-target="#linked">Linked</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link" data-toggle="pill" data-target="#embedded">Embedded</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link" data-toggle="pill" data-target="#inline">Inline</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link" data-toggle="pill" data-target="#noscript">Noscript</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-8 bg-secondary">
-                    <div class="tab-content">
-                      <div class="tab-pane fade show active" id="linked" role="tabpanel">
-                        <ul>
-                          <li>a.k.a External</li>
-                          <li>execution of linked scripts can be deferred or run asynchronously</li>
-                        </ul>
-                      </div>
-                      <div class="tab-pane fade" id="embedded" role="tabpanel">
-                        <ul>
-                          <li>a.k.a Internal</li>
-                          <li>top-level code (i.e. code outside functions) execute as the script is loaded</li>
-                          <li>code inside functions are executed only when the function is involved</li>
-                          <ul>-preferred way</ul>
-                          <ul>-anywhere</ul>
-                        </ul>
-                      </div>
-                      <div class="tab-pane fade" id="inline" role="tabpanel">
-                        <ul>
-                          <li>scripts may be embedded anywhere in the document and any top-level code is executed where it is concentered</li>
-                        </ul>
-                      </div>
-                      <div class="tab-pane fade" id="noscript" role="tabpanel">
-                        <ul>
-                          <li>provides alternative content when the browser does not support or disabled</li>
-                        </ul>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="pt-3 text-center">Type of Scripts</h2>
+            <ul class="nav nav-pills flex-column">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-4 bg-info">
+                      <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                          <a href="" class="active nav-link" data-toggle="pill" data-target="#linked">Linked</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link" data-toggle="pill" data-target="#embedded">Embedded</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="" data-toggle="pill" data-target="#inline">Inline</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link" data-toggle="pill" data-target="#noscript">Noscript</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-8 bg-info">
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="linked" role="tabpanel">
+                          <ul class="">
+                            <li>a.k.a External</li>
+                            <li>execution of linked scripts can be deferred or run asynchronously</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="embedded" role="tabpanel">
+                          <ul>
+                            <li>a.k.a Internal</li>
+                            <li>top-level code (i.e. code outside functions) execute as the script is loaded</li>
+                            <li>code inside functions are executed only when the function is involved</li>
+                            <ul>-preferred way</ul>
+                            <ul>-anywhere</ul>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="inline" role="tabpanel">
+                          <ul>
+                            <li>scripts may be embedded anywhere in the document and any top-level code is executed where it is concentered</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="noscript" role="tabpanel">
+                          <ul>
+                            <li>provides alternative content when the browser does not support or disabled</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-6" style="background-color:rgba(255,255,255,.7);">
-          <h2 class="text-primary">JavaScript Execution Environment</h2>
-          <ul>
-            <li>accessible for specific page only</li>
-            <li>JavaScript was built on NetScape</li>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6" style="background-color:rgba(255,255,255,.9);">
+            <h2 class="text-primary text-center">JavaScript Execution Environment</h2>
             <ul>
-              <li>Core JavaScript (EcmaScript) language and API</li>
-              <li>(Traditional) Browser Object Model (BOM) API (non-standardized)</li>
+              <li>accessible for specific page only</li>
+              <li>JavaScript was built on NetScape</li>
               <ul>
-                <li>Window, Navigator, Screen, Location, History </li>
+                <li>Core JavaScript (EcmaScript) language and API</li>
+                <li>(Traditional) Browser Object Model (BOM) API (non-standardized)</li>
+                <ul>
+                  <li>Window, Navigator, Screen, Location, History </li>
+                </ul>
+                <li>Document Object Model (DOM) API</li>
+                <ul>
+                  <li>Node, Document, Element, Text, Attr, DocumentType, Comment, etc.</li>
+                  <li>Event, EventTarget, Event Listener, etc.</li>
+                  <li>CSSStyleSheet, CSSRule, etc.</li>
+                </ul>
+                <li>Miscellaneous JavaScript Web APIs</li>
+                <ul>
+                  <li>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XML HttpRequest (AJAX), etc.</li>
+                </ul>
+                <li>Most of the APIs are accessed from scripts via the global object Window</li>
               </ul>
-              <li>Document Object Model (DOM) API</li>
-              <ul>
-                <li>Node, Document, Element, Text, Attr, DocumentType, Comment, etc.</li>
-                <li>Event, EventTarget, Event Listener, etc.</li>
-                <li>CSSStyleSheet, CSSRule, etc.</li>
-              </ul>
-              <li>Miscellaneous JavaScript Web APIs</li>
-              <ul>
-                <li>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web Workers, XML HttpRequest (AJAX), etc.</li>
-              </ul>
-              <li>Most of the APIs are accessed from scripts via the global object Window</li>
             </ul>
-          </ul>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js3.png"> </div>
         </div>
-        <div class="col-md-6 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js3.png"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul>
-            <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
-            <li>Accessed in the Document object property of the global Window object</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js4.png"> </div>
-        <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
-          <h2 class="text-primary pt-3">DOM (Document Object Model)</h2>
-          <ul>
-            <li>API that allows access to the HTML document from within scripts associated with the web page</li>
+        <div class="row">
+          <div class="col-md-12">
             <ul>
               <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
               <li>Accessed in the Document object property of the global Window object</li>
             </ul>
-          </ul>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Functionalities</h2>
-          <ul>
-            <li>retrieve references to nodes (or node collections) in the DOM</li>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js4.png"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary pt-3 text-center">DOM (Document Object Model)</h2>
             <ul>
-              <li>getElementById()</li>
-              <li>getElementByTagName, getElementByClassName(), getElementByName()</li>
-              <li>querySelector(), querySelectorAll()</li>
-            </ul>
-          </ul>
-          <ul>
-            <li>traverse the DOM tree (from a given node)</li>
-            <ul>
-              <li>parentNode, parentElement</li>
-              <li>childNodes, children</li>
-              <li>firstChild, lastChild, nextSibling, previousSibling</li>
-              <li> firstElementChild, lastElementChild, nextElementSibling, previousElementSibling</li>
-            </ul>
-          </ul>
-          <ul>
-            <li>construct/copy nodes</li>
-            <ul>
-              <li>createElement(), createTextNode(), createAttribute()</li>
-            </ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js17.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js7.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">JavaScript Language Fundamentals</h2>
-          <ul>Top Level</ul>
-          <ul> var globalVar; //global scope – property of window object </ul>
-          <ul> let someVar; //global scope – not a property of window object </ul>
-          <ul> const LEGAL_AGE=21; //global constant- not a property of window object </ul>
-          <ul> avoidThis = 100; //global reference to window property </ul>
-          <ul>Inside Function</ul>
-          <ul> function func() {
-            <ul> var localVar1; //local function scope </ul>
-            <ul> for (;;) lexical scoping technique </ul>
-            <ul> let blockVar; //block local scope </ul> } </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Primitive data type</h2>
-          <ul>Numbers
-            <ul>
-              <li>decimal notation (integer, floating-point, scientific notation)</li>
-              <li>binary, octal, hexadecimal</li>
-              <li>special numbers ( Infinity, -Infinity, NaN)</li>
-            </ul>
-          </ul>
-          <ul>Strings
-            <ul>
-              <li>single-quote delimited</li>
-              <li>double-quote delimited</li>
-              <li>back-quote</li>
+              <li>API that allows access to the HTML document from within scripts associated with the web page</li>
               <ul>
-                <li>template literals</li>
+                <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
+                <li>Accessed in the Document object property of the global Window object</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-secondary text-center">Functionalities</h2>
+            <ul>
+              <li>retrieve references to nodes (or node collections) in the DOM</li>
+              <ul>
+                <li>getElementById()</li>
+                <li>getElementByTagName, getElementByClassName(), getElementByName()</li>
+                <li>querySelector(), querySelectorAll()</li>
+              </ul>
+            </ul>
+            <ul>
+              <li>traverse the DOM tree (from a given node)</li>
+              <ul>
+                <li>parentNode, parentElement</li>
+                <li>childNodes, children</li>
+                <li>firstChild, lastChild, nextSibling, previousSibling</li>
+                <li> firstElementChild, lastElementChild, nextElementSibling, previousElementSibling</li>
+              </ul>
+            </ul>
+            <ul>
+              <li>construct/copy nodes</li>
+              <ul>
+                <li>createElement(), createTextNode(), createAttribute()</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js17.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js7.jpg"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary pt-3 text-center">JavaScript Language Fundamentals</h2>
+            <ul>Top Level</ul>
+            <ul> var globalVar; //global scope – property of window object </ul>
+            <ul> let someVar; //global scope – not a property of window object </ul>
+            <ul> const LEGAL_AGE=21; //global constant- not a property of window object </ul>
+            <ul> avoidThis = 100; //global reference to window property </ul>
+            <ul>Inside Function</ul>
+            <ul> function func() {
+              <ul> var localVar1; //local function scope </ul>
+              <ul> for (;;) lexical scoping technique </ul>
+              <ul> let blockVar; //block local scope </ul> } </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary text-center">Primitive data type</h2>
+            <ul>Numbers
+              <ul>
+                <li>decimal notation (integer, floating-point, scientific notation)</li>
+                <li>binary, octal, hexadecimal</li>
+                <li>special numbers ( Infinity, -Infinity, NaN)</li>
+              </ul>
+            </ul>
+            <ul>Strings
+              <ul>
+                <li>single-quote delimited</li>
+                <li>double-quote delimited</li>
+                <li>back-quote</li>
                 <ul>
-                  <li>allowing multi-line strings and expression interpolation</li>
-                </ul>
-              </ul>
-            </ul>
-          </ul>
-          <ul>Boolean
-            <ul>
-              <li>true, false</li>
-              <li>0, “”(empty string), null, undefined, NaN are “falsy” values</li>
-            </ul>
-          </ul>
-          <ul>Null and undefined
-            <ul>
-              <li>Var object= null;</li>
-              <li>Var und1, und2 = undefined;</li>
-            </ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js8.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js9.png"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">Object Type</h2>
-          <ul>
-            <li>New String</li>
-            <li>New Number</li>
-            <li>New Boolean</li>
-            <li>Dates and times (in the browser environment), date object</li>
-            <li>Regular expressions</li>
-            <ul>
-              <li>RegExp Object</li>
-              <li>Var r1 = new regExp(‘[,.],’g’);</li>
-              <ul>
-                <li>Object constructor</li>
-              </ul>
-              <li>Var r2 = /[/:]/g;</li>
-              <ul>
-                <li>Regular expression literal syntax</li>
-              </ul>
-            </ul>
-            <li>Mathematical functions and constants (math objects)</li>
-            <ul>
-              <li>Sqrt</li>
-              <li>Pi</li>
-              <li>Random</li>
-              <li>Trunc</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">JavaScript is loosely and dynamically-typed</h2>
-          <ul>
-            <li>var var1 = 100; //v1 is a number</li>
-            <li>var var1=’hello’; //v1 is now a string</li>
-            <li>var varr1=true; //v1 is now a Boolean</li>
-          </ul>
-          <ul>Implicit Type Conversion
-            <ul>
-              <li>(8+’9’) //’89’</li>
-              <li>(8*’9’) //72</li>
-              <li>(8/false) //Infinity</li>
-              <li>(8+true) //9</li>
-              <li>(8-‘nine’) //NaN</li>
-              <li>(8+null) //8</li>
-              <li>(8+undefined) //NaN</li>
-              <li>(true+’love’) //’truelove’</li>
-            </ul>
-          </ul>
-          <ul>Object functions for explicit type conversions
-            <ul>
-              <li>(8+Number(‘9’)); //17</li>
-              <li>(String(8) + String (true)); //’8true’</li>
-            </ul>
-          </ul>
-          <ul>FUNCTIONS
-            <ul>function max( item 1, item 2) {
-              <ul>if (item 1 &gt; item 2) {</ul>
-              <ul>return item1;</ul>
-              <ul>} else if (item 2 &gt; item 1) {</ul>
-              <ul>return item2;</ul>
-              <ul>}</ul> }</ul>
-          </ul>
-          <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample">
-          Read More </button>
-          <br>
-          <div class="collapse" id="readMore">
-            <div class="card card-body">
-              <ul>//’arguments’ object (only valid inside a function)</ul>
-              <ul>//default parameter values</ul>
-              <ul>//”rest” parameters
-                <li>(arg1, arg2, … other Args)</li>
-              </ul>
-              <ul>//function expressions
-                <li>Function (a,b)</li>
-              </ul>
-              <ul>//”arrow” function expression
-                <li>Var f5 ( a,b) = &gt; {ar P-a*b; return P; }</li>
-              </ul>
-              <ul>//function expressions
-                <li>Higher order function</li>
-                <ul>
-                  <li>Function that returns a function</li>
-                  <li>Can be passed as arguments to functions</li>
-                  <li>Nesting functions</li>
+                  <li>template literals</li>
                   <ul>
-                    <li>Define functions inside a function</li>
+                    <li>allowing multi-line strings and expression interpolation</li>
                   </ul>
                 </ul>
               </ul>
-            </div>
+            </ul>
+            <ul>Boolean
+              <ul>
+                <li>true, false</li>
+                <li>0, “”(empty string), null, undefined, NaN are “falsy” values</li>
+              </ul>
+            </ul>
+            <ul>Null and undefined
+              <ul>
+                <li>Var object= null;</li>
+                <li>Var und1, und2 = undefined;</li>
+              </ul>
+            </ul>
           </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js8.jpg"> </div>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js16.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js6.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">ARRAYS</h2>
-          <ul>
-            <li>Array size is dynamic</li>
-            <li>JavaScript allows “sparse “arrays</li>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js9.png"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary pt-3 text-center">Object Type</h2>
             <ul>
-              <li>Array with no elements in other locations</li>
+              <li>New String</li>
+              <li>New Number</li>
+              <li>New Boolean</li>
+              <li>Dates and times (in the browser environment), date object</li>
+              <li>Regular expressions</li>
+              <ul>
+                <li>RegExp Object</li>
+                <li>Var r1 = new regExp(‘[,.],’g’);</li>
+                <ul>
+                  <li>Object constructor</li>
+                </ul>
+                <li>Var r2 = /[/:]/g;</li>
+                <ul>
+                  <li>Regular expression literal syntax</li>
+                </ul>
+              </ul>
+              <li>Mathematical functions and constants (math objects)</li>
+              <ul>
+                <li>Sqrt</li>
+                <li>Pi</li>
+                <li>Random</li>
+                <li>Trunc</li>
+              </ul>
             </ul>
-            <li>Length is higher than 1 than the index</li>
-            <li>Can declare different types in an array (flexible)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">JavaScript Event Handling</h2>
-          <ul>
-            <li>onclick Event Type</li>
-            <ul>
-              <li>most used type of event that triggers when a user clicks using the left button of mouse.</li>
-            </ul>
-            <li>onsubmit Event Type</li>
-            <ul>
-              <li>event that triggers when a user tries to submit a form.</li>
-            </ul>
-            <li>onmouseover Event Type</li>
-            <ul>
-              <li>event that occurs when a user brings the mouse over any element.</li>
-            </ul>
-            <li>onmouseout Event Type</li>
-            <ul>
-              <li>event that occurs when a user moves the mouse out from the element.</li>
-            </ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js14.jpg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js15.png"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">How to Create and Dispatch Events</h2>
-          <ul>
-            <ul>var clickEvent = new Event('click');</ul>
-            <ul>var button = document.querySelector('#button');</ul>
-            <ul>button.dispatchEvent(clickEvent);</ul>
-          </ul>
-          <ul>
-            <ul>var ce = new CustomEvent('pindot');</ul>
-            <ul>button.addEventListener('pindot'.pindotHandler);</ul>
-            <ul>button.dispatchEvent(ce);</ul>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Event Propagation Order(DOM-compliant browsers)</h2>
-          <ul>
-            <ul>
-              <li>capturing the phase</li>
-            </ul>
-            <ul>
-              <li>at target</li>
-            </ul>
-            <ul>
-              <li>bubbling phase</li>
-            </ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js11.jpeg"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js12.png"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">Event Handler Registration</h2>
-          <ul>
-            <li>Method 1(inline HTML event attribute)</li>
-            <ul>
-              <li>non-standard, universal support, not recommended</li>
-            </ul>
-            <ul>
-              <li>ex. onClick='handler()'</li>
-            </ul>
-            <li>Method 2(pre-DOM L2)</li>
-            <ul>
-              <li>non-standard, universal support</li>
-            </ul>
-            <ul>
-              <li>can register only one handler</li>
-            </ul>
-            <ul>
-              <li>remove handler by assigning null value to attribute</li>
-            </ul>
-            <ul>
-              <li>ex. button.onclick=handler();</li>
-            </ul>
-            <li>Method 3 (DOM L2 event registration</li>
-            <ul>
-              <li>standard, well-supported</li>
-            </ul>
-            <ul>
-              <li>can register more than one event handler</li>
-            </ul>
-            <ul>
-              <li>can register handlers on the bubble or capture phase</li>
-            </ul>
-            <ul>
-              <lil>use removeEventListener() to remove event handler</lil>
-            </ul>
-            <ul>
-              <li>use dispatchEvent(0 to trigger event programmatically</li>
-            </ul>
-            <ul>
-              <li>ex. button.addEventListener('click',handler)</li>
-            </ul>
-            <li>Method 4 (Microsoft-specific, non-standard, IEv6-v10...)</li>
-            <ul>
-              <li>can register more than one event handler</li>
-            </ul>
-            <ul>
-              <li>can register handlers only on the bubble phase</li>
-            </ul>
-            <ul>
-              <li>use detachEvent() to remove event handler</li>
-            </ul>
-            <ul>
-              <li>use fireEvent() to trigger event programmatically</li>
-            </ul>
-            <ul>
-              <li>ex. button.attachEvent(‘onclick’, handler)</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">//cross-browser event registration</h2>
-          <ul>
-            <ul>var button – document.getElementById(‘button’);</ul>
-            <ul>if (button.addEventListener) {</ul>
-            <ul>
-              <ul>button.addEventListener('click',handler);</ul>
-            </ul>
-            <ul>} else if (button.attachEvent) {</ul>
-            <ul>
-              <ul>button.AttachEvent('onclick',handler);</ul>
-            </ul>
-            <ul>} else {</ul>
-            <ul>
-              <ul>button.onclick=handler;</ul>
-            </ul>
-            <ul>}</ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <div class="col-md-12">
-            <ul>Whenever an event is triggered information about the event is made available via the ‘event’ object property of the ‘Window’ object.</ul>
-            <ul>*for method 1 registration, the event object may be passed explicitly in the call to the handler.</ul>
-            <ul>*for methods 2 and 3 registration, the event object is passed implicitly as the first argument of the event handler.</ul>
           </div>
         </div>
       </div>
-      <div class="row"> </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Event Object Properties and Methods</h2>
-          <ul>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-primary text-center">JavaScript is loosely and dynamically-typed</h2>
             <ul>
-              <li>Bubbles</li>
+              <li>var var1 = 100; //v1 is a number</li>
+              <li>var var1=’hello’; //v1 is now a string</li>
+              <li>var varr1=true; //v1 is now a Boolean</li>
             </ul>
-            <ul>
-              <li>Eventphase</li>
-            </ul>
-            <ul>
-              <li>Target (or srcElement (non-standard))</li>
-            </ul>
-            <ul>
-              <li>currentTarget</li>
-            </ul>
-            <ul>
-              <li>preventDefault()</li>
-            </ul>
-            <ul>
-              <li>stopPropagation()</li>
-            </ul>
-            <ul>
-              <li>stopImmediatePropagation()</li>
-            </ul>
-            <ul>
-              <li>other events-specific information</li>
-            </ul>
-          </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js13.png"> </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js5.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">AJAX (Asynchronous JavaScript And XML)</h2>
-          <ul>XMLHttpRequest</ul>
-          <ul>
-            <ul>
-              <li>var xar = new XMLHttpRequest();</li>
-            </ul>
-            <ul>
-              <li>xhr.open(‘GET’, resource, false);</li>
-            </ul>
-            <ul>
+            <ul>Implicit Type Conversion
               <ul>
-                <li>what resource will be fetched</li>
+                <li>(8+’9’) //’89’</li>
+                <li>(8*’9’) //72</li>
+                <li>(8/false) //Infinity</li>
+                <li>(8+true) //9</li>
+                <li>(8-‘nine’) //NaN</li>
+                <li>(8+null) //8</li>
+                <li>(8+undefined) //NaN</li>
+                <li>(true+’love’) //’truelove’</li>
               </ul>
             </ul>
-            <ul>
-              <li>xhr.send()</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">2 modes of fetch</h2>
-          <ul>
-            <ul>
-              <li>synchronous</li>
-            </ul>
-            <ul>
-              <li>asynchronous</li>
-            </ul>
-          </ul>
-          <ul> Synchronous
-            <ul>
+            <ul>Object functions for explicit type conversions
               <ul>
-                <li>page is blocked, cannot interact, false</li>
+                <li>(8+Number(‘9’)); //17</li>
+                <li>(String(8) + String (true)); //’8true’</li>
               </ul>
             </ul>
-          </ul>
-          <ul> Asynchronous
-            <ul>
-              <ul>
-                <li>not frozen, can interact, true(default)</li>
-              </ul>
+            <ul>FUNCTIONS
+              <ul>function max( item 1, item 2) {
+                <ul>if (item 1 &gt; item 2) {</ul>
+                <ul>return item1;</ul>
+                <ul>} else if (item 2 &gt; item 1) {</ul>
+                <ul>return item2;</ul>
+                <ul>}</ul> }</ul>
             </ul>
-          </ul>
-          <ul> Callback
-            <ul>
-              <ul>
-                <li>monitor progress of response</li>
-              </ul>
-            </ul>
-          </ul>
-          <ul>JavaScript Promise</ul>
-          <ul>
-            <ul>//defining the promise</ul>
-            <ul>var promise = new Promise</ul>
-            <ul>
-              <ul>//do operation(asynchrously done)</ul>
-            </ul>
-            <ul>
-              <ul>//success - &gt; call resolve () …</ul>
-            </ul>
-            <ul>
-              <ul>//failure -&gt; call reject () …</ul>
-            </ul>
-            <ul>})</ul>
-            <ul>//calls the promise</ul>
-            <ul>promise().then(success,failure);</ul>
+            <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample">
+            Read More </button>
             <br>
-            <ul>function success(result){}</ul>
-            <ul>function failure(err){}</ul>
-          </ul>
+            <div class="collapse" id="readMore">
+              <div class="card card-body">
+                <ul>//’arguments’ object (only valid inside a function)</ul>
+                <ul>//default parameter values</ul>
+                <ul>//”rest” parameters
+                  <li>(arg1, arg2, … other Args)</li>
+                </ul>
+                <ul>//function expressions
+                  <li>Function (a,b)</li>
+                </ul>
+                <ul>//”arrow” function expression
+                  <li>Var f5 ( a,b) = &gt; {ar P-a*b; return P; }</li>
+                </ul>
+                <ul>//function expressions
+                  <li>Higher order function</li>
+                  <ul>
+                    <li>Function that returns a function</li>
+                    <li>Can be passed as arguments to functions</li>
+                    <li>Nesting functions</li>
+                    <ul>
+                      <li>Define functions inside a function</li>
+                    </ul>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js16.jpg"> </div>
         </div>
-        <div class="col-md-5 align-self-center">
-          <img class="img-fluid d-block w-100 img-thumbnail" src="img/js10.png"> </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js6.jpg"> </div>
+          <div class="col-md-7">
+            <h2 class="pt-3 text-secondary text-center">ARRAYS</h2>
+            <ul>
+              <li>Array size is dynamic</li>
+              <li>JavaScript allows “sparse “arrays</li>
+              <ul>
+                <li>Array with no elements in other locations</li>
+              </ul>
+              <li>Length is higher than 1 than the index</li>
+              <li>Can declare different types in an array (flexible)</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Tab 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo">Tab 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree">Tab 3</a>
-            </li>
-          </ul>
-          <div class="tab-content mt-2">
-            <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-              <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-              <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="tab-pane fade" id="tabthree" role="tabpanel">
-              <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary text-center">JavaScript Event Handling</h2>
+            <ul class="text-light">
+              <li>onclick Event Type</li>
+              <ul>
+                <li>most used type of event that triggers when a user clicks using the left button of mouse.</li>
+              </ul>
+              <li>onsubmit Event Type</li>
+              <ul>
+                <li>event that triggers when a user tries to submit a form.</li>
+              </ul>
+              <li>onmouseover Event Type</li>
+              <ul>
+                <li>event that occurs when a user brings the mouse over any element.</li>
+              </ul>
+              <li>onmouseout Event Type</li>
+              <ul>
+                <li>event that occurs when a user moves the mouse out from the element.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js14.jpg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js15.png"> </div>
+          <div class="col-md-7">
+            <h2 class="text-primary pt-3 text-center">How to Create and Dispatch Events</h2>
+            <ul class="text-light">
+              <ul>var clickEvent = new Event('click');</ul>
+              <ul>var button = document.querySelector('#button');</ul>
+              <ul>button.dispatchEvent(clickEvent);</ul>
+            </ul>
+            <ul class="text-light">
+              <ul>var ce = new CustomEvent('pindot');</ul>
+              <ul>button.addEventListener('pindot'.pindotHandler);</ul>
+              <ul>button.dispatchEvent(ce);</ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-primary text-center">Event Propagation Order(DOM-compliant browsers)</h2>
+            <ul>
+              <ul>
+                <li>capturing the phase</li>
+              </ul>
+              <ul>
+                <li>at target</li>
+              </ul>
+              <ul>
+                <li>bubbling phase</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js11.jpeg"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 my-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js12.png"> </div>
+          <div class="col-md-7">
+            <h2 class="pt-3 text-secondary">Event Handler Registration</h2>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                  <h5 class="mb-0 text-center text-white">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <b>Method 1(inline HTML event attribute)</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>non-standard, universal support, not recommended</li>
+                      <li>ex. onClick='handler()'</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                  <h5 class="mb-0 text-center text-white">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <b>Method 2(pre-DOM L2)</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>non-standard, universal support</li>
+                      <li>can register only one handler</li>
+                      <li>remove handler by assigning null value to attribute</li>
+                      <li>ex. button.onclick=handler();</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                  <h5 class="mb-0 text-center text-white">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <b>Method 3 (DOM L2 event registration</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>standard, well-supported</li>
+                      <li>can register more than one event handler</li>
+                      <li>can register handlers on the bubble or capture phase</li>
+                      <lil>use removeEventListener() to remove event handler</lil>
+                      <li>use dispatchEvent(0 to trigger event programmatically</li>
+                      <li>ex. button.addEventListener('click',handler)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                  <h5 class="mb-0 text-center text-white">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <b>Method 4 (Microsoft-specific, non-standard, IEv6-v10...)</b> </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>can register more than one event handler</li>
+                      <li>can register handlers only on the bubble phase</li>
+                      <li>use detachEvent() to remove event handler</li>
+                      <li>use fireEvent() to trigger event programmatically</li>
+                      <li>ex. button.attachEvent(‘onclick’, handler)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary text-center">//cross-browser event registration</h2>
+            <ul>
+              <ul>var button – document.getElementById(‘button’);</ul>
+              <ul>if (button.addEventListener) {</ul>
+              <ul>
+                <ul>button.addEventListener('click',handler);</ul>
+              </ul>
+              <ul>} else if (button.attachEvent) {</ul>
+              <ul>
+                <ul>button.AttachEvent('onclick',handler);</ul>
+              </ul>
+              <ul>} else {</ul>
+              <ul>
+                <ul>button.onclick=handler;</ul>
+              </ul>
+              <ul>}</ul>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <div class="col-md-12" style="background-color:rgba(255,255,255,.6);">
+              <ul>Whenever an event is triggered information about the event is made available via the ‘event’ object property of the ‘Window’ object.</ul>
+              <ul>*for method 1 registration, the event object may be passed explicitly in the call to the handler.</ul>
+              <ul>*for methods 2 and 3 registration, the event object is passed implicitly as the first argument of the event handler.</ul>
+            </div>
+          </div>
+        </div>
+        <div class="row"> </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary text-center">Event Object Properties and Methods</h2>
+            <ul>
+              <ul>
+                <li>Bubbles</li>
+              </ul>
+              <ul>
+                <li>Eventphase</li>
+              </ul>
+              <ul>
+                <li>Target (or srcElement (non-standard))</li>
+              </ul>
+              <ul>
+                <li>currentTarget</li>
+              </ul>
+              <ul>
+                <li>preventDefault()</li>
+              </ul>
+              <ul>
+                <li>stopPropagation()</li>
+              </ul>
+              <ul>
+                <li>stopImmediatePropagation()</li>
+              </ul>
+              <ul>
+                <li>other events-specific information</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js13.png"> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js5.jpg"> </div>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary pt-3 text-center">AJAX (Asynchronous JavaScript And XML)</h2>
+            <ul>XMLHttpRequest</ul>
+            <ul>
+              <ul>
+                <li>var xar = new XMLHttpRequest();</li>
+              </ul>
+              <ul>
+                <li>xhr.open(‘GET’, resource, false);</li>
+              </ul>
+              <ul>
+                <ul>
+                  <li>what resource will be fetched</li>
+                </ul>
+              </ul>
+              <ul>
+                <li>xhr.send()</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.1);">
+            <h2 class="text-primary text-center">2 modes of fetch</h2>
+            <ul>
+              <ul>
+                <li>synchronous</li>
+              </ul>
+              <ul>
+                <li>asynchronous</li>
+              </ul>
+            </ul>
+            <ul> Synchronous
+              <ul>
+                <ul>
+                  <li>page is blocked, cannot interact, false</li>
+                </ul>
+              </ul>
+            </ul>
+            <ul> Asynchronous
+              <ul>
+                <ul>
+                  <li>not frozen, can interact, true(default)</li>
+                </ul>
+              </ul>
+            </ul>
+            <ul> Callback
+              <ul>
+                <ul>
+                  <li>monitor progress of response</li>
+                </ul>
+              </ul>
+            </ul>
+            <ul>JavaScript Promise</ul>
+            <ul>
+              <ul>//defining the promise</ul>
+              <ul>var promise = new Promise</ul>
+              <ul>
+                <ul>//do operation(asynchrously done)</ul>
+              </ul>
+              <ul>
+                <ul>//success - &gt; call resolve () …</ul>
+              </ul>
+              <ul>
+                <ul>//failure -&gt; call reject () …</ul>
+              </ul>
+              <ul>})</ul>
+              <ul>//calls the promise</ul>
+              <ul>promise().then(success,failure);</ul>
+              <br>
+              <ul>function success(result){}</ul>
+              <ul>function failure(err){}</ul>
+            </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid d-block w-100 img-thumbnail" src="img/js10.png"> </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
+      <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+    </pingendo>
   </div>
 </body>
 
