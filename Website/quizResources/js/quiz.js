@@ -7,7 +7,7 @@ var answers = {
     "q6": ["ID Selector", "id selector"],
     "q7": ["CSS Preprocessors", "css preprocessors"],
     "q8": ["CSS Polyfills", "css polyfills"],
-    "q9": ["Strings ", "strings "],
+    "q9": ["Strings ", "strings"],
     "q10": ["Percentages", "percentages"],
     "q11": ["Client Side Web Scripting", "client side web scripting"],
     "q12": ["Inline scripts", "inline scripts"],
@@ -26,6 +26,7 @@ var score = 0;
 function checkAnswers(){
     $("input[type='text']").each(function(){
         console.log($.inArray(this.value, answers[this.id]));
+        this.value = (this.value).toLowerCase();
         if($.inArray(this.value, answers[this.id]) !== -1){
             score++;
         }
