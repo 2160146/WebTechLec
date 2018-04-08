@@ -1,4 +1,4 @@
-CSS
+﻿CSS
 
 1.) H a _ _n  W _ u m  _ i e  ( Hakon Wium Lie )
 	-one of the developers of CSS
@@ -41,5 +41,5 @@ JavaScript
 	-define functions inside a function
 9.) U _ c _ e  B _ n ( Uncle Ben )
 	-uncle of spiderman
-10.) N o s c r i p t ( Noscript )
+10.) N _ s _ _ i p _ ( Noscript )
 	-provides alternative content when the browser does not support or disabled
