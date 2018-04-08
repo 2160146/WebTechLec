@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-md-5">
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css2.png"> </div>
-        <div class="col-md-7">
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
           <h2 class="text-primary pt-3">Version History</h2>
           <ul class="">
             <li>CSS Level 1 (CSS 1, W3C Recommendation, Dec 1996</li>
@@ -114,14 +114,10 @@
       <div class="row mb-5">
         <div class="col-md-7">
           <h2 class="text-primary">HTML Style Sheets</h2>
-          <p class="">-sources of styles for HTML documents</p>
+          <p class="text-light">-sources of styles for HTML documents</p>
+          <br>
           <div class="container">
-            <h2>Dynamic Tabs</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
+            <h2 class="text-primary">Dynamic Tabs</h2>
             <ul class="nav nav-pills">
               <li class="nav-item">
                 <a href="" class="active nav-link" data-toggle="pill" data-target="#tabone">Author Styles</a>
@@ -136,9 +132,8 @@
                 <a href="" class="nav-link" data-toggle="pill" data-target="#tabfour">Extension</a>
               </li>
             </ul>
-            <div class="tab-content mt-2">
+            <div class="tab-content mt-2 p-2" style="background-color:rgba(255,255,255,.6);">
               <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                <p class=""> </p>
                 <p>external (linked) stylesheets (recommended)</p>
                 <p>embedded (internal) stylesheets</p>
                 <p>inline styles</p>
@@ -146,7 +141,6 @@
               <div class="tab-pane fade" id="tabtwo" role="tabpanel">
                 <p class=""> </p>
                 <p>some browsers provide (non-standard) alternatives through plugins/extensions (i.e Stylish, Web Maker, JSbin, CSS-Tricks)</p>
-                <p></p>
               </div>
               <div class="tab-pane fade" id="tabthree" role="tabpanel">
                 <p> sample default user agent stylesheet from CSS 2.1 </p>
@@ -174,9 +168,19 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-8">
+                <div class="col-8 p-2" style="background-color:rgba(255,255,255,.6);">
                   <div class="tab-content">
                     <div class="tab-pane fade show active" id="one" role="tabpanel">
+
+                      <ul>@charset</ul>
+                      <ul>@import</ul>
+                      <ul>@namespace</ul>
+                      <ul>@media</ul>
+                      <ul>@supports</ul>
+                      <ul>@page</ul>
+                      <ul>@font-face</ul>
+                      <ul>@keyframes</ul>
+
                       <ul>
                         <ul>@charset</ul>
                         <ul>@import</ul>
@@ -187,6 +191,7 @@
                         <ul>@font-face</ul>
                         <ul>@keyframes</ul>
                       </ul>
+
                     </div>
                     <div class="tab-pane fade" id="two" role="tabpanel">
                       <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed
@@ -210,7 +215,7 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
             <h2 class="text-primary">CSS Selectors</h2>
             <ul>
               <li>Selector(Level 3)</li>
@@ -231,7 +236,7 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block" src="img/css8.jpg"> </div>
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.8);">
             <h2 class="text-primary pt-3">Combinators</h2>
             <ul>-are used to improve additional matching constrains</ul>
             <ul>
@@ -292,7 +297,7 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.8);">
             <h2 class="text-primary">CSS Rule Precedence</h2>
             <ul>
               <li>An HTML element may be the subject of the selectors of multiple style rules</li>
@@ -322,9 +327,9 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css4.png"> </div>
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
             <h2 class="text-primary pt-3">CSS Declarations</h2>
-            <ul>
+            <ul class="text-dark">
               <li> Properties </li>
               <ul>
                 <li>Shorthand Properties</li>
@@ -348,7 +353,7 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
             <h2 class="text-primary">Values</h2>
             <ul>
               <li>Value Processing</li>
@@ -456,7 +461,7 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/css5.jpg"> </div>
-          <div class="col-md-7">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.2);">
             <h2 class="text-primary pt-3">CSS Preprocessors. Frameworks and Polyfills</h2>
             <ul>
               <li>CSS Preprocessors</li>
@@ -476,7 +481,7 @@
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-12">
-                <h1 class="text-light">JavaScript</h1>
+                <h1 class="text-light text-uppercase text-center">JavaScript</h1>
               </div>
             </div>
           </div>
@@ -486,8 +491,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">Two types of programming on web</h2>
+          <div class="col-md-7 text-light" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary text-center">Two types of programming on web</h2>
             <ol class="">
               <li>Client Side Web Scripting</li>
               <li>Server Side Web Scripting</li>
@@ -499,8 +504,61 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
-          <div class="col-md-7">
-            <h2 class="text-primary pt-3">Type of Scripts</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="pt-3 text-center">Type of Scripts</h2>
+            <ul class="nav nav-pills flex-column">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-4 bg-info">
+                      <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                          <a href="" class="active nav-link" data-toggle="pill" data-target="#linked">Linked</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link" data-toggle="pill" data-target="#embedded">Embedded</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="" data-toggle="pill" data-target="#inline">Inline</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link" data-toggle="pill" data-target="#noscript">Noscript</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-8 bg-info">
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="linked" role="tabpanel">
+                          <ul class="">
+                            <li>a.k.a External</li>
+                            <li>execution of linked scripts can be deferred or run asynchronously</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="embedded" role="tabpanel">
+                          <ul>
+                            <li>a.k.a Internal</li>
+                            <li>top-level code (i.e. code outside functions) execute as the script is loaded</li>
+                            <li>code inside functions are executed only when the function is involved</li>
+                            <ul>-preferred way</ul>
+                            <ul>-anywhere</ul>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="inline" role="tabpanel">
+                          <ul>
+                            <li>scripts may be embedded anywhere in the document and any top-level code is executed where it is concentered</li>
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="noscript" role="tabpanel">
+                          <ul>
+                            <li>provides alternative content when the browser does not support or disabled</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -508,8 +566,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-6">
-            <h2 class="text-primary">JavaScript Execution Environment</h2>
+          <div class="col-md-6" style="background-color:rgba(255,255,255,.9);">
+            <h2 class="text-primary text-center">JavaScript Execution Environment</h2>
             <ul>
               <li>accessible for specific page only</li>
               <li>JavaScript was built on NetScape</li>
@@ -547,8 +605,8 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js4.png"> </div>
-          <div class="col-md-7">
-            <h2 class="text-primary pt-3">DOM (Document Object Model)</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary pt-3 text-center">DOM (Document Object Model)</h2>
             <ul>
               <li>API that allows access to the HTML document from within scripts associated with the web page</li>
               <ul>
@@ -563,8 +621,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">Functionalities</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-secondary text-center">Functionalities</h2>
             <ul>
               <li>retrieve references to nodes (or node collections) in the DOM</li>
               <ul>
@@ -595,8 +653,8 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js7.jpg"> </div>
-          <div class="col-md-7">
-            <h2 class="text-primary pt-3">JavaScript Language Fundamentals</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary pt-3 text-center">JavaScript Language Fundamentals</h2>
             <ul>Top Level</ul>
             <ul> var globalVar; //global scope – property of window object </ul>
             <ul> let someVar; //global scope – not a property of window object </ul>
@@ -614,8 +672,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">Primitive data type</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary text-center">Primitive data type</h2>
             <ul>Numbers
               <ul>
                 <li>decimal notation (integer, floating-point, scientific notation)</li>
@@ -655,8 +713,8 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js9.png"> </div>
-          <div class="col-md-7">
-            <h2 class="text-primary pt-3">Object Type</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
+            <h2 class="text-primary pt-3 text-center">Object Type</h2>
             <ul>
               <li>New String</li>
               <li>New Number</li>
@@ -689,8 +747,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">JavaScript is loosely and dynamically-typed</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-primary text-center">JavaScript is loosely and dynamically-typed</h2>
             <ul>
               <li>var var1 = 100; //v1 is a number</li>
               <li>var var1=’hello’; //v1 is now a string</li>
@@ -723,10 +781,10 @@
                 <ul>}</ul> }</ul>
             </ul>
             <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample">
             Read More </button>
             <br>
-            <div class="collapse" id="collapseExample">
+            <div class="collapse" id="readMore">
               <div class="card card-body">
                 <ul>//’arguments’ object (only valid inside a function)</ul>
                 <ul>//default parameter values</ul>
@@ -760,7 +818,7 @@
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js6.jpg"> </div>
           <div class="col-md-7">
-            <h2 class="text-primary pt-3">ARRAYS</h2>
+            <h2 class="pt-3 text-secondary text-center">ARRAYS</h2>
             <ul>
               <li>Array size is dynamic</li>
               <li>JavaScript allows “sparse “arrays</li>
@@ -777,9 +835,9 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">JavaScript Event Handling</h2>
-            <ul>
+          <div class="col-md-6" style="background-color:rgba(255,255,255,.2);">
+            <h2 class="text-primary text-center">JavaScript Event Handling</h2>
+            <ul class="text-light">
               <li>onclick Event Type</li>
               <ul>
                 <li>most used type of event that triggers when a user clicks using the left button of mouse.</li>
@@ -798,20 +856,20 @@
               </ul>
             </ul>
           </div>
-          <div class="col-md-5 align-self-center">
+          <div class="col-md-6 align-self-center">
             <img class="img-fluid d-block w-100 img-thumbnail" src="img/js14.jpg"> </div>
         </div>
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js15.png"> </div>
           <div class="col-md-7">
-            <h2 class="text-primary pt-3">How to Create and Dispatch Events</h2>
-            <ul>
+            <h2 class="text-primary pt-3 text-center">How to Create and Dispatch Events</h2>
+            <ul class="text-light">
               <ul>var clickEvent = new Event('click');</ul>
               <ul>var button = document.querySelector('#button');</ul>
               <ul>button.dispatchEvent(clickEvent);</ul>
             </ul>
-            <ul>
+            <ul class="text-light">
               <ul>var ce = new CustomEvent('pindot');</ul>
               <ul>button.addEventListener('pindot'.pindotHandler);</ul>
               <ul>button.dispatchEvent(ce);</ul>
@@ -823,8 +881,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">Event Propagation Order(DOM-compliant browsers)</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-primary text-center">Event Propagation Order(DOM-compliant browsers)</h2>
             <ul>
               <ul>
                 <li>capturing the phase</li>
@@ -844,7 +902,10 @@
           <div class="col-md-5 my-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js12.png"> </div>
           <div class="col-md-7">
+
+
             <h2 class="text-primary pt-3">Event Handler Registration</h2>
+
             <div id="accordion">
               <div class="card">
                 <div class="card-header bg-dark" id="headingOne">
@@ -881,7 +942,11 @@
               <div class="card">
                 <div class="card-header bg-dark" id="headingOne">
                   <h5 class="mb-0 text-center text-white">
+
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <b>Method 3 (DOM L2 event registration</b> </button>
+
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <b>Method 3 (DOM L2 event registration)</b> </button>
+
                   </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -923,8 +988,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">//cross-browser event registration</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary text-center">//cross-browser event registration</h2>
             <ul>
               <ul>var button – document.getElementById(‘button’);</ul>
               <ul>if (button.addEventListener) {</ul>
@@ -943,7 +1008,7 @@
             </ul>
           </div>
           <div class="col-md-5 align-self-center">
-            <div class="col-md-12">
+            <div class="col-md-12" style="background-color:rgba(255,255,255,.6);">
               <ul>Whenever an event is triggered information about the event is made available via the ‘event’ object property of the ‘Window’ object.</ul>
               <ul>*for method 1 registration, the event object may be passed explicitly in the call to the handler.</ul>
               <ul>*for methods 2 and 3 registration, the event object is passed implicitly as the first argument of the event handler.</ul>
@@ -956,8 +1021,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">Event Object Properties and Methods</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary text-center">Event Object Properties and Methods</h2>
             <ul>
               <ul>
                 <li>Bubbles</li>
@@ -991,8 +1056,8 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js5.jpg"> </div>
-          <div class="col-md-7">
-            <h2 class="text-primary pt-3">AJAX (Asynchronous JavaScript And XML)</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+            <h2 class="text-primary pt-3 text-center">AJAX (Asynchronous JavaScript And XML)</h2>
             <ul>XMLHttpRequest</ul>
             <ul>
               <ul>
@@ -1017,8 +1082,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7">
-            <h2 class="text-primary">2 modes of fetch</h2>
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.1);">
+            <h2 class="text-primary text-center">2 modes of fetch</h2>
             <ul>
               <ul>
                 <li>synchronous</li>
@@ -1077,9 +1142,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
-      <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-    </pingendo>
   </div>
   <div class="text-white bg-primary">
     <div class="container">
