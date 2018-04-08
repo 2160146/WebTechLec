@@ -182,20 +182,30 @@
               <div class="col-4">
                 <ul class="nav nav-pills flex-column">
                   <li class="nav-item">
-                    <a class="active nav-link" href="" data-toggle="pill" data-target="#tabone">Tab 1</a>
+                    <a class="active nav-link" href="" data-toggle="pill" data-target="#tabone">At-Rules(@)</a>
                   </li>
                   <li class="nav-item">
-                    <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo">Tab 2</a>
+                    <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo">CSS Rule Sets (a.k.a CSS Rules, Style Rules)</a>
                   </li>
                 </ul>
               </div>
               <div class="col-8">
                 <div class="tab-content">
                   <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                    <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul>
+                      <ul>@charset</ul>
+                      <ul>@import</ul>
+                      <ul>@namespace</ul>
+                      <ul>@media</ul>
+                      <ul>@supports</ul>
+                      <ul>@page</ul>
+                      <ul>@font-face</ul>
+                      <ul>@keyframes</ul>
+                    </ul>
                   </div>
                   <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                    <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed by
+                      a property value</ul>
                   </div>
                 </div>
               </div>
@@ -481,7 +491,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="text-light">JavaScript</h1>
+              <h1 class="text-light text-uppercase">JavaScript</h1>
             </div>
           </div>
         </div>
@@ -491,9 +501,9 @@
   <div class="py-5">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-7">
-          <h2 class="text-primary">Two types of programming on web</h2>
-          <ol class="">
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.3);">
+          <h2 class="bg-secondary text-light text-center">Two types of programming on web</h2>
+          <ol class="text-light">
             <li>Client Side Web Scripting</li>
             <li>Server Side Web Scripting</li>
           </ol>
@@ -504,8 +514,61 @@
       <div class="row">
         <div class="col-md-5">
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
-        <div class="col-md-7">
-          <h2 class="text-primary pt-3">Type of Scripts</h2>
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+          <h2 class="pt-3 text-center">Type of Scripts</h2>
+          <ul class="nav nav-pills flex-column">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-4 bg-info">
+                    <ul class="nav nav-pills flex-column">
+                      <li class="nav-item">
+                        <a class="active nav-link" href="" data-toggle="pill" data-target="#linked">Linked</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="pill" data-target="#embedded">Embedded</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="pill" data-target="#inline">Inline</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="pill" data-target="#noscript">Noscript</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-8 bg-secondary">
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="linked" role="tabpanel">
+                        <ul>
+                          <li>a.k.a External</li>
+                          <li>execution of linked scripts can be deferred or run asynchronously</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="embedded" role="tabpanel">
+                        <ul>
+                          <li>a.k.a Internal</li>
+                          <li>top-level code (i.e. code outside functions) execute as the script is loaded</li>
+                          <li>code inside functions are executed only when the function is involved</li>
+                          <ul>-preferred way</ul>
+                          <ul>-anywhere</ul>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="inline" role="tabpanel">
+                        <ul>
+                          <li>scripts may be embedded anywhere in the document and any top-level code is executed where it is concentered</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="noscript" role="tabpanel">
+                        <ul>
+                          <li>provides alternative content when the browser does not support or disabled</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
     </div>
@@ -513,7 +576,7 @@
   <div class="py-5">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-6">
+        <div class="col-md-6" style="background-color:rgba(255,255,255,.7);">
           <h2 class="text-primary">JavaScript Execution Environment</h2>
           <ul>
             <li>accessible for specific page only</li>
@@ -552,7 +615,7 @@
       <div class="row">
         <div class="col-md-5">
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js4.png"> </div>
-        <div class="col-md-7">
+        <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
           <h2 class="text-primary pt-3">DOM (Document Object Model)</h2>
           <ul>
             <li>API that allows access to the HTML document from within scripts associated with the web page</li>
@@ -728,10 +791,10 @@
               <ul>}</ul> }</ul>
           </ul>
           <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample">
           Read More </button>
           <br>
-          <div class="collapse" id="collapseExample">
+          <div class="collapse" id="readMore">
             <div class="card card-body">
               <ul>//’arguments’ object (only valid inside a function)</ul>
               <ul>//default parameter values</ul>
@@ -1071,6 +1134,36 @@
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Tab 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo">Tab 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree">Tab 3</a>
+            </li>
+          </ul>
+          <div class="tab-content mt-2">
+            <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+              <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+              <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="tab-pane fade" id="tabthree" role="tabpanel">
+              <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
