@@ -1,0 +1,45 @@
+CSS
+
+1.) H a _ _n  W _ u m  _ i e  ( Hakon Wium Lie )
+	-one of the developers of CSS
+2.) S _ _ e c _ _ r ( Selector )
+	-structure used as a condition in CSS rule to determine which elements in the document tree and matched by the selector and are thus targeted
+3.) _ e l _ c t _ r  S _ _ t a _ ( Selector Syntax )
+	-chain of one or more sequences of simple selectors
+4.)	C _ m b _ _ a t _ _ s ( Combinators ) 
+	-used to improve additional matching constrains
+5.) C _ a _ s  S _ l e _ _ o r ( Class Selector )
+	-class variable
+6.) I _  S e _ _ c _ o _ ( ID Selector )
+	-value of the ID
+7.) C _ S  _  r e p _ _ c e _ s _ r _ ( CSS Preprocessors )
+	-generate CSS a custom language syntax that typically includes features that don’t exist in pure CSS
+8.) C S _  P _ _ y f _ _ l s ( CSS Polyfills )
+	-provides future developers expect browsers to provide natively
+9.) S _ r _ _ g s ( Strings )
+	-Delimited by single quotes (‘) or double quotes (“)
+10.)P e _ _ e _ t a _ _ s ( Percentages )
+	- number with a % suffix
+
+JavaScript
+
+1.) C _ i e _ t  S _ d e  _ e _  S _ r i _ _ i _ g ( Client Side Web Scripting )
+	-besides Server Side Web Scripting, this is the other type of programming on web
+2.) I n _ _ _ e  s _ r _ _ t _ ( Inline scripts )
+	-scripts may be embedded anywhere in the document and any top-level code is executed where it is concentered
+3.) D _ c _ _ e _ t  O b _ e _ _  M _ d _ _ ( Document Object Model)
+	-API that allows access to the HTML document from within scripts associated with the web page 
+4.) o _ c _ _ c k  E v _ _ t  T _ p _ (onclick Event Type)
+	-most used type of event that triggers when a user clicks using the left button of mouse.
+5.) A s _ n _ _ r _ n _ _ s  _ a _ a S _ _ i p _  A _ d  X _ L ( Asynchronous JavaScript And XML )
+	-Meaning of the acryonym "AJAX"
+6.) _ y n _ h _ _ n _ u _  ( Synchronous )
+	-page is blocked, cannot interact, false
+7.) C _ l l _ a _ _ ( Callback )
+	-monitor progress of response
+8.) _ e s _ i _ g  f u _ _ t _ o _ s ( Nesting functions )
+	-define functions inside a function
+9.) U _ c _ e  B _ n ( Uncle Ben )
+	-uncle of spiderman
+10.) N o s c r i p t ( Noscript )
+	-provides alternative content when the browser does not support or disabled
