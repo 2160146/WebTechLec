@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*!
 * Based on Bootstrap v4.0.0 (https://getbootstrap.com) 
 */
@@ -6175,10 +6176,11 @@ html, body {
     content: ' ';
     background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
 
-.arrow-bot {
-    color: white;
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
+#arrow-bot {
+    
+}
+
+.bounce {
     animation: bounce 2s infinite;
 }
 
@@ -6187,9 +6189,9 @@ html, body {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(20px);
   }
 }
