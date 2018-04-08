@@ -43,3 +43,25 @@ JavaScript
 	-uncle of spiderman
 10.) N _ s _ _ i p _ ( Noscript )
 	-provides alternative content when the browser does not support or disabled
+	
+	
+"q1": ["Hakon Wium Lie", "hakon wium lie"],
+    "q2": ["Hakon Wium Lie", "hakon wium lie"],
+    "q3": ["Hakon Wium Lie", "hakon wium lie"],
+    "q4": ["Hakon Wium Lie", "hakon wium lie"],
+    "q5": ["Hakon Wium Lie", "hakon wium lie"],
+    "q6": ["Hakon Wium Lie", "hakon wium lie"],
+    "q7": ["Hakon Wium Lie", "hakon wium lie"],
+    "q8": ["Hakon Wium Lie", "hakon wium lie"],
+    "q9": ["Hakon Wium Lie", "hakon wium lie"],
+    "q10": ["Hakon Wium Lie", "hakon wium lie"],
+    "q11": ["Hakon Wium Lie", "hakon wium lie"],
+    "q12": ["Hakon Wium Lie", "hakon wium lie"],
+    "q13": ["Hakon Wium Lie", "hakon wium lie"],
+    "q14": ["Hakon Wium Lie", "hakon wium lie"],
+    "q15": ["Hakon Wium Lie", "hakon wium lie"],
+    "q16": ["Hakon Wium Lie", "hakon wium lie"],
+    "q17": ["Hakon Wium Lie", "hakon wium lie"],
+    "q18": ["Hakon Wium Lie", "hakon wium lie"],
+    "q19": ["Hakon Wium Lie", "hakon wium lie"],
+    "q20": ["hasn't", "has not"]
