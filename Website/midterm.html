@@ -3,7 +3,7 @@
 
 <head></head>
 
-<body>
+<body style="background-image: url('images/bg.jpg');">
   <ul>
     <li>API that allows access to the HTML document from within scripts associated with the web page</li>
   </ul>
@@ -11,13 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css">
-  <div class="text-center" style="background-image: url(&quot;https://pingendo.github.io/templates/sections/assets/cover_event.jpg&quot;);">
+  <div class="text-center w-100" style="background-image: url('images/Banner2.jpg');background-size:cover;background-position:center top;background-repeat:no-repeat;">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-12 m-4">
-          <h1 class="display-3 mb-4 text-primary w-100">Hero image intro</h1>
-          <p class="lead mb-5">Pingendo is a HTML editor for everyone. Easy for newbies, useful for professionals.
-            <br>Code quality is a must. Pingendo generates clean, battle-tested, modular Bootstrap 4 code. </p>
+          <h1 class="display-3 mb-4 w-100 text-light">MIDTERM</h1>
         </div>
       </div>
     </div>
@@ -51,20 +49,22 @@
   <div class="bg-primary">
     <div class="row">
       <div class="col-md-6 align-self-center text-center p-4 bg-secondary w-100">
-        <img class="img-fluid d-block mx-auto" src="img/css.png" width="100">
+        <a href="#css">
+          <img class="img-fluid d-block mx-auto" src="img/css.png" width="100"> </a>
         <h3 class="my-2 text-warning">
-          <a href="#www" class="text-white">Cascading Style Sheets</a>
+          <a href="#css" class="text-white">Cascading Style Sheets</a>
         </h3>
       </div>
       <div class="col-md-6 align-self-center text-center p-4 bg-primary">
-        <img class="img-fluid d-block mx-auto" src="img/js.png" width="100">
+        <a href="#js">
+          <img class="img-fluid d-block mx-auto" src="img/js.png" width="100"> </a>
         <h3 class="my-2">
-          <a href="#http" class="text-white">JavaScript</a>
+          <a href="#js" class="text-white">JavaScript</a>
         </h3>
       </div>
     </div>
   </div>
-  <div class="py-5 text-center bg-secondary">
+  <div class="py-5 text-center bg-secondary" id="css">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -175,12 +175,37 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 align-self-center">
+        <div class="align-self-center">
           <div class="col-md-12">
             <h2 class="text-primary pt-3">CSS Statements</h2>
-            <div class="btn-group">
-              <a href="#" class="btn btn-primary">At-Rules</a>
-              <a href="#" class="btn btn-primary">CSS Rule Sets</a>
+            <div class="row">
+              <div class="col-4">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item">
+                    <a class="active nav-link" href="" data-toggle="pill" data-target="#tabone">Tab 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo">Tab 2</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-8">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                    <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+                    <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+            </div>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
             </div>
           </div>
         </div>
@@ -455,7 +480,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 text-center bg-primary">
+  <div class="py-5 text-center bg-primary" id="js">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -486,10 +511,6 @@
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
         <div class="col-md-7">
           <h2 class="text-primary pt-3">Type of Scripts</h2>
-          <a class="btn btn-primary" href="#">Linked</a>
-          <a class="btn btn-primary" href="#">Embedded</a>
-          <a class="btn btn-primary" href="#">Inline</a>
-          <a class="btn btn-primary" href="#">Noscript</a>
         </div>
       </div>
     </div>
@@ -712,28 +733,35 @@
               <ul>}</ul> }</ul>
           </ul>
           <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2</ul>
-          <ul>//’arguments’ object (only valid inside a function)</ul>
-          <ul>//default parameter values</ul>
-          <ul>//”rest” parameters
-            <li>(arg1, arg2, … other Args)</li>
-          </ul>
-          <ul>//function expressions
-            <li>Function (a,b)</li>
-          </ul>
-          <ul>//”arrow” function expression
-            <li>Var f5 ( a,b) = &gt; {ar P-a*b; return P; }</li>
-          </ul>
-          <ul>//function expressions
-            <li>Higher order function</li>
-            <ul>
-              <li>Function that returns a function</li>
-              <li>Can be passed as arguments to functions</li>
-              <li>Nesting functions</li>
-              <ul>
-                <li>Define functions inside a function</li>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Read More </button>
+          <br>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <ul>//’arguments’ object (only valid inside a function)</ul>
+              <ul>//default parameter values</ul>
+              <ul>//”rest” parameters
+                <li>(arg1, arg2, … other Args)</li>
               </ul>
-            </ul>
-          </ul>
+              <ul>//function expressions
+                <li>Function (a,b)</li>
+              </ul>
+              <ul>//”arrow” function expression
+                <li>Var f5 ( a,b) = &gt; {ar P-a*b; return P; }</li>
+              </ul>
+              <ul>//function expressions
+                <li>Higher order function</li>
+                <ul>
+                  <li>Function that returns a function</li>
+                  <li>Can be passed as arguments to functions</li>
+                  <li>Nesting functions</li>
+                  <ul>
+                    <li>Define functions inside a function</li>
+                  </ul>
+                </ul>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="col-md-5 align-self-center">
           <img class="img-fluid d-block w-100 img-thumbnail" src="img/js16.jpg"> </div>
