@@ -167,20 +167,30 @@
                 <div class="col-4">
                   <ul class="nav nav-pills flex-column">
                     <li class="nav-item">
-                      <a class="active nav-link" href="" data-toggle="pill" data-target="#tabone">Tab 1</a>
+                      <a class="active nav-link" href="" data-toggle="pill" data-target="#one">AT-RULES</a>
                     </li>
                     <li class="nav-item">
-                      <a href="" class="nav-link" data-toggle="pill" data-target="#tabtwo">Tab 2</a>
+                      <a href="" class="nav-link" data-toggle="pill" data-target="#two">CSS RULE SETS</a>
                     </li>
                   </ul>
                 </div>
                 <div class="col-8">
                   <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                      <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="tab-pane fade show active" id="one" role="tabpanel">
+						<ul>
+							<ul>@charset</ul>
+							<ul>@import</ul>
+							<ul>@namespace</ul>
+							<ul>@media</ul>
+							<ul>@supports</ul>
+							<ul>@page</ul>
+							<ul>@font-face</ul>
+							<ul>@keyframes</ul>
+						</ul>
                     </div>
-                    <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                      <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="tab-pane fade" id="two" role="tabpanel">
+                      <ul>-consists of a selector, followed by a brace-enclosed declaration block which contains zero or more semi-colon ( ; ), separated property declarations, which in turn consists of a property name, followed by a colon ( : ), followed by a property value</ul>
+					  </ul>
                     </div>
                   </div>
                 </div>
@@ -835,63 +845,77 @@
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js12.png"> </div>
           <div class="col-md-7">
             <h2 class="text-primary pt-3">Event Handler Registration</h2>
-            <ul>
-              <li>Method 1(inline HTML event attribute)</li>
-              <ul>
-                <li>non-standard, universal support, not recommended</li>
+<div id="accordion">
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingOne">
+                    <h5 class="mb-0 text-center text-white">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <b>Method 1(inline HTML event attribute)</b> </button>
+                    </h5>
+                  </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                <ul>
+              <li>non-standard, universal support, not recommended</li>
+              <li>ex. onClick='handler()'</li>
               </ul>
-              <ul>
-                <li>ex. onClick='handler()'</li>
-              </ul>
-              <li>Method 2(pre-DOM L2)</li>
-              <ul>
-                <li>non-standard, universal support</li>
-              </ul>
-              <ul>
-                <li>can register only one handler</li>
-              </ul>
-              <ul>
-                <li>remove handler by assigning null value to attribute</li>
-              </ul>
-              <ul>
-                <li>ex. button.onclick=handler();</li>
-              </ul>
-              <li>Method 3 (DOM L2 event registration</li>
-              <ul>
-                <li>standard, well-supported</li>
-              </ul>
-              <ul>
-                <li>can register more than one event handler</li>
-              </ul>
-              <ul>
-                <li>can register handlers on the bubble or capture phase</li>
-              </ul>
-              <ul>
-                <lil>use removeEventListener() to remove event handler</lil>
-              </ul>
-              <ul>
-                <li>use dispatchEvent(0 to trigger event programmatically</li>
-              </ul>
-              <ul>
-                <li>ex. button.addEventListener('click',handler)</li>
-              </ul>
-              <li>Method 4 (Microsoft-specific, non-standard, IEv6-v10...)</li>
-              <ul>
-                <li>can register more than one event handler</li>
-              </ul>
-              <ul>
-                <li>can register handlers only on the bubble phase</li>
-              </ul>
-              <ul>
-                <li>use detachEvent() to remove event handler</li>
-              </ul>
-              <ul>
-                <li>use fireEvent() to trigger event programmatically</li>
-              </ul>
-              <ul>
-                <li>ex. button.attachEvent(‘onclick’, handler)</li>
-              </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingOne">
+                    <h5 class="mb-0 text-center text-white">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <b>Method 2(pre-DOM L2)</b> </button>
+                    </h5>
+                  </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                <ul>
+              <li>non-standard, universal support</li>
+              <li>can register only one handler</li>
+              <li>remove handler by assigning null value to attribute</li>
+              <li>ex. button.onclick=handler();</li>
             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-dark" id="headingOne">
+                    <h5 class="mb-0 text-center text-white">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <b>Method 3 (DOM L2 event registration</b> </button>
+                    </h5>
+                  </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                <ul>
+              <li>standard, well-supported</li>
+              <li>can register more than one event handler</li>
+              <li>can register handlers on the bubble or capture phase</li>
+              <lil>use removeEventListener() to remove event handler</lil>
+              <li>use dispatchEvent(0 to trigger event programmatically</li>
+              <li>ex. button.addEventListener('click',handler)</li>
+            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                  <div class="card-header bg-dark" id="headingOne">
+                    <h5 class="mb-0 text-center text-white">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <b>Method 4 (Microsoft-specific, non-standard, IEv6-v10...)</b> </button>
+                    </h5>
+                  </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                <ul>
+              <li>can register more than one event handler</li>
+              <li>can register handlers only on the bubble phase</li>
+              <li>use detachEvent() to remove event handler</li>
+              <li>use fireEvent() to trigger event programmatically</li>
+              <li>ex. button.attachEvent(‘onclick’, handler)</li>
+            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
