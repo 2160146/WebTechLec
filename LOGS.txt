@@ -1,0 +1,709 @@
+commit 732f7a36a9aadb282493d4c4056a39dd117f4206 (HEAD -> master, origin/master, origin/HEAD)
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 9 13:20:21 2018 +0800
+
+    Added nav in quiz.html
+
+commit f09d4454a51d92fcf3ff4db4355fb4431dda2679
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:13:57 2018 +0800
+
+    Altered temp final page
+
+commit bb68a68d4f13251758ead51ca028b5554169ea68
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:10:03 2018 +0800
+
+    Fixed Prelim heading color
+
+commit d92f802065d9a716fc2cf1951d36003aebd506fc
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:01:24 2018 +0800
+
+    Final Polished Version
+
+commit ed22940c6a31aeb4ec92e583ab2d5e77246d8850
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 12:53:47 2018 +0800
+
+    removed unnecessary part
+
+commit 27238ec0ad842d1337c6e8abcc866e8ffedf2205
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 12:51:36 2018 +0800
+
+    Polishing
+
+commit 0b75e0603613936677cf7eb2651a8cfaeed7472f (HEAD -> master, origin/master, origin/HEAD)
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 18:40:07 2018 +0800
+
+    Fixed some errors on Quiz Webpage
+
+commit 9034ab315ffc8befa9d0714489001de67469bff8
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 17:51:42 2018 +0800
+
+    There has been some issues in merging the files.
+
+commit 6d8b45d8b9514c55cdb3362c75990825010cdb55
+Author: Mitch Ainslie Galatcha <35722802+mitchainslieit@users.noreply.github.com>
+Date:   Sun Apr 8 17:43:59 2018 +0800
+
+    There has been some issues in merging the files
+
+commit 0cbef619e68ce0babcf47fd494dd1b57f2780ce5
+Merge: 6dd5cf8 fccf03c
+Author: DeanBaguisi <2163907@slu.edu.ph>
+Date:   Sun Apr 8 17:02:22 2018 +0800
+
+    Merge branch 'master' of https://github.com/VeaHufana/WebTechLec
+
+commit 6dd5cf80916bbd9dbe0bc9c82668ba10694dd2ec
+Author: DeanBaguisi <2163907@slu.edu.ph>
+Date:   Sun Apr 8 17:01:55 2018 +0800
+
+    Edited fonts
+
+commit fccf03c393d3d0e2346168351862103ccb0bda50
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 17:00:15 2018 +0800
+
+    Fixed merging error
+
+commit f8ec407c6ec4ee3aaa0ee0ae813dbbaa6f60f3dd
+Merge: 738e159 f2328dd
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 16:42:16 2018 +0800
+
+    Edited changes by Nikki and Jerome
+
+commit 738e15944d2186c8f6d2d97fe461ffc628cd6323
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 16:41:35 2018 +0800
+
+    Edited changes by Nikki and Jerome
+
+commit f2328ddfac5e5bbaae4108ddf5560705e473b00d
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:32:27 2018 +0800
+
+    Added scroll behavior on theme.css
+
+commit 4cf5a1ca4b13c42a9a63ef4691d0aede3d469aa4
+Merge: cfa528d 5272b00
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 16:18:56 2018 +0800
+
+    Edited Midterms
+
+commit cfa528d51e234946e5cf3e43395b34ec64554e7f
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 16:17:51 2018 +0800
+
+    Edited Midterms
+
+commit 5272b00c919ed402830d571b353b68593953c334
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:17:32 2018 +0800
+
+    Change See More Button
+
+commit 38dbf944041fa7fb0b83f9f682922c8001a1bd10
+Merge: ca009e2 16f26af
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:16:31 2018 +0800
+
+    Merge branch 'master' of https://github.com/VeaHufana/WebTechLec
+
+    Merge
+
+commit 16f26af44cb1908c19b9f79e7086ae165e28c243
+Merge: a6b4ef7 68b894f
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 16:14:34 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit a6b4ef77a0d60664a569db41bfdd8e16fe8d339d
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 16:14:30 2018 +0800
+
+    Edit css
+
+commit 68b894f7f7f0e85679d5d82d2e7cef3a4d48f959
+Author: DeanBaguisi <2163907@slu.edu.ph>
+Date:   Sun Apr 8 16:13:36 2018 +0800
+
+    edited
+
+commit ca009e26f532a60b7663cb3d1140e90985c1db40
+Merge: 100df73 63258ef
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:09:15 2018 +0800
+
+    Merge branch 'master' of https://github.com/VeaHufana/WebTechLec
+
+    Merge
+
+commit 100df736bb8657c68f904d41f19607ea35a27d9f
+Merge: 3646e80 5d2ea4d
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:09:06 2018 +0800
+
+    Merge
+
+commit 63258ef58002c6a67e5dfe2f2b20683287fca782
+Merge: 189d708 5d2ea4d
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 16:05:17 2018 +0800
+
+    Fixed Midterms
+
+commit 3646e80897330f8232972c539a5790f7e022c10c
+Author: Mitch Galatcha <2162752@slu.edu.ph>
+Date:   Sun Apr 8 16:04:01 2018 +0800
+
+    Added Some changes to the index.html
+
+commit 189d7082d1585f7315c80942e255c601682c80c2
+Merge: 9717451 f3f1a6c
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 16:03:42 2018 +0800
+
+    Added some changes
+
+commit 5d2ea4d54aedb5a361e88a5e33cccb1968813244
+Merge: 52c5e7d 6a7874a
+Author: DeanBaguisi <2163907@slu.edu.ph>
+Date:   Sun Apr 8 16:03:29 2018 +0800
+
+    Merge branch 'master' of https://github.com/VeaHufana/WebTechLec
+
+commit 52c5e7db856b7e1eb4adb200a80d92c457228e8c
+Author: DeanBaguisi <2163907@slu.edu.ph>
+Date:   Sun Apr 8 16:03:25 2018 +0800
+
+    changes
+
+commit 6a7874a4c4f720719591eba2ad7472fc3ba97749
+Merge: 81803b5 5f4ae97
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 16:00:01 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 81803b5c0ee490afc87c063aa5d67b4cc0769523
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 15:59:17 2018 +0800
+
+    font
+
+commit 5f4ae973efcd3e013395024aca4e68a5a8abcfd6
+Merge: ac8bd74 57172ba
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 15:54:14 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit ac8bd74d1555c30e40024fa3ccd90682c3a2a158
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 15:53:12 2018 +0800
+
+    Fixed some misplaced characters
+
+commit 57172bab25dbb5a2d0e0da077475a57a1e1da027
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 15:51:54 2018 +0800
+
+    Added some changes
+
+commit 1779595f6c62e8ced44b8cb3b6eb96a07a647f46
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 15:35:34 2018 +0800
+
+    update
+
+commit 9717451d6fc42b07b0cc4262da6e7ea94fd5dad5
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 15:27:41 2018 +0800
+
+    Edited midterm
+
+commit f3f1a6c8ed04c14f1990283bd8c607f6e4c57e7a
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 15:27:26 2018 +0800
+
+    Layout
+
+commit 27688ceefb65a692b299e14edc2e3887fa164365
+Merge: debf6d1 d146843
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 15:15:29 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit debf6d1b5f0b1d798ae73d8fa6af74343e392b1b
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 15:15:00 2018 +0800
+
+    fixed picture alignments
+
+commit d1468433a200005ac1b8eed4148b59205b52c38d
+Merge: 1f84f3a dc4b218
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 15:13:33 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 1f84f3a07f337de8230f658bba12d91015b02bd2
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 15:13:28 2018 +0800
+
+    Layout
+
+commit dc4b218e4832444d8f8842b9b55d90aae2ef4c76
+Author: Mitch Ainslie Galatcha <35722802+mitchainslieit@users.noreply.github.com>
+Date:   Sun Apr 8 15:07:32 2018 +0800
+
+    Accordion
+
+commit a54e18ec3182b99d57cb59361454fb4c118f35d1
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 14:52:04 2018 +0800
+
+     added AT-RULES and css rule sets contents
+
+commit 43ee63b299d43c5ad4e709d2debd59d0977c0817
+Merge: 2f25fc3 92e5c41
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 14:45:40 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 2f25fc35d0c8840e7ff628aa61b5a1d9cd9b3356
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 14:45:11 2018 +0800
+
+    Alteration
+
+commit 92e5c4189df7274c86e3486c540b14453ac8828c
+Merge: a9a62a6 8d49461
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 14:40:03 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit a9a62a667174a9be5e6c8c81e85ed32116719880
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 14:39:24 2018 +0800
+
+    added collapsable
+
+commit 8d4946149facdf1df848bda44efc61af3c4d7ee3
+Merge: 0e93a97 a061215
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 14:23:37 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 0e93a97aee679e0783dba797075fc5c6c21b1e47
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 14:22:38 2018 +0800
+
+    Added banner
+
+commit a06121529feb98bccb0fd9d7b9a89dced99c0120
+Merge: 6f0b0aa cf557db
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 14:14:40 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 6f0b0aa229377412d7dc498b8d04468af51c7d16
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 14:14:34 2018 +0800
+
+    Layout
+
+commit cf557db700ea0b825f53279b43684e6c231c42fd
+Merge: 80ee5f1 ac06edc
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 13:28:15 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 80ee5f1f5dbc1777cebed9346e96c446520e9a3c
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 13:27:45 2018 +0800
+
+    added contents about html style sheets
+
+commit 7e7e3f72fa87d3d4f0acecb27894d129a0635c3e
+Merge: 84496f8 ac06edc
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 13:16:36 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit ac06edc4ec227bebcb37518f309aa749029ec10b
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 13:16:17 2018 +0800
+
+    jpeg revised bg
+
+commit 84496f8be333ca70dd20e7d73492a7b6f26307cf
+Merge: 0674989 6e851b8
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 13:12:24 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 0674989ce08927582b52804b3a4d573304a2ad7a
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 13:12:05 2018 +0800
+
+    Updated midterm.html
+
+commit 6e851b8e0261a08ce7c6218c8c9b2bd6c4b351ff
+Author: Mitch Ainslie Galatcha <35722802+mitchainslieit@users.noreply.github.com>
+Date:   Sun Apr 8 13:10:55 2018 +0800
+
+    Added Working Quiz Webpage
+
+commit d1c3256615556e2ca00214ad223ebfb382640d91
+Merge: 06da066 60e69f4
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 13:07:05 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 06da066dbd823e85964945b590fa7063dd21f323
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 13:06:11 2018 +0800
+
+    Edit
+
+commit 60e69f45057b2b00bcdbb90c9746165c7c4c8fbc
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 13:00:24 2018 +0800
+
+    new Background
+
+commit 9c42ae0292ce6b853918c191bb22962da83b4c29
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:50:12 2018 +0800
+
+    filled answers
+
+commit bdeebd21fecefd480ce0be638e8bbc5d1654eed6
+Author: Mitch Ainslie Galatcha <35722802+mitchainslieit@users.noreply.github.com>
+Date:   Sun Apr 8 12:41:31 2018 +0800
+
+    Added parts of js for editting
+
+commit 36520af49b680bb5e4def3927ca0cbf2273f9413
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:28:15 2018 +0800
+
+    fixed spaces for the midterm quiz
+
+commit 16257cfd43b517178460cf1b7a7fa2a8304cea2d
+Merge: 111f968 fe4306e
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:13:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 111f968c225ee7b3ba7f3c2906a91fcdeb5d702b
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:12:33 2018 +0800
+
+     fixed midtermquiz.html
+
+commit fe4306e036aa58f0c4ef7409b8e1faa52a698d8d
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 12:07:58 2018 +0800
+
+    corrected misplaced div
+
+commit 6f13417aed414f4a6a480b5e09e29a8395825c68
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 12:04:58 2018 +0800
+
+    Updated midterm.html
+
+commit 447def16c3a02ef0df5b587e6e88861c31635b00
+Merge: 1ebc3bb 8305992
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:00:53 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 1ebc3bbfb273b98779aa699288e9ccd7f7b64286
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 12:00:01 2018 +0800
+
+    midterm quiz
+
+commit 83059921f4f135bd2382b941df8c8eccba8b5937
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 11:54:19 2018 +0800
+
+    corrected a misplaced div
+
+commit c0c172f5e73029558da19491bf0dee706da0d623
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 11:52:13 2018 +0800
+
+    Fixed links
+
+commit 6860327fa638ea9c3784c9de1717398541936869
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 11:45:28 2018 +0800
+
+    Updated index.html
+
+commit a8c064b671e8b03ccfa3088947044cb445c97223
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 11:40:17 2018 +0800
+
+    Added another video effect
+
+commit f71a2bd9d863862c090d22e1a28f1bdff7ddffa4
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 11:35:21 2018 +0800
+
+    Quiz Result Page
+
+commit b26b8f9427cdef85c4028ba010d0e954a7a56800
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 11:30:17 2018 +0800
+
+    Added quiz.txt
+
+commit 211b71c57e708f58ea9800f7510610421a78dfb9
+Merge: 1f6cebb 31c9404
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 11:29:34 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 1f6cebbddf3154fb37bd29c2a37e7339a74ea80e
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sun Apr 8 11:28:52 2018 +0800
+
+    Added quiz items ( questions )
+
+commit 31c94045567ef95d53b2e06c4075ee15eed3becb
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Apr 8 11:26:23 2018 +0800
+
+    Added video effect
+
+commit c371083088040e066512e38899ff6f84eaa1b82b
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 11:08:36 2018 +0800
+
+    Midterm Quiz Template
+
+commit 1aa8f2fb848bc44b82e3bc9f754a38a7117dde6b
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 10:43:52 2018 +0800
+
+    add index
+
+commit 2aa4d315451c76c88ea0ef278e405f3d3a0a3b1a
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 09:42:30 2018 +0800
+
+    Added photos and logos
+
+commit 9fa4a2315d8d5c9436855da6e6af068b95b17683
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 09:11:34 2018 +0800
+
+    Added some photos
+
+commit 63730ee675d785298a6f99c6eb2c1df0c065c1c3
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 04:40:41 2018 +0800
+
+    Mideterm with content
+
+commit 096c85f3236ccf97c988511194328ed3bf6af1e1
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 04:39:11 2018 +0800
+
+    Added CSS and JS logo
+
+commit e7607682eb3b04168eb50b0c28dedcaa18f3ae83
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 04:28:51 2018 +0800
+
+    Added update
+
+commit 9d9e03b6c0d5d7f70f8db44c0e44d4a4cad8ea7e
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 04:01:16 2018 +0800
+
+    made minor alterations
+
+commit 132002bcfd10f734388c17c38dee5f734d347dc2
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Sun Apr 8 03:59:23 2018 +0800
+
+    New midterm site
+
+commit 7acf60d412613261d843368d04eaf4987f296791
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 03:55:16 2018 +0800
+
+    additional svg file
+
+commit 93a1a1a0ddb85731d57ef37f4a9edbe5e6283b20
+Author: Dean Christian Baguisi <34298426+DeanBaguisi@users.noreply.github.com>
+Date:   Sun Apr 8 03:36:59 2018 +0800
+
+    SVG Logo and  Sample Background
+
+commit 763f2812dafdeccf100c7993cf867999b6122ef3
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Apr 7 23:15:19 2018 +0800
+
+    added some text to js.html and edited some notes
+
+commit 7ff354c4f15ef199166a1bf3ce0e577f64f67719
+Merge: 76d9ef9 ffe79d7
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Apr 7 21:58:14 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 76d9ef9d754283dcc8a27cc2af05b43b105d648b
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Apr 7 21:57:27 2018 +0800
+
+    Added some notes
+
+commit ffe79d7dcaf6c10552da5526abf2efab13c69f36
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sat Apr 7 21:53:12 2018 +0800
+
+    Update js.html
+
+commit 62060b14f0f11bb6f2b5ecae2f9254a7d6459cc8
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Apr 7 21:02:26 2018 +0800
+
+    Added notes about AJAX
+
+commit c06edb15fab10f7dd9841f64b3b6f9f37b78476f
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Wed Apr 4 17:42:55 2018 +0800
+
+    Added notes about JavaScript like functions and arrays
+
+commit 150675dda77773ddb5409952adb75ceb88b0a479
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 2 00:56:54 2018 +0800
+
+    Added js.html
+
+commit 72887a21e35ba03d10939551c81f3a2d4916f54c
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 2 00:43:38 2018 +0800
+
+    Added css.html
+
+commit b3138be6bc29835d20770064bc3449e1fd54dd9f
+Merge: 9105199 a8a4e84
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Mar 25 14:25:29 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160146/WebTechLec
+
+commit 9105199eefe2b940fad1c8a05eec24ddbeef2249
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sun Mar 25 14:19:57 2018 +0800
+
+    Added JavaScript notes
+
+commit a8a4e847bba92eb411fe6c09aab89fd0afe04303
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Mar 24 18:49:35 2018 +0800
+
+    Added the introduction of JavaScript notes
+
+commit eb12cbcf4bbb6e397f2b679a455d741fbdb6846b
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Thu Mar 22 00:23:08 2018 +0800
+
+    Updated CSS Notes
+
+commit e1480f37a36970e977ad13e19f04e37780116ff4
+Merge: 8ad9062 41fedb9
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sat Mar 17 23:37:53 2018 +0800
+
+    Updated CSS notes
+
+commit 8ad9062f0af492093d8d2ce73ecd9de41d85cb32
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sat Mar 17 23:35:24 2018 +0800
+
+    Updated CSS notes
+
+commit 6586ed90e94fd791c2f63d87c4466dd12d199171
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Sat Mar 17 23:34:10 2018 +0800
+
+    Updated CSS notes
+
+commit 41fedb99c09ab9310b5d3e778a345f1cae8b74c0
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Sat Mar 17 17:53:07 2018 +0800
+
+    added CSS declarations upto strings
+
+commit 9d85143028e1440fc8f8d7b026b985f2aca86825
+Author: Nikki <2160819@slu.edu.ph>
+Date:   Thu Mar 15 21:43:14 2018 +0800
+
+    Added some notes, edited notes, (placings)
+
+commit bc93165ee10e4e85312ce288bacbc8afbe07dcc4
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Wed Mar 14 22:19:52 2018 +0800
+
+    Added notes
+
+commit 15391015fd90aa853da97e4ecddfbfb51bb39940
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Tue Mar 13 21:17:10 2018 +0800
+
+    Fixed some notes in midterm.html
+
+commit 99c364687215a4c7f2a0ef58eb567841cc957126
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Mar 12 16:46:15 2018 +0800
+
+    Started midterm.html and added images source
+
+commit e9ec0326df4e2e015f36c8d0037b4eb228332fb4
+Author: Nikki Ganotan <2160819@slu.edu.ph>
+Date:   Fri Mar 9 06:58:02 2018 +0800
+
+    Added some notes in the midterm notes
+
+commit 2a630b64b85e9f12ac71a8d73357988aa80ba57e
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Wed Mar 7 21:17:04 2018 +0800
+
+    Fixed and Organized Repo
+
+commit 6a35dcbb661a423f1b07d480b86679903aff069f
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Wed Mar 7 21:11:37 2018 +0800
+
+    Added CSS notes
