@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="css/theme.css" type="text/css">
-</head>
+  <link rel="stylesheet" href="css/theme.css" type="text/css"> </head>
 
 <body style="background-image: url('images/bg.jpg');font-family:url('css/fonts/RobotoSlab-Regular.otf')">
   <ul>
@@ -253,28 +252,29 @@
               <li>:before, ::before</li>
               <li>:after, ::after</li>
             </ul>
-              <ul><button class="" type="button" data-toggle="collapse" data-target="#readMore2" aria-expanded="false" aria-controls="collapseExample" id="readMore-bot">
-            Read more... </button></ul>
-              <div class="collapse" id="readMore2">
-            <ul>Simple Selectors
-              <ul>
-                <li>Universal Selector - matches everything</li>
-                <li>Type Selector - different elements</li>
-                <li>ID Selector - value of the id, case-sensitive (#)</li>
-                <li>Class Selector - class variable</li>
-                <li>Attribute Selector - value of attributes</li>
-                <li>Pseudo-Classes</li>
+            <ul>
+              <button class="" type="button" data-toggle="collapse" data-target="#readMore2" aria-expanded="false" aria-controls="collapseExample" id="readMore-bot"> Read more... </button>
+            </ul>
+            <div class="collapse" id="readMore2">
+              <ul>Simple Selectors
                 <ul>
-                  <li>Dynamic Pseudo-Classes</li>
-                  <li>Target Pseudo-Classes</li>
-                  <li>Language Pseudo-Classes</li>
-                  <li>UI Element State Pseudo-Classes</li>
-                  <li>Structural Pseudo-Classes</li>
-                  <li>Negotation Pseudo-Classes</li>
+                  <li>Universal Selector - matches everything</li>
+                  <li>Type Selector - different elements</li>
+                  <li>ID Selector - value of the id, case-sensitive (#)</li>
+                  <li>Class Selector - class variable</li>
+                  <li>Attribute Selector - value of attributes</li>
+                  <li>Pseudo-Classes</li>
+                  <ul>
+                    <li>Dynamic Pseudo-Classes</li>
+                    <li>Target Pseudo-Classes</li>
+                    <li>Language Pseudo-Classes</li>
+                    <li>UI Element State Pseudo-Classes</li>
+                    <li>Structural Pseudo-Classes</li>
+                    <li>Negotation Pseudo-Classes</li>
+                  </ul>
                 </ul>
               </ul>
-            </ul>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -489,13 +489,13 @@
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js2.jpg"> </div>
-          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+          <div class="col-md-7" style="background-color:rgba(255,255,255,.3);">
             <h2 class="pt-3 text-center">Type of Scripts</h2>
             <ul class="nav nav-pills flex-column">
               <div class="row">
                 <div class="col-md-12">
                   <div class="row">
-                    <div class="col-4 bg-info">
+                    <div class="col-4">
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
                           <a href="" class="active nav-link" data-toggle="pill" data-target="#linked">Linked</a>
@@ -511,7 +511,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="col-8 bg-info">
+                    <div class="col-8 bg-info p-2">
                       <div class="tab-content">
                         <div class="tab-pane fade show active" id="linked" role="tabpanel">
                           <ul class="">
@@ -574,23 +574,23 @@
                 </ul>
                 <li>Most of the APIs are accessed from scripts via the global object Window</li>
               </ul>
+              <ul>
+                <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
+                <li>Accessed in the Document object property of the global Window object</li>
+              </ul>
             </ul>
           </div>
           <div class="col-md-6 align-self-center">
             <img class="img-fluid d-block w-100 img-thumbnail" src="img/js3.png"> </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <ul>
-              <li>A parsed HTML document is represented by a DOM tree, which contain nodes representing elements, element attributes, textual content, and other HTML document components (e.g DOCTYPE, comments)</li>
-              <li>Accessed in the Document object property of the global Window object</li>
-            </ul>
-          </div>
+          <div class="col-md-12"> </div>
         </div>
+        <div class="row"> </div>
         <div class="row">
           <div class="col-md-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js4.png"> </div>
-          <div class="col-md-7" style="background-color:rgba(255,255,255,.6);">
+          <div class="col-md-7 h-50 p-4" style="background-color:rgba(255,255,255,.6);">
             <h2 class="text-primary pt-3 text-center">DOM (Document Object Model)</h2>
             <ul>
               <li>API that allows access to the HTML document from within scripts associated with the web page</li>
@@ -658,7 +658,7 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-7" style="background-color:rgba(255,255,255,.7);">
-            <h2 class="text-primary text-center">Primitive data type</h2>
+            <h2 class="text-primary text-center m-4">Primitive data type</h2>
             <ul>Numbers
               <ul>
                 <li>decimal notation (integer, floating-point, scientific notation)</li>
@@ -732,7 +732,7 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
+          <div class="col-md-7 p-3" style="background-color:rgba(255,255,255,.5);">
             <h2 class="text-primary text-center">JavaScript is loosely and dynamically-typed</h2>
             <ul>
               <li>var var1 = 100; //v1 is a number</li>
@@ -766,8 +766,10 @@
                 <ul>}</ul> }</ul>
             </ul>
             <ul>*if item 1 = item 2, it returns undefined because there is no return if item 1 is equal to item 2
-              <br><br><button class="" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample" id="readMore-bot">
-            Read more... </button></ul>
+              <br>
+              <br>
+              <button class="" type="button" data-toggle="collapse" data-target="#readMore" aria-expanded="false" aria-controls="collapseExample" id="readMore-bot"> Read more... </button>
+            </ul>
             <br>
             <div class="collapse" id="readMore">
               <div class="card card-body">
@@ -822,20 +824,20 @@
         <div class="row mb-5">
           <div class="col-md-6" style="background-color:rgba(255,255,255,.2);">
             <h2 class="text-primary text-center">JavaScript Event Handling</h2>
-            <ul class="text-light">
-              <li>onclick Event Type</li>
+            <ul class="text-light bg-primary">
+              <li class="text-secondary">onclick Event Type</li>
               <ul>
                 <li>most used type of event that triggers when a user clicks using the left button of mouse.</li>
               </ul>
-              <li>onsubmit Event Type</li>
+              <li class="text-secondary">onsubmit Event Type</li>
               <ul>
                 <li>event that triggers when a user tries to submit a form.</li>
               </ul>
-              <li>onmouseover Event Type</li>
+              <li class="text-secondary">onmouseover Event Type</li>
               <ul>
                 <li>event that occurs when a user brings the mouse over any element.</li>
               </ul>
-              <li>onmouseout Event Type</li>
+              <li class="text-secondary">onmouseout Event Type</li>
               <ul>
                 <li>event that occurs when a user moves the mouse out from the element.</li>
               </ul>
@@ -866,8 +868,8 @@
     <div class="py-5">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-md-7" style="background-color:rgba(255,255,255,.5);">
-            <h2 class="text-primary text-center">Event Propagation Order(DOM-compliant browsers)</h2>
+          <div class="col-md-7 p-3" style="background-color:rgba(255,255,255,.5);">
+            <h2 class="text-center text-light">Event Propagation Order(DOM-compliant browsers)</h2>
             <ul>
               <ul>
                 <li>capturing the phase</li>
@@ -887,7 +889,7 @@
           <div class="col-md-5 my-5">
             <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/js12.png"> </div>
           <div class="col-md-7">
-            <h2 class="text-primary pt-3">Event Handler Registration</h2>
+            <h2 class="pt-3 text-center text-light">Event Handler Registration</h2>
             <div id="accordion">
               <div class="card">
                 <div class="card-header bg-dark" id="headingOne">
@@ -1121,7 +1123,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </div>
-      <div class="text-white bg-primary">
+  <div class="text-white bg-primary">
     <div class="container">
       <div class="row">
         <div class="p-4 col-md-8">
@@ -1152,6 +1154,9 @@
       </div>
     </div>
   </div>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:180px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
 
 </html>
