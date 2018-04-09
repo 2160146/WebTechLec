@@ -1,4 +1,10 @@
-commit 732f7a36a9aadb282493d4c4056a39dd117f4206 (HEAD -> master, origin/master, origin/HEAD)
+commit b4182c5377b4707f0f08bec3684a4a05c65d6dbc (HEAD -> master, origin/master, origin/HEAD)
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 9 13:35:39 2018 +0800
+
+    Edited the quiz
+
+commit 732f7a36a9aadb282493d4c4056a39dd117f4206
 Author: Jerome Francis Salazar <2162253@slu.edu.ph>
 Date:   Mon Apr 9 13:20:21 2018 +0800
 
@@ -34,7 +40,7 @@ Date:   Mon Apr 9 12:51:36 2018 +0800
 
     Polishing
 
-commit 0b75e0603613936677cf7eb2651a8cfaeed7472f (HEAD -> master, origin/master, origin/HEAD)
+commit 0b75e0603613936677cf7eb2651a8cfaeed7472f
 Author: Mitch Galatcha <2162752@slu.edu.ph>
 Date:   Sun Apr 8 18:40:07 2018 +0800
 
