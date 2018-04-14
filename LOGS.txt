@@ -1,4 +1,54 @@
-commit b4182c5377b4707f0f08bec3684a4a05c65d6dbc (HEAD -> master, origin/master, origin/HEAD)
+commit d0ba295ace20ba81e2ddaa900ef006c162b7aa48 (HEAD -> master, origin/master, origin/HEAD)
+Merge: dfe72bb 58e7dd3
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 9 14:08:25 2018 +0800
+
+    Added title
+
+commit dfe72bbb7148196afa7d41a2507fa6bcf7ed8286
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 9 14:07:04 2018 +0800
+
+    Added title
+
+commit 58e7dd359e63f7564e1bdafcca6c943d668d11ae
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 14:04:29 2018 +0800
+
+    Edit
+
+commit 00c429fcbb1fabc1ca446a2c811fcce491a651b7
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 14:02:36 2018 +0800
+
+    edit
+
+commit 4efddb054d857ab9704d2bd10e60ffec1bb9e038
+Author: Jerome Francis Salazar <2162253@slu.edu.ph>
+Date:   Mon Apr 9 13:56:59 2018 +0800
+
+    Added title
+
+commit 5bbdaedbb9b8e50265fdc975c0105bcc3198d171
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:40:20 2018 +0800
+
+    Minor Alteration
+
+commit 66ea373f690a63b2c691304b4e30373501d4f383
+Merge: 732d210 b4182c5
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:37:41 2018 +0800
+
+    Merge branch 'master' of https://github.com/VeaHufana/WebTechLec
+
+commit 732d21060822c83c34b9780d04150d5eab122103
+Author: 2160146 <2160146@slu.edu.ph>
+Date:   Mon Apr 9 13:35:52 2018 +0800
+
+    Minor ALterations
+
+commit b4182c5377b4707f0f08bec3684a4a05c65d6dbc
 Author: Jerome Francis Salazar <2162253@slu.edu.ph>
 Date:   Mon Apr 9 13:35:39 2018 +0800
 
