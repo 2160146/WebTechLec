@@ -1,12 +1,12 @@
-.col-md-6-col-lg-4 {
+.col-md-6 {
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
     -o-perspective: 1000;
     perspective: 1000;
 }
     /* flip the pane when hovered */
-    .col-md-6-col-lg-4:hover .flipper, 
-	.col-md-6-col-lg-4.hover .flipper {
+    .col-md-6:hover .card-border, 
+	.col-md-6 .card-border {
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
@@ -14,7 +14,7 @@
     }
 
 /* flip speed goes here */
-.flipper {
+.card-border {
     -webkit-transition: 0.6s;
     -webkit-transform-style: preserve-3d;
     -moz-transition: 0.6s;
@@ -26,7 +26,7 @@
     position: relative;
 }
 /* hide back of pane during swap */
-.front, .back {
+#front, #back {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -36,17 +36,18 @@
     left: 0;
 }
 /* front pane, placed above back */
-.front {
+#front {
     z-index: 2;
-    border:2px solid black;
+    margin:auto;
+    padding:auto;
 }
 /* back, initially hidden pane */
-.back {
+#back {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
     margin:auto;
     padding:auto;
-    position:absolute 
+    position:absolute;        
 }
