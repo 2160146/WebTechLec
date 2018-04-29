@@ -46,6 +46,7 @@
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    border:2px solid black;
-    padding:1rem; 
+    margin:auto;
+    padding:auto;
+    position:absolute 
 }
