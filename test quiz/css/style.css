@@ -6,12 +6,21 @@
 }
     /* flip the pane when hovered */
     .col-md-6:hover .card-border, 
-	.col-md-6 .card-border {
+	.col-md-6.hover .card-border {
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
         -o-transform: rotateY(180deg);
         transform: rotateY(180deg);
     }
+	
+	.col-md-6:hover .flipper, 
+	.col-md-6.hover .flipper {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+	
 
 /* flip speed goes here */
 .card-border {
@@ -25,6 +34,19 @@
     transform-style: preserve-3d;
     position: relative;
 }
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
 /* hide back of pane during swap */
 #front, #back {
     -webkit-backface-visibility: hidden;
@@ -35,11 +57,23 @@
     top: 0;
     left: 0;
 }
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+
+}
 /* front pane, placed above back */
 #front {
     z-index: 2;
     margin:auto;
     padding:auto;
+}
+
+.front {
+    z-index: 2;
 }
 /* back, initially hidden pane */
 #back {
@@ -50,4 +84,12 @@
     margin:auto;
     padding:auto;
     position:absolute;        
+}
+
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
