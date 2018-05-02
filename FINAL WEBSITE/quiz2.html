@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/quiz2.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
   <script src="quizResources/js/scroll.js" type="text/javascript"></script>    
+  <script src="quizResources/js/quiz2.js" type="text/javascript"></script>    
 </head>
 
  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -37,7 +38,7 @@
             <a href="#quiz-container" id="rev-quiz">Reveal Quiz!</a>
         </div>
         <div id="quiz-container">
-
+		 <form class="" method="post" action="https://formspree.io/">
             <!--True or False-->
             <div class="list-group">
                 <p class = "questions">HTML was initially developed at CERN then the IETF then the W3c, and then also the WHATWG  </p>
@@ -45,12 +46,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t1" name="tf1">
+                            <input type="radio" id="t1" name="tf1" value="correct">
                             <label for="t1">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f1" name="tf1">
+                            <input type="radio" id="f1" name="tf1" value="wrong">
                             <label for="f1">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -62,12 +63,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t2" name="tf2">
+                            <input type="radio" id="t2" name="tf2" value="correct">
                             <label for="t2">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f2" name="tf2">
+                            <input type="radio" id="f2" name="tf2" value="wrong">
                             <label for="f2">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -79,12 +80,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t3" name="tf3">
+                            <input type="radio" id="t3" name="tf3" value="wrong">
                             <label for="t3">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f3" name="tf3">
+                            <input type="radio" id="f3" name="tf3" value="correct">
                             <label for="f3">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -96,12 +97,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t4" name="tf4">
+                            <input type="radio" id="t4" name="tf4" value="wrong">
                             <label for="t4">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f4" name="tf4">
+                            <input type="radio" id="f4" name="tf4" value="correct">
                             <label for="f4">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -113,12 +114,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t5" name="tf5">
+                            <input type="radio" id="t5" name="tf5" value="correct">
                             <label for="t5">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f5" name="tf5">
+                            <input type="radio" id="f5" name="tf5" value="wrong">
                             <label for="f5">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -130,12 +131,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t6" name="tf6">
+                            <input type="radio" id="t6" name="tf6" value="wrong">
                             <label for="t6">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f6" name="tf6">
+                            <input type="radio" id="f6" name="tf6" value="correct">
                             <label for="f6">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -147,12 +148,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t7" name="tf7">
+                            <input type="radio" id="t7" name="tf7" value="correct">
                             <label for="t7">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f7" name="tf7">
+                            <input type="radio" id="f7" name="tf7" value="wrong">
                             <label for="f7">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -164,12 +165,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t8" name="tf8">
+                            <input type="radio" id="t8" name="tf8" value="wrong">
                             <label for="t8">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f8" name="tf8">
+                            <input type="radio" id="f8" name="tf8" value="" value="correct">
                             <label for="f8">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -181,12 +182,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t9" name="tf9">
+                            <input type="radio" id="t9" name="tf9" value="correct">
                             <label for="t9">True</label>
                             <div class="check"></div>
                         </li>
                             <li class = "answers_item">
-                            <input type="radio" id="f9" name="tf9">
+                            <input type="radio" id="f9" name="tf9" value="wrong">
                             <label for="f9">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -198,12 +199,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t10" name="tf10">
+                            <input type="radio" id="t10" name="tf10" value="correct">
                             <label for="t10">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f10" name="tf10">
+                            <input type="radio" id="f10" name="tf10" value="wrong">
                             <label for="f10">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -215,12 +216,12 @@
                 <div class="answers">   
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t11" name="tf11">
+                            <input type="radio" id="t11" name="tf11" value="correct">
                             <label for="t11">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f11" name="tf11">
+                            <input type="radio" id="f11" name="tf11" value="wrong">
                             <label for="f11">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -232,12 +233,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t12" name="tf12">
+                            <input type="radio" id="t12" name="tf12" value="correct">
                             <label for="t12">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f12" name="tf12">
+                            <input type="radio" id="f12" name="tf12" value="wrong">
                             <label for="f12">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -249,12 +250,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t13" name="tf13">
+                            <input type="radio" id="t13" name="tf13" value="wrong">
                             <label for="t13">True</label>
                             <div class="check"></div>
                         </li>
                             <li class = "answers_item">
-                            <input type="radio" id="f13" name="tf13">
+                            <input type="radio" id="f13" name="tf13" value="correct">
                             <label for="f13">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -266,12 +267,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t14" name="tf14">
+                            <input type="radio" id="t14" name="tf14" value="correct">
                             <label for="t14">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f14" name="tf14">
+                            <input type="radio" id="f14" name="tf14" value="wrong">
                             <label for="f14">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -283,12 +284,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t15" name="tf15">
+                            <input type="radio" id="t15" name="tf15" value="wrong">
                             <label for="t15">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f15" name="tf15">
+                            <input type="radio" id="f15" name="tf15" value="correct">
                             <label for="f15">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -300,12 +301,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t16" name="tf16">
+                            <input type="radio" id="t16" name="tf16" value="wrong">
                             <label for="t16">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f16" name="tf16">
+                            <input type="radio" id="f16" name="tf16" value="correct">
                             <label for="f16">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -317,12 +318,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t17" name="tf17">
+                            <input type="radio" id="t17" name="tf17" value="correct">
                             <label for="t17">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f17" name="tf17">
+                            <input type="radio" id="f17" name="tf17" value="wrong">
                             <label for="f17">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -334,12 +335,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t18" name="tf18">
+                            <input type="radio" id="t18" name="tf18" value="correct">
                             <label for="t18">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f18" name="tf18">
+                            <input type="radio" id="f18" name="tf18" value="wrong">
                             <label for="f18">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -351,12 +352,12 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t19" name="tf19">
+                            <input type="radio" id="t19" name="tf19" value="wrong">
                             <label for="t19">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f19" name="tf19">
+                            <input type="radio" id="f19" name="tf19" value="correct">
                             <label for="f19">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
@@ -368,18 +369,19 @@
                 <div class="answers">
                     <ul>
                         <li class = "answers_item">
-                            <input type="radio" id="t20" name="tf20">
+                            <input type="radio" id="t20" name="tf20" value="correct">
                             <label for="t20">True</label>
                             <div class="check"></div>
                         </li>
                         <li class = "answers_item">
-                            <input type="radio" id="f20" name="tf20">
+                            <input type="radio" id="f20" name="tf20" value="wrong">
                             <label for="f20">False</label>
                             <div class="check"><div class="inside"></div></div>
                         </li>
                     </ul>
             </div>
-            <br><a href="#begin-cont" id="submit">Submit</a>
+            <br><div class="form-group w-100 text-center"><input type="submit" id="submit" value="Submit" onClick="checkAllQs()" class="btn btn-lg btn-primary mx-1"/></div>
+			</form>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
     </body>
