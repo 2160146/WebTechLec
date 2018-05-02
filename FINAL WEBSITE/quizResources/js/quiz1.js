@@ -65,9 +65,14 @@ function checkQs(questionNum){
 }
 
 function checkAllQs(){
-	for(var k = 0; k < questions.length; k++){
-		checkQs(questions[k]);
-	}
-	document.getElementById("showScore").innerHTML = "Your score is: " + score + "/" + questions.length;
-	
+	var getDiv = document.getElementById("showScore");
+    getDiv.innerHTML += '<div class="container py-5">'
+            + '<div class="row">'
+                + '<div class="col-md-12">'
+                    + '<h1 class="display-3 mb-4 text-warning">MULTIPLE CHOICE QUIZ RESULT</h1>'
+                    + '<h1 class="text-light">Your Score is : ' + score + ' / 20</h1><br>'
+                    + '<input class="btn btn-lg btn-light mx-1" type="button" value="GO BACK TO QUIZ" onClick="window.location.reload()">'
+                + '</div>'
+            + '</div>'
+        + '</div>'
 }
