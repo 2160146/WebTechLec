@@ -165,7 +165,8 @@ input[type=radio]:checked ~ label{
     padding: 2vh;
     text-decoration: none;
     color: #000;
-    border:5px solid #1aff8c 
+    border:5px solid #1aff8c;
+    cursor:pointer
 }
 
 #submit:hover {
