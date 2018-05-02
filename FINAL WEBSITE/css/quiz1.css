@@ -74,7 +74,7 @@ video.fullscreen {
     margin: auto;
     display: inline-block;
     position: relative;
-    width: 65vh;
+    width: 75vh;
     text-align: center;
     padding: 1rem;
 }
@@ -87,7 +87,7 @@ video.fullscreen {
 .answers_item label{
     display: block;
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3vh;
     border: 5px solid;
     padding: 3%;
