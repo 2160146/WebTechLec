@@ -6226,3 +6226,51 @@ html, body {
     border: 2px solid transparent;
     color: #0d1a26
 }
+
+#quiz1{
+    border: 2px solid #00ce9e;
+    color: #00ce9e;
+    font-weight:bolder;
+}
+
+#quiz1:hover {
+    border: 2px solid #00ce9e;
+    color: #fff;
+    background-color: #00ce9e; 
+}
+
+#quiz2{
+    border: 2px solid #6F9FD8;
+    color: #6F9FD8;
+    font-weight:bolder;
+}
+
+#quiz2:hover {
+    border: 2px solid #6F9FD8;
+    color: #fff;
+    background-color: #6F9FD8; 
+}
+
+#quiz3{
+    border: 2px solid #F6D155;
+    color: #ECDB54;
+    font-weight:bolder;
+}
+
+#quiz3:hover {
+    border: 2px solid #F6D155;
+    color: #fff;
+    background-color: #F6D155; 
+}
+
+#quiz4{
+    border: 2px solid #E94B3C;
+    color: #E94B3C;
+    font-weight:bolder;
+}
+
+#quiz4:hover {
+    border: 2px solid #E94B3C;
+    color: #fff;
+    background-color: #E94B3C; 
+}

@@ -52,15 +52,6 @@ html {
 }
 
 /* hide back of pane during swap */
-#front, #back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .front, .back {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -69,31 +60,22 @@ html {
     position: absolute;
 
 }
-/* front pane, placed above back */
-#front {
-    z-index: 2;
-    margin:auto;
-    padding:auto;
-}
 
+/* front pane, placed above back */
 .front {
     z-index: 2;
 }
+
 /* back, initially hidden pane */
-#back {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    margin:auto;
-    padding:auto;
-    position:absolute;        
-}
-
-
 .back {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    margin: auto;
+    }
+
+.flipper {
+    border:1px solid transparent;
+    
 }

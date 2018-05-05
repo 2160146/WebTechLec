@@ -4,6 +4,11 @@ html, body {
     margin: 0;
 }
 
+@font-face {
+    font-family: Roboto Slab;
+    src: url("css/fonts/RobotoSlab-Regular.ttf");
+}
+
 #begin-cont {
     background: black;
     padding-top: 15vh;
@@ -162,10 +167,10 @@ input[type=radio]:checked ~ label{
     font-size: 4vh;
     font-weight: 800;
     font-family: starwars1;
-    padding: 2vh;
+    padding: 1vh;
     text-decoration: none;
     color: #000;
-    border:5px solid #1aff8c;
+    border:3px solid #1aff8c;
     cursor:pointer
 }
 
@@ -178,4 +183,16 @@ input[type=radio]:checked ~ label{
 @font-face {
     font-family: starwars1;
     src: url(fonts/font1.ttf);
+}
+
+.list-group {
+    background-color: #1aff8c;
+}
+
+.nav-item i {
+    color: #1aff8c;
+}
+
+.nav-item b {
+    color: #1aff8c;
 }
