@@ -64,11 +64,13 @@ function checkQs(questionNum){
 	count++;	
 }
 
-function checkAllQs() {
+function checkAllQs(){
 	for(var k = 0; k < questions.length; k++){
 		checkQs(questions[k]);
 	}
-	var getDiv = document.getElementById("showScore");
+	var ques = document.getElementById("quiz-container");
+    ques.style.display = 'none';
+    var getDiv = document.getElementById("showScore");
     getDiv.innerHTML += '<div class="container py-5">'
             + '<div class="row">'
                 + '<div class="col-md-12">'
@@ -77,5 +79,8 @@ function checkAllQs() {
                     + '<input class="btn btn-lg btn-light mx-1" type="button" value="GO BACK TO QUIZ" onClick="window.location.reload()">'
                 + '</div>'
             + '</div>'
-        + '</div>'
+        + '</div>';
+    getDiv.style.display = 'block';
+    getDiv.style.paddingTop = '10%';
+    
 }
