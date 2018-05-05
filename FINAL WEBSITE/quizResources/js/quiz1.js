@@ -1,4 +1,4 @@
-var textdisplay = "";
+﻿var textdisplay = "";
 
 var answers = new Array(20);
 
@@ -64,7 +64,10 @@ function checkQs(questionNum){
 	count++;	
 }
 
-function checkAllQs(){
+function checkAllQs() {
+	for(var k = 0; k < questions.length; k++){
+		checkQs(questions[k]);
+	}
 	var getDiv = document.getElementById("showScore");
     getDiv.innerHTML += '<div class="container py-5">'
             + '<div class="row">'
