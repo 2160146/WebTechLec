@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+a {
+  color: white;
+}
+a:hover {
+  color: limegreen;
+}
+
+.filterwrapper {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.svgtext {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.glitch-filter-example {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.glitch-filter-example__heading {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 600px) {
+    .glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media(min-width: 600px) {
+    .glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+} 
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media(min-width: 1200px) {
+    .glitch-filter-example__filtered-text {
+  -webkit-filter: url(#filter);
+          filter: url(#filter);
+  fill: white;
+  font-family: 'Share Tech Mono', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+}
+.top-r,
+.bot-r,
+.top-g,
+.bot-g {
+  stroke: #ffffff;
+}
+
+.top-r {
+  stroke-width: 100%;
+  -webkit-animation: topani 3.5s linear infinite;
+          animation: topani 3.5s linear infinite;
+}
+
+.bot-r {
+  stroke-width: 100%;
+  -webkit-animation: botani 4s linear infinite;
+          animation: botani 4s linear infinite;
+}
+
+.top-g {
+  stroke-width: 50%;
+  animation: topani 4s linear reverse infinite;
+}
+
+.bot-g {
+  stroke-width: 50%;
+  animation: botani 3.5s linear reverse infinite;
+}
+
+@-webkit-keyframes topani {
+  5% {
+    stroke-width: 42px;
+  }
+  11% {
+    stroke-width: 44px;
+  }
+  19% {
+    stroke-width: 108px;
+  }
+  26% {
+    stroke-width: 5px;
+  }
+  34% {
+    stroke-width: 49px;
+  }
+  40% {
+    stroke-width: 178px;
+  }
+  44% {
+    stroke-width: 7px;
+  }
+  52% {
+    stroke-width: 23px;
+  }
+  59% {
+    stroke-width: 83px;
+  }
+  63% {
+    stroke-width: 99px;
+  }
+  74% {
+    stroke-width: 25px;
+  }
+  78% {
+    stroke-width: 53px;
+  }
+  88% {
+    stroke-width: 100px;
+  }
+  93% {
+    stroke-width: 153px;
+  }
+  100% {
+    stroke-width: 125px;
+  }
+}
+
+@keyframes topani {
+  5% {
+    stroke-width: 42px;
+  }
+  11% {
+    stroke-width: 44px;
+  }
+  19% {
+    stroke-width: 108px;
+  }
+  26% {
+    stroke-width: 5px;
+  }
+  34% {
+    stroke-width: 49px;
+  }
+  40% {
+    stroke-width: 178px;
+  }
+  44% {
+    stroke-width: 7px;
+  }
+  52% {
+    stroke-width: 23px;
+  }
+  59% {
+    stroke-width: 83px;
+  }
+  63% {
+    stroke-width: 99px;
+  }
+  74% {
+    stroke-width: 25px;
+  }
+  78% {
+    stroke-width: 53px;
+  }
+  88% {
+    stroke-width: 100px;
+  }
+  93% {
+    stroke-width: 153px;
+  }
+  100% {
+    stroke-width: 125px;
+  }
+}
+@-webkit-keyframes botani {
+  2% {
+    stroke-width: 96px;
+  }
+  12% {
+    stroke-width: 35px;
+  }
+  23% {
+    stroke-width: 171px;
+  }
+  26% {
+    stroke-width: 76px;
+  }
+  34% {
+    stroke-width: 126px;
+  }
+  45% {
+    stroke-width: 151px;
+  }
+  50% {
+    stroke-width: 184px;
+  }
+  60% {
+    stroke-width: 97px;
+  }
+  70% {
+    stroke-width: 51px;
+  }
+  77% {
+    stroke-width: 116px;
+  }
+  80% {
+    stroke-width: 153px;
+  }
+  90% {
+    stroke-width: 181px;
+  }
+  103% {
+    stroke-width: 184px;
+  }
+}
+@keyframes botani {
+  2% {
+    stroke-width: 96px;
+  }
+  12% {
+    stroke-width: 35px;
+  }
+  23% {
+    stroke-width: 171px;
+  }
+  26% {
+    stroke-width: 76px;
+  }
+  34% {
+    stroke-width: 126px;
+  }
+  45% {
+    stroke-width: 151px;
+  }
+  50% {
+    stroke-width: 184px;
+  }
+  60% {
+    stroke-width: 97px;
+  }
+  70% {
+    stroke-width: 51px;
+  }
+  77% {
+    stroke-width: 116px;
+  }
+  80% {
+    stroke-width: 153px;
+  }
+  90% {
+    stroke-width: 181px;
+  }
+  103% {
+    stroke-width: 184px;
+  }
+}
