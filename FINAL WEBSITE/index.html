@@ -4,36 +4,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/glitch.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/theme.css" type="text/css">
-  <script src="quizResources/js/scroll.js" type="text/javascript"></script> 
+    <script src="style/warpspeed.js.download" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="style/main.css">
+  <script src="quizResources/js/scroll.js" type="text/javascript"></script>
 </head>
 
-<body style="background-image: url('C:/Users/HP/Desktop/index_background.jpg');">
+<body>
+
+    <div id="background">
+	<canvas id="bkFrame" width="1349" height="613"></canvas>
+	<script type="text/javascript">
+		ai_background=new WarpSpeed("bkFrame",{targetSpeed:5, speedAdjFactor:5, shape:"square", backgroundColor:"black", speedWhileLoading:20});
+	</script>
+</div>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" class="filterwrapper">
+    <defs>
+      <svg id="glitchmask-r" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <line class="top-r" x1="0" y1="0" x2="100%" y2="0"> </line>
+        <line class="bot-r" x1="0" y1="100%" x2="100%" y2="100%"></line>
+      </svg>
+      <svg id="glitchmask-g" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <line class="top-g" x1="0" y1="0" x2="100%" y2="0"></line>
+        <line class="bot-g" x1="0" y1="100%" x2="100%" y2="100%"></line>
+      </svg>
+      <filter color-interpolation-filters="sRGB" id="filter" width="100%" heigth="100%" x="0" y="0">
+        <feFlood flood-color="black" result="black"></feFlood>
+        <!-- red text start -->
+        <feFlood flood-color="red" result="REDTXT_FLOOD_10"></feFlood>
+        <feComposite operator="in" in="REDTXT_FLOOD_10" in2="SourceAlpha" result="REDTXT_COMP_20"></feComposite>
+        <feOffset in="SourceGraphic" dx="-2" dy="0" result="REDTXT_OFFSET_30"></feOffset>
+        <feMerge result="REDTXT_MERGE_40">
+          <feMergeNode in="black"></feMergeNode>
+          <feMergeNode in="REDTXT_COMP_20"></feMergeNode>
+          <feMergeNode in="REDTXT_OFFSET_30"></feMergeNode>
+        </feMerge>
+        <feImage preserveAspectRatio="none" id="mask-r" result="REDTXT_IMG_50" xlink:href="#glitchmask-r"></feImage>
+        <feComposite in2="REDTXT_IMG_50" in="REDTXT_MERGE_40" operator="out" result="REDTXT_COMP_60"></feComposite>
+        <!-- red text end -->
+        <!-- green text start -->
+        <feFlood flood-color="limegreen" result="GREENTXT_FLOOD_10"></feFlood>
+        <feComposite operator="in" in="GREENTXT_FLOOD_10" in2="SourceAlpha" result="GREENTXT_COMP_20"></feComposite>
+        <feOffset in="SourceGraphic" dx="2" dy="0" result="GREENTXT_OFFSET_30"></feOffset>
+        <feMerge result="GREENTXT_MERGE_40">
+          <feMergeNode in="black"></feMergeNode>
+          <feMergeNode in="GREENTXT_COMP_20"></feMergeNode>
+          <feMergeNode in="GREENTXT_OFFSET_30"></feMergeNode>
+        </feMerge>
+        <feImage preserveAspectRatio="none" id="mask-g" result="GREENTXT_IMG_50" xlink:href="#glitchmask-g"></feImage>
+        <feComposite in2="GREENTXT_IMG_50" in="GREENTXT_MERGE_40" operator="out" result="GREENTXT_COMP_60"></feComposite>
+        <!-- green text end -->
+        <feMerge result="MERGE_10">
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+          <feMergeNode in="REDTXT_COMP_60"></feMergeNode>
+          <feMergeNode in="GREENTXT_COMP_60"></feMergeNode>
+        </feMerge>
+      </filter>
+    </defs>
+  </svg>
   <div class="text-center h-100 w-100 m-0">
     <div class="container mx-auto py-5">
       <div class="row">
         <div class="col-md-12 my-3">
           <a href="index.html">
-            <img class="img-fluid d-block mx-auto p-0" src="images/logo.svg" width="350px"> </a>
+            <img class="bg-fluid" src="images/logo.svg"> </a>
           <div class="col-md-12" id="home">
-            <h1 class="text-white">
-              <b>Web Systems and Technologies</b>
-            </h1>
+            <figure class="glitch-filter-example">
+              <svg class="glitch-filter-example__demo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 50%; width: 100%;">
+                <text class="glitch-filter-example__filtered-text" y="50%" text-anchor="middle" x="50%">Web Systems and Technology</text>
+              </svg>
+            </figure>
             <div class="col-md-12">
               <div class="bounce">
                 <a class="" href="#bg" id="arrow-bot">
                   <i class="fa d-inline fa-lg fa-chevron-down"></i>
                 </a>
               </div>
-              <video src="images/background_animation2.mp4" poster="images/webtech_background.jpg" style="position: fixed;top:50%;
-  left:50%;
-    min-width:100%;
-    min-height:100%;
-    width:auto;
-    height:auto;
-    z-index:-100;
-    transform:translate(-50%, -50%);" autoplay=""> </video>
             </div>
           </div>
         </div>
@@ -45,37 +93,68 @@
       <div class="row"> </div>
     </div>
   </div>
+    
   <div class="text-center h-100 w-100 m-0" id="bg" style="background-image: url(&quot;images/index_background.jpg&quot;); background-position: center center;">
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-md-6">
+                <h1 class="py-5" id="lesson">LESSON</h1>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid d-block mx-auto bg-info" src="images/Untitled-1.png" width="200 200px" height="200px 200">
+                  <p class="">Java Servlet and PHP</p>
+              </div>
+          </div>
+          <div class="row py-5">
+              <div class="col-md-6">
+                <img class="img-fluid d-block mx-auto bg-info" src="images/Education_28-512.png" width="200 200px" height="200px 200">
+                  <p class="">Quiz about the lesson</p>
+              </div>
+              <div class="col-md-6">
+                <h1 class="py-5" id="quiz">QUIZ</h1>
+              </div>
+          </div>
+      </div>
+      <!--
     <div class="container w-100 h-50 p-0">
       <div class="row">
-        <div class="col-md-4 my-5"></div>
-        <div class="col-md-4 my-5">
-          <h1 class="my-5" id="lesson">LESSON</h1>
+        <div class="col-md-6 my-5">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="my-5" id="lesson">LESSON</h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 my-5">
-          <img class="img-fluid d-block mx-auto" src="images/Untitled-1.png" width="200
+        <div class="col-md-6 my-5">
+          <div class="row">
+            <div class="col-md-12">
+              <img class="img-fluid d-block mx-auto bg-info" src="images/Untitled-1.png" width="200
 
 200px" height="200px
-200">
+200"> </div>
+          </div>
           <p class="">Java Servlet and PHP</p>
         </div>
       </div>
     </div>
     <div class="container w-100 h-50 p-0">
       <div class="row">
-        <div class="col-md-4 my-5">
-          <img class="img-fluid d-block mx-auto" src="images/Education_28-512.png" width="200
-
-200px" height="200px
-200">
+        <div class="col-md-6 my-5">
+          <div class="row">
+            <div class="col-md-12">
+               </div>
+          </div>
           <p class="">Quiz about the lesson</p>
         </div>
-        <div class="col-md-4 my-5">
-          <h1 class="my-5">QUIZ</h1>
+        <div class="col-md-6 my-5">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="my-5">QUIZ</h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 my-5"></div>
       </div>
-    </div>
+    </div>-->
   </div>
   <div class="text-white bg-primary">
     <div class="container">
@@ -133,8 +212,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa d-inline fa-lg fa-chevron-circle-up"></i>
+  </button>
+  <script src="js/glitch.js"></script>
 
 </body>
 
