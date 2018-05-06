@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finals - Web Systems and Technologies</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="css/finals.css" type="text/css"> </head>
-
+  <link rel="stylesheet" href="css/theme.css" type="text/css"> 
+  <link rel="stylesheet" href="css/finals.css" type="text/css"> 
+  <script src="quizResources/js/scroll.js" type="text/javascript"></script>    
+    </head>
 <body>
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-secondary">
     <div class="container">
@@ -22,7 +25,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quiz</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="quizzes.html" target="">Quizzes </a>
+              <a class="dropdown-item" href="quiz.html" target="">Quizzes </a>
               <a class="dropdown-item" href="quiz1.html" target="">Quiz 1</a>
               <a class="dropdown-item" href="quiz2.html">Quiz 2</a>
               <a class="dropdown-item" href="quiz3.html">Quiz 3</a>
@@ -33,9 +36,9 @@
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebTech</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="index.html">HOME</a>
-              <a class="dropdown-item" href="final.html" target="">Lessons and Discussion</a>
-              <a class="dropdown-item" href="final.html#sss.html">Server-Side Scripting</a>
-              <a class="dropdown-item" href="final#was.html">Web App Security</a>
+              <a class="dropdown-item" href="finals.html" target="">Lessons and Discussion</a>
+              <a class="dropdown-item" href="#sss">Server-Side Scripting</a>
+              <a class="dropdown-item" href="#was">Web App Security</a>
             </div>
           </li>
         </ul>
@@ -59,12 +62,14 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6">
-              <img class="img-fluid d-block mx-auto" src="img/servers.png" width="100px">
-              <h1 class="text-center text-white">Server-Side Scripting</h1>
+                <a class="dropdown-item text-center text-white" href="#sss" target="">
+                    <img class="img-fluid d-block mx-auto" src="img/servers.png" width="100px"></a>
+                <h1 class="text-center text-white">Server-Side Scripting</h1>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid d-block mx-auto" src="img/security.png" width="100px">
-              <h1 class="text-center text-white">Web App Security</h1>
+                <a class="dropdown-item text-center text-white" href="#was" target="">
+                    <img class="img-fluid d-block mx-auto" src="img/security.png" width="100px"></a>
+                    <h1 class="text-center text-white">Web App Security</h1>
             </div>
           </div>
         </div>
@@ -73,7 +78,7 @@
   </div>
   <div class="py-5 bg-light">
     <div class="container">
-      <div class="row">
+      <div class="row" id="sss">
         <div class="col-md-12">
           <h1 class="display-1 text-center" style="color:#7C9188;">SERVER-SIDE&nbsp;
             <br>WEB SCRIPTING</h1>
@@ -94,7 +99,7 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/9g2-UF8tOIM&gt;"> </iframe>
+          <iframe width="500" height="320" src="https://www.youtube.com/embed/9g2-UF8tOIM&gt"> </iframe>
         </div>
         <div class="col-md-6 p-4" style="background-color:rgba(79,145,85,0.8);">
           <h2 class="text-center text-dark m-1">Why Use Server Side Scripting?</h2>
@@ -111,7 +116,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-center text-light">DIFFERENT SCRIPTING LANGUAGES</h1>
-          <p class="text-center text-success">There a re a lot of web scripting language but here we are going to tackle only some of the most used languages.</p>
+          <p class="text-center text-success">There are a lot of web scripting language but here we are going to tackle only some of the most used languages.</p>
         </div>
       </div>
       <div class="row mb-5">
@@ -165,29 +170,93 @@
         <div class="col-md-7">
           <h2 class="text-primary pt-3">PHP</h2>
           <p class="text-white">PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
-          <p class="text-white"> </p>
-          <p class="text-white">There are three main areas where PHP scripts are used. Server-side scripting. This is the most traditional and main target field for PHP. You need three things to make this work: the PHP parser (CGI or server module), a web server and a web
-            browser. You need to run the web server, with a connected PHP installation. You can access the PHP program output with a web browser, viewing the PHP page through the server. All these can run on your home machine if you are just experimenting
-            with PHP programming. See the installation instructions section for more information. Command line scripting. You can make a PHP script to run it without any server or browser. You only need the PHP parser to use it this way. This type of
-            usage is ideal for scripts regularly executed using cron (on *nix or Linux) or Task Scheduler (on Windows). These scripts can also be used for simple text processing tasks. See the section about Command line usage of PHP for more information.
-            Writing desktop applications. PHP is probably not the very best language to create a desktop application with a graphical user interface, but if you know PHP very well, and would like to use some advanced PHP features in your client-side applications
-            you can also use PHP-GTK to write such programs. </p>
+        <br>    
+            <h3 class="text-success">PHP Scripts uses Three main areas</h3>
+            <ul>
+            <li class="text-white">Server-side scripting</li>
+            <p class="text-white">Known as the main objective and the most traditional of all the PHP Scripts. PHP parser (CGI or server module), a Web Server and a Web
+            Browser is required in order to execute and run PHP. Web Server because it is needed together with a PHP installation which is connection. Also, you will have the ability to access the PHP program output with a web browser which you can view the PHP page through the Web Server.
+            </p>    
+                
+            <li class="text-white">Command line scripting</li> 
+            <p class="text-white">PHP Script can also generate and execute without using any server or browser but only required a PHP parser to imply the idea for scripts often executed using CRON/Task Scheduler. It can also be utilized for any text processing tasks. 
+            </p>
+            
+            <li class="text-white">Writing desktop applications</li>
+            <p class="text-white">PHP is not usually the typical language to use in making and generating a desktop application with a GUI. However, you can still able to use it for the client-side applications if you want to be advanced.
+            </p> 
+            </ul>
           <p></p>
         </div>
       </div>
+        <br>
       <div class="row">
         <div class="col-md-7 align-self-center">
-          <h3 class="text-success">DEMO to be PLACED here</h3>
-          <p class="my-3 text-muted">Flex setting of this column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 class="text-success">DEMO HERE</h3>
+          <p class="my-3 text-muted">Flex setting of this column. </p>
         </div>
-        <div class="col-md-5"></div>
+        <div class="col-md-5">         
+            <iframe width="500" height="280" src=" https://www.youtube.com/embed/AZo4VPlvE64"  allowfullscreen> 
+        </iframe>
+          </div>
       </div>
+    <div class="col-md-12 text-white">         
+      <h3 class="text-success">PHP Syntax </h3>
+        <ul><p class="text-white"> 
+            PHP scripts has no particukar placing or position in the document file. The scripting of PHP always starts with a <b class="text-success"> &lt;?php </b> and then ends with <b class="text-success">?&gt;.</b>
+      </p></ul>
+    <div class="col-md-5 text-success">         
+        <ul>
+        &lt;?php <br>
+        // PHP code goes here <br>
+        ?&gt;
+        </ul>
     </div>
-  </div>
+        <ul>
+            The PHP default file extension is <b class="text-success">".php".</b>
+      
+        A PHP file normally ci=onsists of HTML tags, and PHP scriptings.
+    <br><br>
+    <p class="text-white"> 
+      Note: PHP statements ends with a semicolon (;).
+    </p>
+
+      <p class="text-white"> 
+A comment in PHP code is a line that is not read/executed as part of the program. Its only purpose is to be read by someone who is looking at the code.
+
+Comments can be used to:
+
+Let others understand what you are doing
+Remind yourself of what you did - Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did. Comments can remind you of what you were thinking when you wrote the code
+PHP supports several ways of commenting:
+
+      <p class="text-white"> 
+PHP Case Sensitivity
+In PHP, all keywords (e.g. if, else, while, echo, etc.), classes, functions, and user-defined functions are NOT case-sensitive.
+
+In the example below, all three echo statements below are legal (and equal):
+
+However; all variable names are case-sensitive.
+
+In the example below, only the first statement will display the value of the $color variable (this is because $color, $COLOR, and $coLOR are treated as three different variables):
+    </p>
+            
+    <div class="col-md-5 text-success">         
+        &lt;?php 
+        $color = "red";
+        echo "My car is " . $color . "<br>";
+        echo "My house is " . $COLOR . "<br>";
+        echo "My boat is " . $coLOR . "<br>";
+        ?&gt;
+    </div>
+        </ul>
+    </div>
+        </div>
+    </div>
+    
   <div class="py-5" style="background-image: url('img/mid.png');background-position:center top;background-size:cover;background-repeat:no-repeat;" id="was">
     <div class="container">
-      <div class="row">
+      <div class="row" id="was">
         <div class="col-md-12 m-5">
           <h1 class="text-center text-secondary" style="background-color:rgba(255,255,255,0.5);font-size:3.5em;">
             <b>WEB APPLICATION SECURITY</b>
@@ -207,12 +276,13 @@
       </div>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
+  <button onclick="bottomFunction()" id="myBtn2" title="Go to bottom"><i class="fa d-inline fa-lg fa-chevron-circle-down"></i></button>
+
 </body>
 
 </html>

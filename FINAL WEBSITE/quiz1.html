@@ -35,7 +35,7 @@
   </nav>
 <body class="self">
         <div id="quiz-container">
-            <div class="list-group">
+            <div class="list-group mt-5">
                 <p class = "questions">Q1. HTML stands for _____?</p>
             </div>    
                 <div class="answers">
@@ -579,7 +579,9 @@
             <br><input type="button" id="submit" value="SUBMIT" onClick="checkAllQs()">	
         </div>
     <div id="showScore" class="bg-dark cover" style="display: none;"></div>
+    <audio src="audio/force.mp3" autoplay="autoplay" loop="loop"></audio>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
+    <button onclick="bottomFunction()" id="myBtn2" title="Go to bottom"><i class="fa d-inline fa-lg fa-chevron-circle-down"></i></button>
     </body>
     <script>
     $('#submit a').click(function(e) {

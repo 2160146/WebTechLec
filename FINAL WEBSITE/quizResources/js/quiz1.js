@@ -73,10 +73,10 @@ function checkAllQs(){
     var getDiv = document.getElementById("showScore");
     getDiv.innerHTML += '<div class="container py-5">'
             + '<div class="row">'
-                + '<div class="col-md-12">'
-                    + '<h1 class="display-3 mb-4 text-warning">MULTIPLE CHOICE QUIZ RESULT</h1>'
+                + '<div class="col-md-12 text-center">'
+                    + '<h1 class="display-3 mb-4 text-success">MULTIPLE CHOICE QUIZ RESULT</h1>'
                     + '<h1 class="text-light">Your Score is : ' + score + ' / 20</h1><br>'
-                    + '<input class="btn btn-lg btn-light mx-1" type="button" value="GO BACK TO QUIZ" onClick="window.location.reload()">'
+                    + '<input class="btn btn-lg btn-success mx-1" type="button" value="GO BACK TO MULTIPLE CHOICE QUIZ" onClick="window.location.reload()">'
                 + '</div>'
             + '</div>'
         + '</div>';
