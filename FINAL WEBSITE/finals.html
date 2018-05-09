@@ -172,7 +172,11 @@
           <img class="img-fluid d-block mb-4 w-100 img-thumbnail" src="img/php-logo.svg"> </div>
         <div class="col-md-7">
           <h2 class="text-primary pt-3">PHP</h2>
-          <p class="text-white">PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+            <p class="text-white">PHP was initially stood for <i class="text-success">Personal Home Page</i>,&nbsp; however it was then changed to a recursive acronym that means <b class="text-success">PHP: Hypertext Preprocessor</b>. </p>
+            <p class="text-white">
+            PHP is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+            <p class="text-white">In 1994, PHP was intially created and designed by <b class="text-success">Rasnus Lerdorf</b> and now being implemented by <b class="text-success">Zend Technologies with Zend Engine</b>.
+            </p>
         <br>    
             <h3 class="text-success">PHP Scripts uses Three main areas</h3>
             <ul>
@@ -189,21 +193,44 @@
             <p class="text-white">PHP is not usually the typical language to use in making and generating a desktop application with a GUI. However, you can still able to use it for the client-side applications if you want to be advanced.
             </p> 
             </ul>
-          <p></p>
         </div>
       </div>
         <br>
       <div class="row">
         <div class="col-md-7 align-self-center">
-          <h3 class="text-success">DEMO HERE</h3>
-          <p class="my-3 text-muted">Flex setting of this column. </p>
+          <h3 class="text-success">SAMPLE PHP CODE</h3>
+            <div class="col-md-7 text-info">         
+                <ul>
+                    //Login using PHP <br><br>
+                    
+                &lt;?php <br>
+	               require 'scripts/connect.php'; <br>
+	               session_start(); <br>
+                ?&gt;
+                </ul>
+                <ul>
+                &lt;?php <br>
+                    if (isset($_SESSION['logged_in']) &amp;&amp; $_SESSION['logged_in'] == true) { <br>
+                    &nbsp;&nbsp;  if($_SESSION['type'] == 0) { <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        header ("location: admin.php"); <br>
+                     &nbsp;&nbsp;    } else { <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       header ("location: faculty.php"); <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;                } <br>
+                    } <br>
+                    if (isset($_POST['login'])) { //user logging in <br>
+                    &nbsp;&nbsp; require 'scripts/signin.php'; <br>
+                    } <br>
+                    ?&gt;
+                </ul>
+            </div>
+
         </div>
         <div class="col-md-5">         
             <iframe width="500" height="280" src=" https://www.youtube.com/embed/AZo4VPlvE64"  allowfullscreen> 
         </iframe>
           </div>
       </div>
-    <div class="col-md-12 text-white">         
+    <div class="col-md-12 text-white"><br>        
       <h3 class="text-success">PHP Syntax </h3>
         <ul><p class="text-white"> 
             PHP scripts has no particukar placing or position in the document file. The scripting of PHP always starts with a <b class="text-success"> &lt;?php </b> and then ends with <b class="text-success">?&gt;.</b>
@@ -211,26 +238,41 @@
     <div class="col-md-5 text-success">         
         <ul>
         &lt;?php <br>
-        // PHP code goes here <br>
+        // insert PHP code here <br>
         ?&gt;
         </ul>
     </div>
-        <ul>
-            The PHP default file extension is <b class="text-success">".php".</b>
-      
-        A PHP file normally ci=onsists of HTML tags, and PHP scriptings.
+            The PHP default file extension is <b class="text-success">".php".</b> A PHP file normally ci=onsists of HTML tags, and PHP scriptings.
     <br><br>
-    <p class="text-white"> 
-      Note: PHP statements ends with a semicolon (;).
-    </p>
+        <p class="text-white"> 
+            Note: PHP statements ends with a semicolon (;).
+        </p>
 
-      <p class="text-white"> 
-          There are also comments used for PHP code which is not readable/executed on the file.  Comments in PHP are used as a guide for your code so that others can also understand your code.
-          
+        <p class="text-white"> 
           When talking about the case sensitiivty of PHP is it  depends on what code you're typing such as classes, user-defined functions, keywords, and sfunctions are all NOT case-sensitive except the variable names which are case-sensitive.
-    </p>
-        </ul>
-    </div>
+        </p>
+        <br><br>
+        <h3 class="text-success">PHP Declaration </h3>
+            <p class="text-white">
+            When declaring in PHP, there are two ways which is echo and print statements. In comparison of the two are echo not having any return value, can take multiple parameters, and faster while print has a return value of 1 and can take only one arguement. Echo and Print statements can be used with or without any parentheses.
+            </p>    
+        
+        <div class="text-success">
+            //Example of echo <br>
+            &lt;?php <br>
+            echo "&lt;h1&gt;PHP&lt;/h1&gt;"; <br>
+            ?&gt; <br><br>
+        </div>
+
+        <div class="text-success">
+            //Example of print <br>
+            &lt;?php <br>
+            $title = "PHP"; <br>
+            print "&lt;h1&gt; . $title . "&lt;h1&gt;; <br>
+            ?&gt;
+        </div>
+
+        </div>
     </div>
     </div>
     
