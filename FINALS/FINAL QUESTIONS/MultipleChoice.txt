@@ -1,0 +1,82 @@
+Multiple choice
+
+1. Java objects that are intended to play the role of server components in client-server communications.
+a. Java Servlet
+b. PHP
+c. Session Handling
+d. Javascript
+
+2. Which is not belong to the group.
+a. installation
+b. initialization
+c. response handling
+d. destruction
+
+3. PHP stands for?
+i) Personal Home Page
+ii) Hypertext Preprocessor
+iii) Pretext Hypertext Processor
+iv) Preprocessor Home Page
+a.Both (i) and (ii)
+b.Only (ii)
+c.Both (ii) and (iv)
+d.Both (i) and (iii)
+
+4. What are Servlets?
+a.Java Servlets are programs that run on a Web or Application server.
+b.Java Servlets act as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.
+c. Both A and B
+d. None of the Above
+
+5. Which of the following code is used to set the session timeout in servlets?
+a.response.setMaxInactiveInterval(interval)
+b.None of the above.
+c. request.setMaxInactiveInterval(interval)
+d.session.setMaxInactiveInterval(interval)
+
+6. Which of the following code is used to get names of the headers in servlet?
+a. response.getHeaderNames()
+b. request.getHeaderNames()
+c. Header.getHeaderNames()
+d. None of the above.
+
+7. A PHP script should start with ___ and end with ___:
+a.<?php> </php>
+b. < ?php ? >
+c.< php > </php>
+d.<?php> <?php>
+
+8. What will be the output of the following PHP code?
+< ?php 
+    $num = 10;
+    echo 'What is her age? \n She is $num years old';
+?>
+a.What is her age? \n She is $num years old
+b.What is her age? She is 10 years old
+c.What is her age? 
+She is 10 years old
+d.What is her age? 
+She is $num years old
+
+9.  When doFilter() method of servlet gets called?
+a.The doFilter() method is called when the filter is first created.
+b.The doFilter() method is called whenever the servlet being filtered is invoked.
+c.Both of the above.
+d.None of the above.
+
+10. PHP files have a default file extension of.
+a. html
+b. ph 
+c. js
+d. none of the above.
+
+1. A
+2. C
+3. A
+4. C
+5. D
+6. B
+7. B
+8. A
+9. B
+10. D

@@ -1,0 +1,11 @@
+True or False
+1. T - PHP is created in 1994 by Rasmus Lerdorf
+2. F - In PHP, to create instance of class "new" keyword is not required.
+3. F - The first stage in java servlet life cycle is creation.
+4. T - Java server used to handle HTTP requests and generate HTTP responses
+5. T - Java Servlet handles client requests by generating responses to such requests
+6. F - In Java servlet lifecycle, initialization is invoked multiple times and is intended for any startup initialization code
+7. T - PHP: Hypertext Preprocessor is a server-side scripting language designed for web development but also used as a general-purpose programming language.
+8. F - The last or final stage in java servlet lifecycle is deletion.
+9. F - In PHP, a class can be inherited from one base class and with multiple base classes.
+10. T - A Java servlet is a Java program that extends the capabilities of a server.
