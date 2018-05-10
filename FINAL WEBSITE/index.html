@@ -4,24 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Systems and Technologies</title> 
+  <title>Web Systems and Technologies</title>
   <link rel="stylesheet" href="css/glitch.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bounce.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/theme.css" type="text/css">
   <script src="style/warpspeed.js.download" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="style/main.css">
   <script src="quizResources/js/scroll.js" type="text/javascript"></script>
-  <link rel="icon" href="images/icon.ico" />
-</head>
+  <link rel="icon" href="images/icon.ico"> </head>
 
 <body>
-
-    <div id="background">
-	<canvas id="bkFrame" width="1349" height="613"></canvas>
-	<script type="text/javascript">
-		ai_background=new WarpSpeed("bkFrame",{targetSpeed:5, speedAdjFactor:5, shape:"square", backgroundColor:"black", speedWhileLoading:20});
-	</script>
-</div>
+  <div id="background">
+    <canvas id="bkFrame" width="1349" height="613"></canvas>
+    <script type="text/javascript">
+      ai_background=new WarpSpeed("bkFrame",{targetSpeed:5, speedAdjFactor:5, shape:"square", backgroundColor:"black", speedWhileLoading:20});
+    </script>
+  </div>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" class="filterwrapper">
     <defs>
       <svg id="glitchmask-r" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -66,16 +66,44 @@
       </filter>
     </defs>
   </svg>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-rebel"></i>
+        <b>&nbsp; Webtech</b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> &nbsp;Lessons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">&nbsp;Quizzes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebTech</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="index.html">HOME</a>
+              <a class="dropdown-item" href="finals.html">Finals</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="text-center h-100 w-100 m-0">
     <div class="container mx-auto py-5">
       <div class="row">
         <div class="col-md-12 my-3">
           <a href="index.html">
-            <img class="bg-fluid" src="images/logo.svg"> </a>
+            <img class="bg-fluid animated bounceInDown" src="images/logo.svg"> </a>
           <div class="col-md-12" id="home">
             <figure class="glitch-filter-example">
               <svg class="glitch-filter-example__demo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 50%; width: 100%;">
-                <text class="glitch-filter-example__filtered-text" y="50%" text-anchor="middle" x="50%">Web Systems and Technology</text>
+                <text class="glitch-filter-example__filtered-text animated wobble" y="50%" text-anchor="middle" x="50%">Web Systems and Technology</text>
               </svg>
             </figure>
             <div class="col-md-12">
@@ -95,29 +123,31 @@
       <div class="row"> </div>
     </div>
   </div>
-    
   <div class="text-center h-100 w-100 m-0" id="bg" style="background-image: url(&quot;images/index_background.jpg&quot;); background-position: center center;">
-      <div class="container py-5">
-          <div class="row">
-              <div class="col-md-6">
-                <h1 class="py-5" id="lesson">LESSON</h1>
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid d-block mx-auto bg-info" src="images/Untitled-1.png" width="200 200px" height="200px 200">
-                  <p class="">Java Servlet and PHP</p>
-              </div>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="py-5" id="lesson">LESSON</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="animated infinite pulse">
+            <img class="img-fluid d-block mx-auto bg-info" src="images/Untitled-1.png" width="200 200px" height="200px 200">
           </div>
-          <div class="row py-5">
-              <div class="col-md-6">
-                <img class="img-fluid d-block mx-auto bg-info" src="images/Education_28-512.png" width="200 200px" height="200px 200">
-                  <p class="">Quiz about the lesson</p>
-              </div>
-              <div class="col-md-6">
-                <h1 class="py-5" id="quiz">QUIZ</h1>
-              </div>
-          </div>
+          <p class="">Java Servlet and PHP</p>
+        </div>
       </div>
-      <!--
+      <div class="row py-5">
+        <div class="col-md-6">
+          <div class="animated infinite pulse">
+            <img class="img-fluid d-block mx-auto bg-info" src="images/Education_28-512.png" width="200 200px" height="200px 200"> </div>
+          <p class="">Quiz about the lesson</p>
+        </div>
+        <div class="col-md-6">
+          <h1 class="py-5" id="quiz">QUIZ</h1>
+        </div>
+      </div>
+    </div>
+    <!--
     <div class="container w-100 h-50 p-0">
       <div class="row">
         <div class="col-md-6 my-5">
@@ -156,9 +186,8 @@
           </div>
         </div>
       </div>
-    </div>-->
-  </div>
-  <div class="text-white bg-primary">
+    </div>--></div>
+  <div class="gradientbg h-75">
     <div class="container">
       <div class="row">
         <div class="p-4 col-md-12">
@@ -183,34 +212,6 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="fa d-inline fa-lg fa-rebel"></i>
-        <b>&nbsp; Webtech</b>
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#"> &nbsp;Lessons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="quiz.html">&nbsp;Quizzes</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebTech</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="index.html">HOME</a>
-              <a class="dropdown-item" href="finals.html">Finals</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -218,7 +219,9 @@
     <i class="fa d-inline fa-lg fa-chevron-circle-up"></i>
   </button>
   <script src="js/glitch.js"></script>
-
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
 
 </html>
