@@ -79,3 +79,10 @@ html {
     border:1px solid transparent;
     
 }
+
+@media (max-width:767px) {
+    .card {
+        width:auto;
+        
+    }
+}

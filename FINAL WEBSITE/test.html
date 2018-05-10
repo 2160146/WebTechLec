@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="robots" content="noindex">
+  <head>
+    
+    <style type="text/css">body{font:62.5% Verdana,Arial,sans-serif}</style>
+	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+    
+    <title>JQuery-UI/Draggable new snapMode: snap to 'corner'</title>
+    <style type="text/css">
+
+
+      .drag-source, .drop-target {
+        margin: 1em;
+        border: 1px solid black;
+        width: 100px;
+        height: 30px;
+        
+        text-align: center;
+        vertical-align: middle;
+        line-height: 30px;
+        
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+      }
+
+      .drag-source {
+        z-index: 1;
+        background-color: orange;
+      }
+
+      .drop-target {
+		color: white;
+		background-color: blue;
+		display: inline-block;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+  
+	<div style="float:right; width:50%;">
+		<div class="drag-source" id="0">Answer 1</div>
+		<div class="drag-source" id="1">Answer 2</div>
+		<div class="drag-source" id="2">Answer 3</div>
+	</div>
+	<div style="float:left; width:50%;">
+		<div class="drop-targets-container">
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a  <div class="drop-target" id="0">Question 1</div> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a  <div class="drop-target" id="1">Question 2</div> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a  <div class="drop-target" id="2">Question 3</div> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+			<button onclick="checkAnswers()">CHECK</button>
+		</div>
+	</div>
+	
+<script>
+	var score = 0;
+	var checker = new Array();
+	$('.drag-source').draggable(
+		{ snap: '.drop-target' , revert : function(event, ui) {
+            $(this).data("uiDraggable").originalPosition = {
+                top : 0,
+                left : 0
+            };
+            return !event;
+        } }	 
+	);
+
+	$('.drop-target').droppable(
+		{ accept: '.drag-source', drop : function(event, ui) {
+			var draggableId = ui.draggable.attr("id");
+			var droppableId = $(this).attr("id");
+			if (draggableId == droppableId) {
+				updateTracker(draggableId, 1);
+			} else {
+				updateTracker(draggableId, 0);
+			}
+		}, out : function(event, ui) {
+			updateTracker(($(this).attr("id")), 0);
+		} }
+	);
+	
+	function updateTracker (index, value) {
+		checker[index] = value;
+		console.log(checker);
+	}
+	
+	function checkAnswers() {
+		for (i = 0; i < checker.length; i++) {
+			if(checker[i] == 1) {
+				score++;
+			}
+		}
+		alert(score);
+		location.reload();
+	}	
+</script>
+</html>

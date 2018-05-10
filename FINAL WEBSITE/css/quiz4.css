@@ -1,0 +1,204 @@
+html, body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Roboto Slab;
+    src: url("css/fonts/RobotoSlab-Regular.ttf");
+}
+
+#begin-cont {
+    background: black;
+    padding-top: 15vh;
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: auto;
+    padding: auto;
+    text-align: center;
+}
+
+/*rgb(247, 217, 33);*/
+
+#logo-force {
+    height: 65vh;
+    width: auto;
+    margin: 0;
+}
+
+video.fullscreen {
+    position: fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translate(-50%, -50%);
+}
+
+.list-group {
+    width: 90%;
+    padding: 3%;
+    margin: auto;
+    display: table;
+    text-align: center;
+    background: #4d79ff;
+}
+
+#quiz-container {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #c2d1f0;
+}
+
+#quiz-container:target {
+    display: block;
+}
+
+.questions {
+    font-family: monospace;
+    color: white;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    width: 80%
+}
+
+.answers {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+.answers_item {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 65vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+.answers_item input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.answers_item label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 3vh;
+    border: 3px solid;
+    border-radius:10rem;
+    padding: 3%;
+    margin: 10px auto;
+    cursor: pointer;
+    color:#000;
+    text-transform:uppercase; 
+}
+
+.answers_item:hover label{ 
+    font-weight: 800;
+    border-color: #FFF;
+    box-shadow: 0px 0px 50px #0039e6;
+    transition: all 0.2s linear;
+}
+
+.answers_item .check{
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 35px;
+    left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+}
+
+/**.answers_item:hover .check { 
+    border: 5px solid #FFF; 
+}**/
+
+.answers_item .check::before {
+    display: block;
+    position: absolute;
+	content: '';
+    height: 28px;
+    width: 28px;
+    top: -1px;
+    left: -1px;
+    margin: 0 auto;
+	transition: background 0.25s linear;
+}
+
+/**input[type=radio]:checked ~ .check { border: 5px solid #FFFFFF; }
+input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }**/
+
+#submit {
+    margin-left: 45%;
+    border-radius: 10px;
+    font-size: 4vh;
+    font-weight: 800;
+    font-family: starwars1;
+    padding: 1vh;
+    text-decoration: none;
+    border: 3px solid transparent;
+    text-align:center; 
+}
+
+#submit:hover {
+    box-shadow: 0px 0px 50px black;
+    transition: all 0.1s linear;
+}
+
+/*fonts*/
+@font-face {
+    font-family: starwars1;
+    src: url(fonts/font1.ttf);
+}
+
+.drag-source, .drop-target {
+    margin: 1em;
+    width: 50%;
+    text-align: center;
+    padding:1em;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.drag-source {
+    background-color:#E94B3C;
+    cursor: pointer;
+    width:75%;
+    text-transform:uppercase    
+}
+
+.drag-source:hover {
+    background-color:#F70000;
+    cursor:pointer;
+    font-weight:bolder;
+    text-transform:uppercase
+}
+
+.drop-target {
+    color: #fff;
+    background-color:#EC9787;
+    display: inline-block;
+}
+    
+.drag-choice {
+    float: right;
+    width: 28%;
+}
+
+.drop-targets-container {
+    float: left;
+    padding: 2em;
+    margin: auto;
+    margin-left: 3em
+}

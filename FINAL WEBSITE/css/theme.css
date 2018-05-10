@@ -6308,3 +6308,7 @@ html, body {
     color: #fff;
     background-color: #E94B3C; 
 }
+
+.answers_item {
+    font-family:monospace
+}

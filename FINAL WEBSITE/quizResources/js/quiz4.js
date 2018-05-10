@@ -1,3 +1,46 @@
+	var score = 0;
+	var checker = new Array();
+	$('.drag-source').draggable(
+		{ snap: '.drop-target' , revert : function(event, ui) {
+            $(this).data("uiDraggable").originalPosition = {
+                top : 0,
+                left : 0
+            };
+            return !event;
+        } }	 
+	);
+
+	$('.drop-target').droppable(
+		{ accept: '.drag-source', drop : function(event, ui) {
+			var draggableId = ui.draggable.attr("id");
+			var droppableId = $(this).attr("id");
+			if (draggableId == droppableId) {
+				updateTracker(draggableId, 1);
+			} else {
+				updateTracker(draggableId, 0);
+			}
+		}, out : function(event, ui) {
+			updateTracker(($(this).attr("id")), 0);
+		} }
+	);
+	
+	function updateTracker (index, value) {
+		checker[index] = value;
+		console.log(checker);
+	}
+	
+	function checkAnswers() {
+		for (i = 0; i < checker.length; i++) {
+			if(checker[i] == 1) {
+				score++;
+			}
+		}
+		alert(score);
+		location.reload();
+	}	
+
+
+
 var answers = {
     "q1": ["Hakon Wium Lie", "hakon wium lie"],
     "q2": ["Selector", "selector"],
