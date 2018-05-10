@@ -164,7 +164,6 @@ input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }**/
 
 .drag-source, .drop-target {
     margin: 1em;
-    width: 50%;
     text-align: center;
     padding:1em;
     -moz-border-radius: 0px;
@@ -174,14 +173,13 @@ input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }**/
 .drag-source {
     background-color:#E94B3C;
     cursor: pointer;
-    width:75%;
-    text-transform:uppercase    
+    text-transform: uppercase;
+    width:auto;
 }
 
 .drag-source:hover {
     background-color:#F70000;
     cursor:pointer;
-    font-weight:bolder;
     text-transform:uppercase
 }
 
@@ -189,11 +187,14 @@ input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }**/
     color: #fff;
     background-color:#EC9787;
     display: inline-block;
+    width: 25%;
+    margin:auto 
 }
     
 .drag-choice {
-    float: right;
-    width: 28%;
+    border: 2px solid black;
+    position: fixed;
+    display: none;
 }
 
 .drop-targets-container {
@@ -202,3 +203,52 @@ input[type=radio]:checked ~ .check::before{ background: #FFFFFF; }**/
     margin: auto;
     margin-left: 3em
 }
+
+#sidebar-fixed {
+    float:right;
+    width: 214px;
+    height: auto;
+    position: fixed;
+    display: none;
+    margin-top: 24px;
+}
+
+@media (max-width: 1110px){
+      #sidebar-fixed{
+        width: 190px;
+      }
+      #sidebar-fluid{
+        width: 190px;
+      }
+    }
+    @media (max-width: 990px){
+      #sidebar-fixed{
+        width: 170px;
+      }
+      #sidebar-fluid{
+        width: 170px;
+      }
+    }
+    @media (max-width: 970px){
+      #sidebar-fixed{
+        width: 150px;
+      }
+      #sidebar-fluid{
+        width: 150px;
+      }
+    }
+    @media (max-width: 810px){
+      #sidebar-fixed{
+        width: 130px;
+      }
+      #sidebar-fluid{
+        width: 130px;
+      }
+    }
+    @media (max-width: 683px){
+      #sidebar-fluid{
+        /* reset sidebar to remove static width*/
+        width: 683px;
+        max-width: 100%;
+      }
+    }
