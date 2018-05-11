@@ -6359,3 +6359,9 @@ html, body {
 		background-position: 0% 50%
 	}
 }
+
+.wordy1{
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+}
