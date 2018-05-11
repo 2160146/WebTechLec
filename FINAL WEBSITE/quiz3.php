@@ -70,7 +70,7 @@
 		<script>
 				<?php
 	echo "var answers = {";
-			$ques = $mysqli->query("select * from ques_ans natural join answer") or die($mysqli->error());  
+			$ques = $mysqli->query("select * from ques_ans natural join answer where type='iden'") or die($mysqli->error());  
 			$q = 1;
 			while($row = mysqli_fetch_array($ques)) {
 					if ($row['type'] === 'iden') {	
