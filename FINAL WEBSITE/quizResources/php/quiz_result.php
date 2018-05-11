@@ -17,5 +17,5 @@
     $totalItems = mysqli_num_rows($result);
     $_SESSION['score'] = $totalCorrect;
     $_SESSION['total'] = $totalItems;
-    header('location: quiz3-score.php');
+    header('location: quiz2-score.php');
 ?>

@@ -35,7 +35,7 @@
       </div>
     </div>
   </nav>
-  <div class="py-5 text-white opaque-overlay" id="question" style="background-image: url(&quot;images/webtech_background.jpg&quot;);">
+  <div class="py-5 text-white opaque-overlay cover" id="question" style="background-image: url(&quot;images/webtech_background.jpg&quot;);">
     <div class="container">
       <div class="row">
         <div class="col-md-1" style="background-image: url('images/webtech_background.jpg');"></div>

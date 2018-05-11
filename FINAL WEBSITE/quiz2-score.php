@@ -19,7 +19,7 @@
             require 'quizResources/php/quiz_result.php';
         }
     ?>
-<body class="self">
+<body class="self bg-info">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><i class="fa d-inline fa-lg fa-rebel"></i><b>&nbsp; TRUE OR FALSE</b></a>
@@ -38,15 +38,15 @@
     </div>
   </nav>
     
-        <div class="container py-5">
+        <div class="container py-5 my-5">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 class="display-3 mb-4 text-success">TRUE OR FALSE QUIZ RESULT</h1>
-                        <h1 class="text-light">Your Score is : 
+                        <h1 class="display-3 mb-4 text-secondary">TRUE OR FALSE QUIZ RESULT</h1>
+                        <h1 class="text-secondary">Your Score is : 
                             <?php
                             echo $_SESSION['score'].'/'.$_SESSION['total'];
                             ?></h1><br>
-                        <input class="btn btn-lg btn-success mx-1" type="button" value="GO BACK TO TRUE OR FALSE QUIZ" onClick="window.location.reload()">
+                        <input class="btn btn-lg btn-secondary mx-1" type="button" value="GO BACK TO TRUE OR FALSE QUIZ" onClick="location.href = 'quiz2.php';">
                     </div>
                 </div>
             </div>;

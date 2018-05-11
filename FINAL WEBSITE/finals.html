@@ -122,6 +122,28 @@
           <p class="text-center text-success">There are a lot of web scripting language but here we are going to tackle only some of the most used languages.</p>
         </div>
       </div>
+          <div class="py-2" style="background-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="text-center text-secondary">Java</h1>
+          <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+        <div class="col-md-4">
+          <h1 class="text-center text-secondary">Php</h1>
+          <img class="img-fluid d-block mx-5 py-5" src="img/php.png" width="250px"> </div>
+        <div class="col-md-4">
+          <h1 class="text-center text-secondary">Node.Js</h1>
+          <img class="img-fluid d-block mx-auto py-2" src="img/node.png" width="250px"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light" style="background-repeat: no-repeat; background-position: center top; background-image: url(&quot;img/main2.png&quot;);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center bg-success">JAVA as a Server Side Scripting Language</h1>
+        </div>
+      </div>-
       <div class="row mb-5">
         <div class="col-md-6 text-success">
           <h2 class="text-primary">Java&nbsp;</h2>
@@ -133,34 +155,132 @@
             <br>Servlets are Java Clases which extends "HttpServlet" which allows a user to create dynamic and interactive web pages through HTTP request and HTTP response .</p>
           <p class="text-light">
             <b>Java Server Pages
-              <br> </b>JavaServer Pages (JSP) are files which holds combined HTML and Java code. JSP is basically Java code directly embeded into HTML pages. Having this kind of setup &nbsp;The web cotainer compiles the JSP into a servlet at the first time
-            the JSP is accessed.</p>
+              <br> </b>JavaServer Pages (JSP) are files which holds combined HTML and Java code. JSP is basically Java code directly embeded into HTML pages. Having this kind of setup makes it way easier to create dynamic pages compared to servlets. &nbsp;JSP
+            is actually compiled into a servlet.&nbsp;</p>
         </div>
         <div class="col-md-6 align-self-center">
-          <img class="img-fluid d-block w-100" src="img/jsp-icon.png" style=" width:100px; height:450px;"> </div>
+          <img class="img-fluid d-block w-100" src="img/javaserver.png" style="height:350px;"> </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-success">
-          <h1 class="">Life Cycle of a JSP&nbsp;</h1>
-          <ul class="text-light">
-            <li>Instantiation (Object of the Generated Servlet is created)</li>
-            <li>Initialization ( jspInit() method is invoked by the container)</li>
-            <li>Reqeust processing ( _jspService() method is invoked by the container)</li>
-            <li>Destroy ( jspDestroy() method is invoked by the container)</li>
-          </ul>
+        <div class="row"> </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-light text-center border border-dark">LIFE CYCLE</h2>
+          </div>
+        </div>
+        <div class="row bg-primary">
+          <button type="button" class="btn text-primary m-1" data-toggle="collapse" data-target="#servlet" style="width:100%;font-size:1.5em;">
+            <b>SERVLET LIFE CYCLE</b>
+          </button>
+          <div id="servlet" class="collapse" style="background-color:rgba(255,255,255,0.5);padding:10px;margin:10px;">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> INITIALIZATION </h3>
+                <p> First, init() method is called to initialize the servlet.
+                  <br>
+                  <b>The init() Method</b>
+                  <br> The init method is used only once in the entire servlet life cycle. It is called during the creation of the servlet and it is only used for one-time initializations. During a servlet invocation, one instance of a servlet is created
+                  wherein every request turns to a new thread which is then handed of the necessary doXXX(). This method basically initializes the data that will be used in the entire service life. </p>
+                <p> public void init() throws ServletException { // Initialization code... } </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> SERVICE </h3>
+                <p> Second, service() method is then called upon to process client request.
+                  <br>
+                  <b>The service() Method</b>
+                  <br> The service() method is the main method which performs the actual task. Whenever a request for a servlet is made a new thread is created and calls a service. The method checks the HTTP request type and calls the appropriate doXXX(),
+                  such as; </p>
+                <ul>
+                  <li> GET for doGet() </li>
+                  <li> POST for doPost() </li>
+                  <li> PUT for doPut() </li>
+                  <li> DELETE for doDelete() </li>
+                </ul>
+                <p></p>
+                <p> public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException { } </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> DESTROY </h3>
+                <p> Finally, destroy() method is called to terminate the servlet.
+                  <b>The destroy() Method</b> The destroy() method is also called only once, like init(), but this time during the end of the servlet's cycle. This method enables the servlet to close database connections, stop background threads, and perform
+                  other cleanup activities. </p>
+                <p> public void destroy() { // Finalization code... } </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-success">
-          <h1 class="text-right text-dark">DEMO HERE</h1>
+      <div class="container">
+        <div class="row bg-light">
+          <button type="button" class="btn text-primary m-1" data-toggle="collapse" data-target="#jsp" style="width:100%;font-size:1.5em;">
+            <b>JSP LIFE CYCLE</b>
+          </button>
+          <div id="jsp" class="collapse" style="background-color:rgba(255,255,255,0.5);padding:10px;margin:10px;">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3>JSP COMPILATION </h3>
+                <p>
+                  <br> The JSP engine compiles a JSP if it has never been compiled before or if there are any modifications done recently.
+                  <br> The compilation has three main steps; </p>
+                <ol>
+                  <li>Parse the JSP</li>
+                  <li>Convert the JSP to servlet</li>
+                  <li>Compile the servlet</li>
+                </ol>
+                <p></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> JSP INITIALIZATION </h3>
+                <p> jspInit() is the equivalent of init() method in servlet.
+                  <br> Initialization in JSP is basically the same with servlets wherein connections are established and files are prepared. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> JSP EXECUTION </h3>
+                <p> _jspService() method is invoked to handle client requests just like service() method in servlets. It takes both HttpServletRequest and HttpServletResponse as parameters to serve appropriate responses for each request. </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="img-fluid d-block py-2 mx-auto" src="img/java.png" width="200px"> </div>
+              <div class="col-lg-8">
+                <h3> JSP CLEANUP </h3>
+                <p> This is where the destruction phase of the JSP cycle comes into place. Cleaup is the equivalent to servlet's destroy phase and is invoked using the method jspDestroy(). This phase includes closing all the connections made in the initialization
+                  and closing the files. </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-fluid d-block float-right" src="img/jspdirectory.JPG"> </div>
-        <div class="col-md-6 p-5">
-          <h2 class="text-light">Directory Structure</h2>
-          <p class="text-warning">The directory structure of JSP page is same as servlet. We contains the jsp page outside the WEB-INF folder or in any directory.</p>
+        <div class="row bg-info m-2">
+          <div class="col-md-12 p-0 m-1">
+            <h2 class="text-light text-center">Directory Structure</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="img/jspdirectory.JPG"> </div>
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="img/jspdirectory.JPG"> </div>
         </div>
       </div>
     </div>
@@ -271,11 +391,10 @@
             print "&lt;h1&gt; . $title . "&lt;h1&gt;; <br>
             ?&gt;
         </div>
-
         </div>
     </div>
+</div>
     </div>
-    
   <div class="py-5" style="background-image: url('img/mid.png');background-position:center top;background-size:cover;background-repeat:no-repeat;" id="was">
     <div class="container">
       <div class="row" id="was">
