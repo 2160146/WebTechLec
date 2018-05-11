@@ -65,7 +65,8 @@
     </div>
 		</div>
   <div class="py-5 text-center cover bg-dark" id="test" style="display: none;"></div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
+    <audio src="audio/force.mp3" autoplay="autoplay"></audio>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa d-inline fa-lg fa-chevron-circle-up"></i></button>
 
 		<script>
 				<?php
